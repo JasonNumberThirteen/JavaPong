@@ -7,8 +7,8 @@ public class GamePanel extends JPanel implements Runnable
 {
 	public GamePanel()
 	{
-		setBackground(Color.BLACK);
-		setPreferredSize(new Dimension(640, 480));
+		setBackground(Constants.BACKGROUND_COLOR);
+		setPreferredSize(new Dimension(Constants.GAME_WIDTH, Constants.GAME_HEIGHT));
 	}
 
 	@Override

@@ -7,7 +7,7 @@ public class GameFrame extends JFrame
 	public GameFrame()
 	{
 		add(new GamePanel());
-		setTitle("Pong");
+		setTitle(Constants.GAME_TITLE);
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setVisible(true);
 		setResizable(false);
