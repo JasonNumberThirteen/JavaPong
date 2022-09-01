@@ -17,7 +17,7 @@ public class Paddle extends GameObject
 	@Override
 	public void draw(Graphics g)
 	{
-		g.setColor(Color.WHITE);
-		g.fillRect(position.x, position.y, 8, 32);
+		g.setColor(Constants.PADDLE_COLOR);
+		g.fillRect(position.x, position.y, Constants.PADDLE_WIDTH, Constants.PADDLE_HEIGHT);
 	}
 }

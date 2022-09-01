@@ -6,8 +6,8 @@ import javax.swing.*;
 public class GamePanel extends JPanel implements Runnable
 {
 	private final Thread thread;
-	private final Paddle paddleA = new Paddle(8, 8);
-	private final Paddle paddleB = new Paddle(Constants.GAME_WIDTH - 8 - 8, 8);
+	private final Paddle paddleA = new Paddle(Constants.PADDLE_WIDTH, 8);
+	private final Paddle paddleB = new Paddle(Constants.GAME_WIDTH - Constants.PADDLE_WIDTH - Constants.PADDLE_OFFSET_FROM_EDGE, 8);
 
 	private boolean isRunning;
 
