@@ -8,6 +8,7 @@ public class GamePanel extends JPanel implements Runnable
 	private final Thread thread;
 	private final Paddle paddleA = new Paddle(Constants.PADDLE_WIDTH, 8);
 	private final Paddle paddleB = new Paddle(Constants.GAME_WIDTH - Constants.PADDLE_WIDTH - Constants.PADDLE_OFFSET_FROM_EDGE, 8);
+	private final Ball ball = new Ball((Constants.GAME_WIDTH >> 1) - 8, (Constants.GAME_HEIGHT >> 1) - 8);
 
 	private boolean isRunning;
 
@@ -62,6 +63,7 @@ public class GamePanel extends JPanel implements Runnable
 		super.paintComponent(g);
 		paddleA.draw(g);
 		paddleB.draw(g);
+		ball.draw(g);
 	}
 
 	private void update()
