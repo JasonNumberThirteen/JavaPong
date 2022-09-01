@@ -17,7 +17,7 @@ public class Ball extends GameObject
 	@Override
 	public void draw(Graphics g)
 	{
-		g.setColor(Color.WHITE);
-		g.fillArc(position.x, position.y, 16, 16, 0, 360);
+		g.setColor(Constants.BALL_COLOR);
+		g.fillArc(position.x, position.y, Constants.BALL_RADIUS, Constants.BALL_RADIUS, 0, 360);
 	}
 }

@@ -15,4 +15,9 @@ public final class Constants
 	public static final int PADDLE_HEIGHT = 32;
 	public static final int PADDLE_OFFSET_FROM_EDGE = 8;
 	public static final Color PADDLE_COLOR = Color.WHITE;
+
+	public static final int BALL_RADIUS = 16;
+	public static final int BALL_INITIAL_X = (GAME_WIDTH - BALL_RADIUS) >> 1;
+	public static final int BALL_INITIAL_Y = (GAME_HEIGHT - BALL_RADIUS) >> 1;
+	public static final Color BALL_COLOR = Color.WHITE;
 }
