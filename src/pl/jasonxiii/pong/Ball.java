@@ -4,6 +4,9 @@ import java.awt.*;
 
 public class Ball extends GameObject implements Updatable, Drawable
 {
+	private int directionX = -1;
+	private int directionY = 1;
+
 	public Ball(int x, int y)
 	{
 		super(x, y);
@@ -12,7 +15,10 @@ public class Ball extends GameObject implements Updatable, Drawable
 	@Override
 	public void update()
 	{
+		int movementSpeed = Constants.BALL_INITIAL_MOVEMENT_SPEED;
 
+		position.x += movementSpeed*directionX;
+		position.y += movementSpeed*directionY;
 	}
 
 	@Override
