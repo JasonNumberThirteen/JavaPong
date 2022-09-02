@@ -6,12 +6,18 @@ import java.awt.event.KeyListener;
 
 public class Paddle extends GameObject implements Updatable, Drawable, KeyListener
 {
+	private final int upMovementCode;
+	private final int downMovementCode;
+
 	private boolean isMovingUp;
 	private boolean isMovingDown;
 
-	public Paddle(int x)
+	public Paddle(int x, int upMovementCode, int downMovementCode)
 	{
 		super(x, (Constants.GAME_HEIGHT - Constants.PADDLE_HEIGHT) >> 1);
+
+		this.upMovementCode = upMovementCode;
+		this.downMovementCode = downMovementCode;
 	}
 
 	@Override
@@ -45,11 +51,11 @@ public class Paddle extends GameObject implements Updatable, Drawable, KeyListen
 	{
 		int code = ke.getKeyCode();
 
-		if(code == KeyEvent.VK_W && !isMovingUp)
+		if(code == upMovementCode && !isMovingUp)
 		{
 			isMovingUp = true;
 		}
-		else if(code == KeyEvent.VK_S && !isMovingDown)
+		else if(code == downMovementCode && !isMovingDown)
 		{
 			isMovingDown = true;
 		}
@@ -60,11 +66,11 @@ public class Paddle extends GameObject implements Updatable, Drawable, KeyListen
 	{
 		int code = ke.getKeyCode();
 
-		if(code == KeyEvent.VK_W && isMovingUp)
+		if(code == upMovementCode && isMovingUp)
 		{
 			isMovingUp = false;
 		}
-		else if(code == KeyEvent.VK_S && isMovingDown)
+		else if(code == downMovementCode && isMovingDown)
 		{
 			isMovingDown = false;
 		}
