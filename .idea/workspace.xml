@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ea342c66-e60c-4706-9bb0-07a8f29b3208" name="Changes" comment="Added antialiasing for UI texts">
+    <list default="true" id="ea342c66-e60c-4706-9bb0-07a8f29b3208" name="Changes" comment="Added antialiasing for ball object">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pl/jasonxiii/pong/Ball.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/jasonxiii/pong/Ball.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -311,7 +311,14 @@
       <option name="project" value="LOCAL" />
       <updated>1662120193314</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="Added antialiasing for ball object">
+      <created>1662120250103</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1662120250103</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -326,7 +333,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added Constants class" />
     <MESSAGE value="Added a game loop using a thread" />
     <MESSAGE value="Added GameObject class" />
     <MESSAGE value="Added Paddle class" />
@@ -351,7 +357,8 @@
     <MESSAGE value="Added UI class" />
     <MESSAGE value="Added constant for UI font size" />
     <MESSAGE value="Added antialiasing for UI texts" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added antialiasing for UI texts" />
+    <MESSAGE value="Added antialiasing for ball object" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added antialiasing for ball object" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

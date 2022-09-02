@@ -4,6 +4,8 @@
 ## Table of Contents
 * [General information](#general-information)
 * [Used technologies](#used-technologies)
+* [Features](#features)
+* [Usage](#usage)
 * [Credits](#credits)
 
 ## General information
@@ -16,6 +18,15 @@
 ## Used technologies
 - "IntelliJIDEA" IDE for writing code
 - Eclipse Adoptium 17.0.4.1+1 64-bit
+
+## Features
+- Resolution: 640x480
+- Two players mode
+- Adjustable plenty of values in single class
+
+## Usage
+- Press W / S keys to control the left paddle
+- Press O / L keys to control the right paddle
 
 ## Credits
 - This project was made by [Jason](https://jasonxiii.pl "Jason. Gry, muzyka, kursy, artykuły, programy i filmy!")
