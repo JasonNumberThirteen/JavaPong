@@ -6,6 +6,9 @@ import java.awt.event.KeyListener;
 
 public class Paddle extends GameObject implements Updatable, Drawable, KeyListener
 {
+	private boolean isMovingUp;
+	private boolean isMovingDown;
+
 	public Paddle(int x, int y)
 	{
 		super(x, y);
@@ -19,7 +22,14 @@ public class Paddle extends GameObject implements Updatable, Drawable, KeyListen
 	@Override
 	public void update()
 	{
-
+		if(isMovingUp)
+		{
+			--position.y;
+		}
+		else if(isMovingDown)
+		{
+			++position.y;
+		}
 	}
 
 	@Override
@@ -38,12 +48,30 @@ public class Paddle extends GameObject implements Updatable, Drawable, KeyListen
 	@Override
 	public void keyPressed(KeyEvent ke)
 	{
-		System.out.println("Pressed " + ke.getKeyCode());
+		int code = ke.getKeyCode();
+
+		if(code == KeyEvent.VK_W && !isMovingUp)
+		{
+			isMovingUp = true;
+		}
+		else if(code == KeyEvent.VK_S && !isMovingDown)
+		{
+			isMovingDown = true;
+		}
 	}
 
 	@Override
 	public void keyReleased(KeyEvent ke)
 	{
-		System.out.println("Released " + ke.getKeyCode());
+		int code = ke.getKeyCode();
+
+		if(code == KeyEvent.VK_W && isMovingUp)
+		{
+			isMovingUp = false;
+		}
+		else if(code == KeyEvent.VK_S && isMovingDown)
+		{
+			isMovingDown = false;
+		}
 	}
 }
