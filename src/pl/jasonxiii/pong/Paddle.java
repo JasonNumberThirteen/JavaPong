@@ -14,11 +14,6 @@ public class Paddle extends GameObject implements Updatable, Drawable, KeyListen
 		super(x, (Constants.GAME_HEIGHT - Constants.PADDLE_HEIGHT) >> 1);
 	}
 
-	public Paddle(Point position)
-	{
-		super(position);
-	}
-
 	@Override
 	public void update()
 	{

@@ -10,9 +10,4 @@ public abstract class GameObject
 	{
 		this.position = new Point(x, y);
 	}
-
-	public GameObject(Point position)
-	{
-		this.position = position;
-	}
 }

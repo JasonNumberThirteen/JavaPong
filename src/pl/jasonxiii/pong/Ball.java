@@ -9,11 +9,6 @@ public class Ball extends GameObject implements Updatable, Drawable
 		super(x, y);
 	}
 
-	public Ball(Point position)
-	{
-		super(position);
-	}
-
 	@Override
 	public void update()
 	{
