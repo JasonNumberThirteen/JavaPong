@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ea342c66-e60c-4706-9bb0-07a8f29b3208" name="Changes" comment="Added listeners list inside KeyboardInput class">
+    <list default="true" id="ea342c66-e60c-4706-9bb0-07a8f29b3208" name="Changes" comment="Added paddle movement by pressing keys">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pl/jasonxiii/pong/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/jasonxiii/pong/Constants.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pl/jasonxiii/pong/Paddle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/jasonxiii/pong/Paddle.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -227,7 +228,14 @@
       <option name="project" value="LOCAL" />
       <updated>1662117886743</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Added paddle movement by pressing keys">
+      <created>1662117984722</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1662117984722</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -259,7 +267,8 @@
     <MESSAGE value="Added paddle movement" />
     <MESSAGE value="Added KeyboardInput class" />
     <MESSAGE value="Added listeners list inside KeyboardInput class" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added listeners list inside KeyboardInput class" />
+    <MESSAGE value="Added paddle movement by pressing keys" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added paddle movement by pressing keys" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

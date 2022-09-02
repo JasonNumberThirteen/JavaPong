@@ -24,11 +24,11 @@ public class Paddle extends GameObject implements Updatable, Drawable, KeyListen
 	{
 		if(isMovingUp)
 		{
-			--position.y;
+			position.y -= Constants.PADDLE_MOVEMENT_SPEED;
 		}
 		else if(isMovingDown)
 		{
-			++position.y;
+			position.y += Constants.PADDLE_MOVEMENT_SPEED;
 		}
 	}
 
