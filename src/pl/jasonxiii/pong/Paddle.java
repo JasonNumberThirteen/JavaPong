@@ -9,9 +9,9 @@ public class Paddle extends GameObject implements Updatable, Drawable, KeyListen
 	private boolean isMovingUp;
 	private boolean isMovingDown;
 
-	public Paddle(int x, int y)
+	public Paddle(int x)
 	{
-		super(x, y);
+		super(x, (Constants.GAME_HEIGHT - Constants.PADDLE_HEIGHT) >> 1);
 	}
 
 	public Paddle(Point position)
