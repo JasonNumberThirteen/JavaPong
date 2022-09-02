@@ -20,6 +20,11 @@ public class Ball extends GameObject implements Updatable, Drawable
 
 		position.x += movementSpeed*directionX;
 		position.y += movementSpeed*directionY;
+
+		if(position.y <= 0 || position.y >= Constants.GAME_HEIGHT - Constants.BALL_RADIUS)
+		{
+			directionY = -directionY;
+		}
 	}
 
 	@Override

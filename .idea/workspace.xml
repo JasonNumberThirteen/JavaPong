@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ea342c66-e60c-4706-9bb0-07a8f29b3208" name="Changes" comment="Added ball movement">
+    <list default="true" id="ea342c66-e60c-4706-9bb0-07a8f29b3208" name="Changes" comment="Added randomisation of ball direction">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pl/jasonxiii/pong/Ball.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/jasonxiii/pong/Ball.java" afterDir="false" />
     </list>
@@ -276,7 +276,14 @@
       <option name="project" value="LOCAL" />
       <updated>1662119043740</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="Added randomisation of ball direction">
+      <created>1662119153798</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1662119153798</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -315,7 +322,8 @@
     <MESSAGE value="Removed redundant GameObject constructor overloads" />
     <MESSAGE value="Added separate movement keys for paddles" />
     <MESSAGE value="Added ball movement" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added ball movement" />
+    <MESSAGE value="Added randomisation of ball direction" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added randomisation of ball direction" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
