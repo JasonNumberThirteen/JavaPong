@@ -17,7 +17,7 @@ public class Paddle extends GameObject implements Updatable, Drawable
 	@Override
 	public void update()
 	{
-
+		++position.y;
 	}
 
 	@Override
