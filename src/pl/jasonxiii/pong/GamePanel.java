@@ -9,6 +9,7 @@ public class GamePanel extends JPanel implements Runnable
 	private final Paddle paddleA = new Paddle(Constants.PADDLE_WIDTH, 8);
 	private final Paddle paddleB = new Paddle(Constants.GAME_WIDTH - Constants.PADDLE_WIDTH - Constants.PADDLE_OFFSET_FROM_EDGE, 8);
 	private final Ball ball = new Ball(Constants.BALL_INITIAL_X, Constants.BALL_INITIAL_Y);
+	private final KeyboardInput input = new KeyboardInput();
 
 	private boolean isRunning;
 
@@ -16,6 +17,9 @@ public class GamePanel extends JPanel implements Runnable
 	{
 		setBackground(Constants.BACKGROUND_COLOR);
 		setPreferredSize(new Dimension(Constants.GAME_WIDTH, Constants.GAME_HEIGHT));
+		setFocusable(true);
+		setFocusTraversalKeysEnabled(false);
+		addKeyListener(input);
 
 		thread = new Thread(this);
 		isRunning = true;
