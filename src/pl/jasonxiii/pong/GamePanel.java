@@ -68,6 +68,8 @@ public class GamePanel extends JPanel implements Runnable
 
 	private void update()
 	{
-
+		paddleA.update();
+		paddleB.update();
+		ball.update();
 	}
 }
