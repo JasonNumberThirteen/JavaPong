@@ -15,6 +15,4 @@ public abstract class GameObject
 	{
 		this.position = position;
 	}
-
-	public abstract void draw(Graphics g);
 }

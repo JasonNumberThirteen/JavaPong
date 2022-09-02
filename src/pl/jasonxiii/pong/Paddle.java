@@ -2,7 +2,7 @@ package pl.jasonxiii.pong;
 
 import java.awt.*;
 
-public class Paddle extends GameObject
+public class Paddle extends GameObject implements Updatable, Drawable
 {
 	public Paddle(int x, int y)
 	{
@@ -12,6 +12,12 @@ public class Paddle extends GameObject
 	public Paddle(Point position)
 	{
 		super(position);
+	}
+
+	@Override
+	public void update()
+	{
+
 	}
 
 	@Override
