@@ -4,12 +4,13 @@ import java.awt.*;
 
 public class Ball extends GameObject implements Updatable, Drawable
 {
-	private int directionX = -1;
-	private int directionY = 1;
+	private int directionX;
+	private int directionY;
 
 	public Ball(int x, int y)
 	{
 		super(x, y);
+		randomiseDirection();
 	}
 
 	@Override
@@ -26,5 +27,11 @@ public class Ball extends GameObject implements Updatable, Drawable
 	{
 		g.setColor(Constants.BALL_COLOR);
 		g.fillArc(position.x, position.y, Constants.BALL_RADIUS, Constants.BALL_RADIUS, 0, 360);
+	}
+
+	private void randomiseDirection()
+	{
+		directionX = Math.random() < 0.5 ? -1 : 1;
+		directionY = Math.random() < 0.5 ? -1 : 1;
 	}
 }
