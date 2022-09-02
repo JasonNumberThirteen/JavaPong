@@ -22,4 +22,6 @@ public final class Constants
 	public static final int BALL_INITIAL_Y = (GAME_HEIGHT - BALL_RADIUS) >> 1;
 	public static final int BALL_INITIAL_MOVEMENT_SPEED = 2;
 	public static final Color BALL_COLOR = Color.WHITE;
+
+	public static final int UI_FONT_SIZE = 32;
 }

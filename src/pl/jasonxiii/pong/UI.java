@@ -9,12 +9,12 @@ public class UI implements Drawable
 	{
 		g.setColor(Color.WHITE);
 		g.setFont(uiFont());
-		g.drawString("0", (Constants.GAME_WIDTH >> 1) - 48, 32);
-		g.drawString("0", (Constants.GAME_WIDTH >> 1) + 48, 32);
+		g.drawString("0", (Constants.GAME_WIDTH >> 1) - 48, Constants.UI_FONT_SIZE);
+		g.drawString("0", (Constants.GAME_WIDTH >> 1) + 48, Constants.UI_FONT_SIZE);
 	}
 
 	private Font uiFont()
 	{
-		return new Font(Font.SERIF, Font.BOLD, 32);
+		return new Font(Font.SERIF, Font.BOLD, Constants.UI_FONT_SIZE);
 	}
 }

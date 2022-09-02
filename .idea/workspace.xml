@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ea342c66-e60c-4706-9bb0-07a8f29b3208" name="Changes" comment="Added ball deflection from vertical edges of the screen">
-      <change afterPath="$PROJECT_DIR$/src/pl/jasonxiii/pong/UI.java" afterDir="false" />
+    <list default="true" id="ea342c66-e60c-4706-9bb0-07a8f29b3208" name="Changes" comment="Added UI class">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pl/jasonxiii/pong/GamePanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/jasonxiii/pong/GamePanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pl/jasonxiii/pong/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/jasonxiii/pong/Constants.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pl/jasonxiii/pong/UI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/jasonxiii/pong/UI.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -291,7 +291,14 @@
       <option name="project" value="LOCAL" />
       <updated>1662119517073</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="Added UI class">
+      <created>1662119917689</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1662119917689</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -306,7 +313,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added simplest code to test" />
     <MESSAGE value="Added GameFrame class" />
     <MESSAGE value="Added GamePanel class" />
     <MESSAGE value="Added Constants class" />
@@ -331,7 +337,8 @@
     <MESSAGE value="Added ball movement" />
     <MESSAGE value="Added randomisation of ball direction" />
     <MESSAGE value="Added ball deflection from vertical edges of the screen" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added ball deflection from vertical edges of the screen" />
+    <MESSAGE value="Added UI class" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added UI class" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
