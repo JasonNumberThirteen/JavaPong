@@ -23,6 +23,7 @@ public class Player
 	public void increaseScore()
 	{
 		score.increaseBy(1);
+		scoreText.updateText(score.getValue());
 	}
 
 	public Paddle getPaddle()

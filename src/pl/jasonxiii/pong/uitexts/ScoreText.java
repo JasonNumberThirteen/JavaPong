@@ -8,4 +8,9 @@ public class ScoreText extends UIText
 	{
 		super(String.valueOf(score), position, Color.WHITE);
 	}
+
+	public void updateText(int score)
+	{
+		setText(String.valueOf(score));
+	}
 }
