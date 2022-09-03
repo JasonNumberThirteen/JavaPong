@@ -1,6 +1,8 @@
 package pl.jasonxiii.pong;
 
 import java.awt.*;
+import java.util.ArrayList;
+import java.util.Arrays;
 import javax.swing.*;
 
 public class GamePanel extends JPanel implements Runnable
@@ -11,6 +13,8 @@ public class GamePanel extends JPanel implements Runnable
 	private final Ball ball = new Ball(Constants.BALL_INITIAL_X, Constants.BALL_INITIAL_Y);
 	private final KeyboardInput input = new KeyboardInput(playerA.getPaddle(), playerB.getPaddle());
 	private final UI ui = new UI(playerA, playerB);
+	private final ArrayList<Updatable> updatables = new ArrayList<>(Arrays.asList(playerA.getPaddle(), playerB.getPaddle(), ball));
+	private final ArrayList<Drawable> drawables = new ArrayList<>(Arrays.asList(playerA.getPaddle(), playerB.getPaddle(), ball, ui));
 
 	private boolean isRunning;
 
@@ -66,16 +70,11 @@ public class GamePanel extends JPanel implements Runnable
 	protected void paintComponent(Graphics g)
 	{
 		super.paintComponent(g);
-		playerA.getPaddle().draw(g);
-		playerB.getPaddle().draw(g);
-		ball.draw(g);
-		ui.draw(g);
+		drawables.forEach(d -> d.draw(g));
 	}
 
 	private void update()
 	{
-		playerA.getPaddle().update();
-		playerB.getPaddle().update();
-		ball.update();
+		updatables.forEach(Updatable::update);
 	}
 }
