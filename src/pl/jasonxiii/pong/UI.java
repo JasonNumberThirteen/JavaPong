@@ -2,12 +2,14 @@ package pl.jasonxiii.pong;
 
 import pl.jasonxiii.pong.interfaces.Drawable;
 import pl.jasonxiii.pong.players.Player;
+import pl.jasonxiii.pong.uitexts.PlayerWonText;
 
 import java.awt.*;
 
 public class UI implements Drawable
 {
 	private final Player[] players;
+	private final PlayerWonText playerWonText = new PlayerWonText();
 
 	public UI(Player... players)
 	{
@@ -21,5 +23,7 @@ public class UI implements Drawable
 		{
 			p.getScoreText().draw(g);
 		}
+
+		playerWonText.draw(g);
 	}
 }
