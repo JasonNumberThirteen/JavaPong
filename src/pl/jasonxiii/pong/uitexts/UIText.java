@@ -1,5 +1,6 @@
-package pl.jasonxiii.pong;
+package pl.jasonxiii.pong.uitexts;
 
+import pl.jasonxiii.pong.Constants;
 import pl.jasonxiii.pong.interfaces.Drawable;
 
 import java.awt.*;

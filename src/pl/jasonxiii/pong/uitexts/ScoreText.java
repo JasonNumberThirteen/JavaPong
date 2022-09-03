@@ -1,4 +1,4 @@
-package pl.jasonxiii.pong;
+package pl.jasonxiii.pong.uitexts;
 
 import java.awt.*;
 
