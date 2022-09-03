@@ -7,9 +7,9 @@ public class Ball extends GameObject implements Updatable, Drawable
 	private int directionX;
 	private int directionY;
 
-	public Ball(int x, int y)
+	public Ball()
 	{
-		super(x, y);
+		super(Constants.BALL_INITIAL_X, Constants.BALL_INITIAL_Y);
 		randomiseDirection();
 	}
 

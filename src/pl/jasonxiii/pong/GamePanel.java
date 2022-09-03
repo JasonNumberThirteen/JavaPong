@@ -10,7 +10,7 @@ public class GamePanel extends JPanel implements Runnable
 	private final Thread thread;
 	private final Player playerA = new PlayerOne();
 	private final Player playerB = new PlayerTwo();
-	private final Ball ball = new Ball(Constants.BALL_INITIAL_X, Constants.BALL_INITIAL_Y);
+	private final Ball ball = new Ball();
 	private final KeyboardInput input = new KeyboardInput(playerA.getPaddle(), playerB.getPaddle());
 	private final UI ui = new UI(playerA, playerB);
 	private final ArrayList<Updatable> updatables = new ArrayList<>(Arrays.asList(playerA.getPaddle(), playerB.getPaddle(), ball));
