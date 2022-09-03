@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ea342c66-e60c-4706-9bb0-07a8f29b3208" name="Changes" comment="Added position member variable to UIText class">
-      <change afterPath="$PROJECT_DIR$/src/pl/jasonxiii/pong/ScoreText.java" afterDir="false" />
+    <list default="true" id="ea342c66-e60c-4706-9bb0-07a8f29b3208" name="Changes" comment="Added ScoreText class">
+      <change afterPath="$PROJECT_DIR$/src/pl/jasonxiii/pong/PlayerInput.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pl/jasonxiii/pong/UI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/jasonxiii/pong/UI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pl/jasonxiii/pong/gameobjects/Paddle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/jasonxiii/pong/gameobjects/Paddle.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pl/jasonxiii/pong/players/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/jasonxiii/pong/players/Player.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pl/jasonxiii/pong/players/PlayerOne.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/jasonxiii/pong/players/PlayerOne.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pl/jasonxiii/pong/players/PlayerTwo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/jasonxiii/pong/players/PlayerTwo.java" afterDir="false" />
@@ -104,13 +104,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1662027905581</updated>
-    </task>
-    <task id="LOCAL-00001" summary="Added README file">
-      <created>1662028008501</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1662028008501</updated>
     </task>
     <task id="LOCAL-00002" summary="Added simplest code to test">
       <created>1662028071280</created>
@@ -448,7 +441,14 @@
       <option name="project" value="LOCAL" />
       <updated>1662194001555</updated>
     </task>
-    <option name="localTasksCounter" value="50" />
+    <task id="LOCAL-00050" summary="Added ScoreText class">
+      <created>1662194595316</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1662194595316</updated>
+    </task>
+    <option name="localTasksCounter" value="51" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -463,7 +463,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Removed redundant GameObject constructor overloads" />
     <MESSAGE value="Added separate movement keys for paddles" />
     <MESSAGE value="Added ball movement" />
     <MESSAGE value="Added randomisation of ball direction" />
@@ -488,7 +487,8 @@
     <MESSAGE value="Added UIText class" />
     <MESSAGE value="Modified UIText class" />
     <MESSAGE value="Added position member variable to UIText class" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added position member variable to UIText class" />
+    <MESSAGE value="Added ScoreText class" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added ScoreText class" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

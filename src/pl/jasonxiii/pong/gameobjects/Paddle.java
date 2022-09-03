@@ -1,6 +1,7 @@
 package pl.jasonxiii.pong.gameobjects;
 
 import pl.jasonxiii.pong.Constants;
+import pl.jasonxiii.pong.PlayerInput;
 import pl.jasonxiii.pong.interfaces.Drawable;
 import pl.jasonxiii.pong.Methods;
 import pl.jasonxiii.pong.interfaces.Updatable;
@@ -11,18 +12,16 @@ import java.awt.event.KeyListener;
 
 public class Paddle extends GameObject implements Updatable, Drawable, KeyListener
 {
-	private final int upMovementCode;
-	private final int downMovementCode;
+	private final PlayerInput input;
 
 	private boolean isMovingUp;
 	private boolean isMovingDown;
 
-	public Paddle(int x, int upMovementCode, int downMovementCode)
+	public Paddle(int x, PlayerInput input)
 	{
 		super(x, Constants.PADDLE_INITIAL_Y);
 
-		this.upMovementCode = upMovementCode;
-		this.downMovementCode = downMovementCode;
+		this.input = input;
 	}
 
 	@Override
@@ -56,11 +55,11 @@ public class Paddle extends GameObject implements Updatable, Drawable, KeyListen
 	{
 		int code = ke.getKeyCode();
 
-		if(code == upMovementCode && !isMovingUp)
+		if(code == input.upMovementCode() && !isMovingUp)
 		{
 			isMovingUp = true;
 		}
-		else if(code == downMovementCode && !isMovingDown)
+		else if(code == input.downMovementCode() && !isMovingDown)
 		{
 			isMovingDown = true;
 		}
@@ -71,11 +70,11 @@ public class Paddle extends GameObject implements Updatable, Drawable, KeyListen
 	{
 		int code = ke.getKeyCode();
 
-		if(code == upMovementCode && isMovingUp)
+		if(code == input.upMovementCode() && isMovingUp)
 		{
 			isMovingUp = false;
 		}
-		else if(code == downMovementCode && isMovingDown)
+		else if(code == input.downMovementCode() && isMovingDown)
 		{
 			isMovingDown = false;
 		}
