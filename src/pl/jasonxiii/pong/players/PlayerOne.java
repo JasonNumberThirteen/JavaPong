@@ -8,6 +8,6 @@ public class PlayerOne extends Player
 {
 	public PlayerOne()
 	{
-		super(Constants.PADDLE_WIDTH, KeyEvent.VK_W, KeyEvent.VK_S);
+		super(Constants.PADDLE_WIDTH, KeyEvent.VK_W, KeyEvent.VK_S, (Constants.GAME_WIDTH >> 1) - 48);
 	}
 }

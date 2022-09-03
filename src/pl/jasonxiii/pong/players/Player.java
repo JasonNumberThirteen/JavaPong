@@ -1,17 +1,22 @@
 package pl.jasonxiii.pong.players;
 
+import pl.jasonxiii.pong.Constants;
 import pl.jasonxiii.pong.Counter;
+import pl.jasonxiii.pong.ScoreText;
 import pl.jasonxiii.pong.gameobjects.Paddle;
+
+import java.awt.*;
 
 public class Player
 {
 	private final Paddle paddle;
-
 	private final Counter score = new Counter(0);
+	private final ScoreText scoreText;
 
-	public Player(int x, int upMovementCode, int downMovementCode)
+	public Player(int x, int upMovementCode, int downMovementCode, int textXPosition)
 	{
 		paddle = new Paddle(x, upMovementCode, downMovementCode);
+		scoreText = new ScoreText(0, new Point(textXPosition, Constants.UI_FONT_SIZE));
 	}
 
 	public void increaseScore()
@@ -27,5 +32,10 @@ public class Player
 	public int getScore()
 	{
 		return score.getValue();
+	}
+
+	public ScoreText getScoreText()
+	{
+		return scoreText;
 	}
 }
