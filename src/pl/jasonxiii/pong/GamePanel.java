@@ -1,14 +1,13 @@
 package pl.jasonxiii.pong;
 
 import java.awt.*;
-import java.awt.event.KeyEvent;
 import javax.swing.*;
 
 public class GamePanel extends JPanel implements Runnable
 {
 	private final Thread thread;
 	private final Player playerA = new PlayerOne();
-	private final Player playerB = new Player(Constants.GAME_WIDTH - Constants.PADDLE_WIDTH - Constants.PADDLE_OFFSET_FROM_EDGE, KeyEvent.VK_O, KeyEvent.VK_L);
+	private final Player playerB = new PlayerTwo();
 	private final Ball ball = new Ball(Constants.BALL_INITIAL_X, Constants.BALL_INITIAL_Y);
 	private final KeyboardInput input = new KeyboardInput(playerA.getPaddle(), playerB.getPaddle());
 	private final UI ui = new UI();
