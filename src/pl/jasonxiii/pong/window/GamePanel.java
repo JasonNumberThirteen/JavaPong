@@ -30,6 +30,7 @@ public class GamePanel extends JPanel implements Runnable
 		setFocusTraversalKeysEnabled(false);
 		addKeyListener(input);
 		GameManager.INSTANCE.setBoard(board);
+		GameManager.INSTANCE.setUI(ui);
 
 		thread = new Thread(this);
 		isRunning = true;

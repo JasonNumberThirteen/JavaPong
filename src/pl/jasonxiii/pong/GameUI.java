@@ -17,6 +17,11 @@ public class GameUI implements Drawable
 		this.playerTwoScoreText = playerTwoScoreText;
 	}
 
+	public void setPlayerWonText(String text)
+	{
+		playerWonText.setText(text);
+	}
+
 	@Override
 	public void draw(Graphics g)
 	{
