@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ea342c66-e60c-4706-9bb0-07a8f29b3208" name="Changes" comment="Added GameRenderer class">
-      <change afterPath="$PROJECT_DIR$/src/pl/jasonxiii/pong/GameBoard.java" afterDir="false" />
+    <list default="true" id="ea342c66-e60c-4706-9bb0-07a8f29b3208" name="Changes" comment="Added GameBoard record">
+      <change afterPath="$PROJECT_DIR$/src/pl/jasonxiii/pong/UIText.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pl/jasonxiii/pong/window/GamePanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/jasonxiii/pong/window/GamePanel.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -410,7 +409,14 @@
       <option name="project" value="LOCAL" />
       <updated>1662192316859</updated>
     </task>
-    <option name="localTasksCounter" value="45" />
+    <task id="LOCAL-00045" summary="Added GameBoard record">
+      <created>1662193001578</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1662193001578</updated>
+    </task>
+    <option name="localTasksCounter" value="46" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -425,7 +431,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added paddle movement by pressing keys" />
     <MESSAGE value="Added constant for paddle movement speed" />
     <MESSAGE value="Added clamping for paddle Y position" />
     <MESSAGE value="Added constant Y position for paddles" />
@@ -450,7 +455,8 @@
     <MESSAGE value="Added Counter class" />
     <MESSAGE value="Moved code to separate packages" />
     <MESSAGE value="Added GameRenderer class" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added GameRenderer class" />
+    <MESSAGE value="Added GameBoard record" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added GameBoard record" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
