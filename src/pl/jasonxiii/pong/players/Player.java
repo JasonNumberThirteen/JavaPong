@@ -1,4 +1,7 @@
-package pl.jasonxiii.pong;
+package pl.jasonxiii.pong.players;
+
+import pl.jasonxiii.pong.Counter;
+import pl.jasonxiii.pong.gameobjects.Paddle;
 
 public class Player
 {

@@ -1,5 +1,8 @@
 package pl.jasonxiii.pong;
 
+import pl.jasonxiii.pong.interfaces.Drawable;
+import pl.jasonxiii.pong.players.Player;
+
 import java.awt.*;
 
 public class UI implements Drawable

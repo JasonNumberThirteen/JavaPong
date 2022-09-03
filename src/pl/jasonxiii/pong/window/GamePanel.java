@@ -1,4 +1,14 @@
-package pl.jasonxiii.pong;
+package pl.jasonxiii.pong.window;
+
+import pl.jasonxiii.pong.Constants;
+import pl.jasonxiii.pong.KeyboardInput;
+import pl.jasonxiii.pong.UI;
+import pl.jasonxiii.pong.gameobjects.Ball;
+import pl.jasonxiii.pong.interfaces.Drawable;
+import pl.jasonxiii.pong.interfaces.Updatable;
+import pl.jasonxiii.pong.players.Player;
+import pl.jasonxiii.pong.players.PlayerOne;
+import pl.jasonxiii.pong.players.PlayerTwo;
 
 import java.awt.*;
 import java.util.ArrayList;

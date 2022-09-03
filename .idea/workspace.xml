@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ea342c66-e60c-4706-9bb0-07a8f29b3208" name="Changes" comment="Removed parameters from Ball class constructor">
-      <change afterPath="$PROJECT_DIR$/src/pl/jasonxiii/pong/Counter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pl/jasonxiii/pong/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/jasonxiii/pong/Player.java" afterDir="false" />
-    </list>
+    <list default="true" id="ea342c66-e60c-4706-9bb0-07a8f29b3208" name="Changes" comment="Added Counter class" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -78,7 +74,7 @@
       <module name="Pong" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="pl.jasonxiii.pong.*" />
+          <option name="PATTERN" value="pl.jasonxiii.pong.gameobjects.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -389,7 +385,14 @@
       <option name="project" value="LOCAL" />
       <updated>1662191040491</updated>
     </task>
-    <option name="localTasksCounter" value="42" />
+    <task id="LOCAL-00042" summary="Added Counter class">
+      <created>1662191352732</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1662191352732</updated>
+    </task>
+    <option name="localTasksCounter" value="43" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -404,7 +407,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added paddle movement" />
     <MESSAGE value="Added KeyboardInput class" />
     <MESSAGE value="Added listeners list inside KeyboardInput class" />
     <MESSAGE value="Added paddle movement by pressing keys" />
@@ -429,7 +431,8 @@
     <MESSAGE value="Added a constant for paddle initial Y position" />
     <MESSAGE value="Added lists for updatable and drawable objects" />
     <MESSAGE value="Removed parameters from Ball class constructor" />
-    <option name="LAST_COMMIT_MESSAGE" value="Removed parameters from Ball class constructor" />
+    <MESSAGE value="Added Counter class" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added Counter class" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

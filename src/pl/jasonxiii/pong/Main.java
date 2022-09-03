@@ -1,5 +1,7 @@
 package pl.jasonxiii.pong;
 
+import pl.jasonxiii.pong.window.GameFrame;
+
 import java.awt.*;
 
 public class Main

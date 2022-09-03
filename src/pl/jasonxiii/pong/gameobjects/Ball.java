@@ -1,4 +1,8 @@
-package pl.jasonxiii.pong;
+package pl.jasonxiii.pong.gameobjects;
+
+import pl.jasonxiii.pong.Constants;
+import pl.jasonxiii.pong.interfaces.Drawable;
+import pl.jasonxiii.pong.interfaces.Updatable;
 
 import java.awt.*;
 

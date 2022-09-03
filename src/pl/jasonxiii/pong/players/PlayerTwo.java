@@ -1,4 +1,6 @@
-package pl.jasonxiii.pong;
+package pl.jasonxiii.pong.players;
+
+import pl.jasonxiii.pong.Constants;
 
 import java.awt.event.KeyEvent;
 
