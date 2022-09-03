@@ -6,7 +6,8 @@ import java.awt.*;
 
 public class UIText implements Drawable
 {
-	private final String text;
+	private String text;
+
 	private final Color color;
 
 	public UIText(String text, Color color)
@@ -15,9 +16,24 @@ public class UIText implements Drawable
 		this.color = color;
 	}
 
+	public Point textPosition()
+	{
+		return new Point(0, 0);
+	}
+
+	public boolean isVisible()
+	{
+		return true;
+	}
+
 	@Override
 	public void draw(Graphics g)
 	{
+		if(!isVisible())
+		{
+			return;
+		}
+
 		Graphics2D g2D = (Graphics2D)g;
 		Point position = textPosition();
 
@@ -30,10 +46,5 @@ public class UIText implements Drawable
 	private Font textFont()
 	{
 		return new Font(Font.SERIF, Font.BOLD, Constants.UI_FONT_SIZE);
-	}
-
-	private Point textPosition()
-	{
-		return new Point(0, 0);
 	}
 }
