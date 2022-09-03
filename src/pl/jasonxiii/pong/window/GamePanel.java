@@ -18,6 +18,7 @@ public class GamePanel extends JPanel implements Runnable
 	private final KeyboardInput input = new KeyboardInput(playerA.getPaddle(), playerB.getPaddle());
 	private final UI ui = new UI(playerA, playerB);
 	private final GameBoard board = new GameBoard(playerA, playerB, ball);
+	private final GameManager manager = new GameManager(board);
 	private final GameRenderer renderer = new GameRenderer(playerA.getPaddle(), playerB.getPaddle(), ball, ui);
 
 	private boolean isRunning;
@@ -29,6 +30,7 @@ public class GamePanel extends JPanel implements Runnable
 		setFocusable(true);
 		setFocusTraversalKeysEnabled(false);
 		addKeyListener(input);
+		ball.setGameManager(manager);
 
 		thread = new Thread(this);
 		isRunning = true;

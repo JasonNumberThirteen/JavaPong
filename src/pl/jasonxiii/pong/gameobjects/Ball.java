@@ -1,6 +1,7 @@
 package pl.jasonxiii.pong.gameobjects;
 
 import pl.jasonxiii.pong.Constants;
+import pl.jasonxiii.pong.GameManager;
 import pl.jasonxiii.pong.interfaces.Drawable;
 import pl.jasonxiii.pong.interfaces.Updatable;
 
@@ -10,11 +11,17 @@ public class Ball extends GameObject implements Updatable, Drawable
 {
 	private int directionX;
 	private int directionY;
+	private GameManager manager;
 
 	public Ball()
 	{
 		super(Constants.BALL_INITIAL_X, Constants.BALL_INITIAL_Y);
 		randomiseDirection();
+	}
+
+	public void setGameManager(GameManager gm)
+	{
+		manager = gm;
 	}
 
 	@Override
@@ -28,6 +35,18 @@ public class Ball extends GameObject implements Updatable, Drawable
 		if(position.y <= 0 || position.y >= Constants.GAME_HEIGHT - Constants.BALL_RADIUS)
 		{
 			directionY = -directionY;
+		}
+		else if(position.x >= Constants.GAME_WIDTH)
+		{
+			manager.increaseScoreToPlayerOne();
+			resetPosition();
+			randomiseDirection();
+		}
+		else if(position.x <= -Constants.BALL_RADIUS)
+		{
+			manager.increaseScoreToPlayerTwo();
+			resetPosition();
+			randomiseDirection();
 		}
 	}
 
@@ -45,5 +64,11 @@ public class Ball extends GameObject implements Updatable, Drawable
 	{
 		directionX = Math.random() < 0.5 ? -1 : 1;
 		directionY = Math.random() < 0.5 ? -1 : 1;
+	}
+
+	private void resetPosition()
+	{
+		position.x = Constants.BALL_INITIAL_X;
+		position.y = Constants.BALL_INITIAL_Y;
 	}
 }

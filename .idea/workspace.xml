@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ea342c66-e60c-4706-9bb0-07a8f29b3208" name="Changes" comment="Modified parameters of GameBoard record constructor">
-      <change afterPath="$PROJECT_DIR$/src/pl/jasonxiii/pong/GameManager.java" afterDir="false" />
+    <list default="true" id="ea342c66-e60c-4706-9bb0-07a8f29b3208" name="Changes" comment="Added GameManager class">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pl/jasonxiii/pong/GameManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/jasonxiii/pong/GameManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pl/jasonxiii/pong/gameobjects/Ball.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/jasonxiii/pong/gameobjects/Ball.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pl/jasonxiii/pong/window/GamePanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/jasonxiii/pong/window/GamePanel.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -100,13 +102,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1662027905581</updated>
-    </task>
-    <task id="LOCAL-00005" summary="Added Constants class">
-      <created>1662029045650</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1662029045650</updated>
     </task>
     <task id="LOCAL-00006" summary="Added a game loop using a thread">
       <created>1662029801461</created>
@@ -444,7 +439,14 @@
       <option name="project" value="LOCAL" />
       <updated>1662196243901</updated>
     </task>
-    <option name="localTasksCounter" value="54" />
+    <task id="LOCAL-00054" summary="Added GameManager class">
+      <created>1662196390166</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1662196390166</updated>
+    </task>
+    <option name="localTasksCounter" value="55" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -459,7 +461,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added ball deflection from vertical edges of the screen" />
     <MESSAGE value="Added UI class" />
     <MESSAGE value="Added constant for UI font size" />
     <MESSAGE value="Added antialiasing for UI texts" />
@@ -484,7 +485,8 @@
     <MESSAGE value="Added PlayerInput class" />
     <MESSAGE value="Moved code to separate package" />
     <MESSAGE value="Modified parameters of GameBoard record constructor" />
-    <option name="LAST_COMMIT_MESSAGE" value="Modified parameters of GameBoard record constructor" />
+    <MESSAGE value="Added GameManager class" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added GameManager class" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

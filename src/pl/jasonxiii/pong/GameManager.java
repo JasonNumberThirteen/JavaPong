@@ -12,11 +12,13 @@ public class GameManager
 	public void increaseScoreToPlayerOne()
 	{
 		board.playerOne().increaseScore();
+		System.out.println("P1: " + board.playerOne().getScore());
 	}
 
 	public void increaseScoreToPlayerTwo()
 	{
 		board.playerTwo().increaseScore();
+		System.out.println("P2: " + board.playerTwo().getScore());
 	}
 
 	public boolean isOver()
