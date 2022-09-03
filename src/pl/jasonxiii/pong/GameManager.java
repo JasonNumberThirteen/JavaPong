@@ -23,6 +23,8 @@ public enum GameManager
 
 	public boolean isOver()
 	{
-		return board.playerOne().getScore() == 1 || board.playerTwo().getScore() == 1;
+		int scoreToWin = Constants.PLAYER_SCORE_TO_WIN;
+
+		return board.playerOne().getScore() == scoreToWin || board.playerTwo().getScore() == scoreToWin;
 	}
 }

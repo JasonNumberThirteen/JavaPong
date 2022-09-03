@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ea342c66-e60c-4706-9bb0-07a8f29b3208" name="Changes" comment="Replaced GameManager class with enum singleton">
-      <change beforePath="$PROJECT_DIR$/src/pl/jasonxiii/pong/uitexts/PlayerWonText.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/jasonxiii/pong/uitexts/PlayerWonText.java" afterDir="false" />
+    <list default="true" id="ea342c66-e60c-4706-9bb0-07a8f29b3208" name="Changes" comment="Added player won text display when the game is over">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pl/jasonxiii/pong/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/jasonxiii/pong/Constants.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pl/jasonxiii/pong/GameManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/jasonxiii/pong/GameManager.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -99,13 +101,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1662027905581</updated>
-    </task>
-    <task id="LOCAL-00010" summary="Added several constants">
-      <created>1662030371214</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1662030371214</updated>
     </task>
     <task id="LOCAL-00011" summary="Added Ball class">
       <created>1662030451925</created>
@@ -443,7 +438,14 @@
       <option name="project" value="LOCAL" />
       <updated>1662198644456</updated>
     </task>
-    <option name="localTasksCounter" value="59" />
+    <task id="LOCAL-00059" summary="Added player won text display when the game is over">
+      <created>1662198719557</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1662198719557</updated>
+    </task>
+    <option name="localTasksCounter" value="60" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -458,7 +460,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Updated README file" />
     <MESSAGE value="Removed redundant casting to int" />
     <MESSAGE value="Added Player class" />
     <MESSAGE value="Added PlayerOne class" />
@@ -483,7 +484,8 @@
     <MESSAGE value="Added score counters updating when player scores" />
     <MESSAGE value="Added PlayerWonText class" />
     <MESSAGE value="Replaced GameManager class with enum singleton" />
-    <option name="LAST_COMMIT_MESSAGE" value="Replaced GameManager class with enum singleton" />
+    <MESSAGE value="Added player won text display when the game is over" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added player won text display when the game is over" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
