@@ -7,11 +7,13 @@ import java.awt.*;
 public class UIText implements Drawable
 {
 	private final StringBuilder stringBuilder;
+	private final Point position;
 	private final Color color;
 
-	public UIText(String text, Color color)
+	public UIText(String text, Point position, Color color)
 	{
 		this.stringBuilder = new StringBuilder(text);
+		this.position = position;
 		this.color = color;
 	}
 
@@ -20,9 +22,14 @@ public class UIText implements Drawable
 		stringBuilder.replace(0, stringBuilder.length(), text);
 	}
 
-	public Point textPosition()
+	public void setX(int x)
 	{
-		return new Point(0, 0);
+		position.x = x;
+	}
+
+	public void setY(int y)
+	{
+		position.y = y;
 	}
 
 	public boolean isVisible()
@@ -39,7 +46,6 @@ public class UIText implements Drawable
 		}
 
 		Graphics2D g2D = (Graphics2D)g;
-		Point position = textPosition();
 
 		g.setColor(color);
 		g.setFont(textFont());
