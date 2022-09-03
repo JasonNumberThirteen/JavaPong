@@ -16,7 +16,7 @@ public class GamePanel extends JPanel implements Runnable
 	private final Player playerB = new PlayerTwo();
 	private final Ball ball = new Ball();
 	private final KeyboardInput input = new KeyboardInput(playerA.getPaddle(), playerB.getPaddle());
-	private final GameUI ui = new GameUI(playerA, playerB);
+	private final GameUI ui = new GameUI(playerA.getScoreText(), playerB.getScoreText());
 	private final GameBoard board = new GameBoard(playerA, playerB, ball);
 	private final GameRenderer renderer = new GameRenderer(playerA.getPaddle(), playerB.getPaddle(), ball, ui);
 

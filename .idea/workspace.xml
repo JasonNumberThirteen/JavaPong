@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ea342c66-e60c-4706-9bb0-07a8f29b3208" name="Changes" comment="Added game stop when it is over" />
+    <list default="true" id="ea342c66-e60c-4706-9bb0-07a8f29b3208" name="Changes" comment="Renamed UI class to GameUI">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pl/jasonxiii/pong/GameUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/jasonxiii/pong/GameUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pl/jasonxiii/pong/window/GamePanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/jasonxiii/pong/window/GamePanel.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -97,13 +101,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1662027905581</updated>
-    </task>
-    <task id="LOCAL-00013" summary="Added several constants">
-      <created>1662030951590</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1662030951590</updated>
     </task>
     <task id="LOCAL-00014" summary="Added interfaces for game objects">
       <created>1662114592917</created>
@@ -441,7 +438,14 @@
       <option name="project" value="LOCAL" />
       <updated>1662199184877</updated>
     </task>
-    <option name="localTasksCounter" value="62" />
+    <task id="LOCAL-00062" summary="Renamed UI class to GameUI">
+      <created>1662199513702</created>
+      <option name="number" value="00062" />
+      <option name="presentableId" value="LOCAL-00062" />
+      <option name="project" value="LOCAL" />
+      <updated>1662199513702</updated>
+    </task>
+    <option name="localTasksCounter" value="63" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -456,7 +460,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added PlayerOne class" />
     <MESSAGE value="Added PlayerTwo class" />
     <MESSAGE value="Added drawing players current score" />
     <MESSAGE value="Added a constant for paddle initial Y position" />
@@ -481,7 +484,8 @@
     <MESSAGE value="Added player won text display when the game is over" />
     <MESSAGE value="Added a constant for required player score to win" />
     <MESSAGE value="Added game stop when it is over" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added game stop when it is over" />
+    <MESSAGE value="Renamed UI class to GameUI" />
+    <option name="LAST_COMMIT_MESSAGE" value="Renamed UI class to GameUI" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
