@@ -14,7 +14,7 @@ public class Paddle extends GameObject implements Updatable, Drawable, KeyListen
 
 	public Paddle(int x, int upMovementCode, int downMovementCode)
 	{
-		super(x, (Constants.GAME_HEIGHT - Constants.PADDLE_HEIGHT) >> 1);
+		super(x, Constants.PADDLE_INITIAL_Y);
 
 		this.upMovementCode = upMovementCode;
 		this.downMovementCode = downMovementCode;

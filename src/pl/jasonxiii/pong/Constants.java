@@ -13,6 +13,7 @@ public final class Constants
 
 	public static final int PADDLE_WIDTH = 8;
 	public static final int PADDLE_HEIGHT = 32;
+	public static final int PADDLE_INITIAL_Y = (GAME_HEIGHT - PADDLE_HEIGHT) >> 1;
 	public static final int PADDLE_OFFSET_FROM_EDGE = 8;
 	public static final int PADDLE_MOVEMENT_SPEED = 3;
 	public static final Color PADDLE_COLOR = Color.WHITE;
