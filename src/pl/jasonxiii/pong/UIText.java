@@ -6,14 +6,18 @@ import java.awt.*;
 
 public class UIText implements Drawable
 {
-	private String text;
-
+	private final StringBuilder stringBuilder;
 	private final Color color;
 
 	public UIText(String text, Color color)
 	{
-		this.text = text;
+		this.stringBuilder = new StringBuilder(text);
 		this.color = color;
+	}
+
+	public void setText(String text)
+	{
+		stringBuilder.replace(0, stringBuilder.length(), text);
 	}
 
 	public Point textPosition()
@@ -40,7 +44,7 @@ public class UIText implements Drawable
 		g.setColor(color);
 		g.setFont(textFont());
 		g2D.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
-		g.drawString(text, position.x, position.y);
+		g.drawString(stringBuilder.toString(), position.x, position.y);
 	}
 
 	private Font textFont()
