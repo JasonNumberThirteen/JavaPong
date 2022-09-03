@@ -7,10 +7,10 @@ import javax.swing.*;
 public class GamePanel extends JPanel implements Runnable
 {
 	private final Thread thread;
-	private final Paddle paddleA = new Paddle(Constants.PADDLE_WIDTH, KeyEvent.VK_W, KeyEvent.VK_S);
-	private final Paddle paddleB = new Paddle(Constants.GAME_WIDTH - Constants.PADDLE_WIDTH - Constants.PADDLE_OFFSET_FROM_EDGE, KeyEvent.VK_O, KeyEvent.VK_L);
+	private final Player playerA = new Player(Constants.PADDLE_WIDTH, KeyEvent.VK_W, KeyEvent.VK_S);
+	private final Player playerB = new Player(Constants.GAME_WIDTH - Constants.PADDLE_WIDTH - Constants.PADDLE_OFFSET_FROM_EDGE, KeyEvent.VK_O, KeyEvent.VK_L);
 	private final Ball ball = new Ball(Constants.BALL_INITIAL_X, Constants.BALL_INITIAL_Y);
-	private final KeyboardInput input = new KeyboardInput(paddleA, paddleB);
+	private final KeyboardInput input = new KeyboardInput(playerA.getPaddle(), playerB.getPaddle());
 	private final UI ui = new UI();
 
 	private boolean isRunning;
@@ -67,16 +67,16 @@ public class GamePanel extends JPanel implements Runnable
 	protected void paintComponent(Graphics g)
 	{
 		super.paintComponent(g);
-		paddleA.draw(g);
-		paddleB.draw(g);
+		playerA.getPaddle().draw(g);
+		playerB.getPaddle().draw(g);
 		ball.draw(g);
 		ui.draw(g);
 	}
 
 	private void update()
 	{
-		paddleA.update();
-		paddleB.update();
+		playerA.getPaddle().update();
+		playerB.getPaddle().update();
 		ball.update();
 	}
 }

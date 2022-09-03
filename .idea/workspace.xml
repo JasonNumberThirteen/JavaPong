@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ea342c66-e60c-4706-9bb0-07a8f29b3208" name="Changes" comment="Updated README file">
+    <list default="true" id="ea342c66-e60c-4706-9bb0-07a8f29b3208" name="Changes" comment="Removed redundant casting to int">
+      <change afterPath="$PROJECT_DIR$/src/pl/jasonxiii/pong/Player.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pl/jasonxiii/pong/Methods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/jasonxiii/pong/Methods.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pl/jasonxiii/pong/GamePanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/jasonxiii/pong/GamePanel.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -325,7 +326,21 @@
       <option name="project" value="LOCAL" />
       <updated>1662120509649</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="Removed redundant casting to int">
+      <created>1662189120833</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1662189120833</updated>
+    </task>
+    <task id="LOCAL-00034" summary="Removed redundant casting to int">
+      <created>1662189149089</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1662189149089</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -340,7 +355,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added GameObject class" />
     <MESSAGE value="Added Paddle class" />
     <MESSAGE value="Added two paddles" />
     <MESSAGE value="Added Ball class" />
@@ -365,7 +379,8 @@
     <MESSAGE value="Added antialiasing for UI texts" />
     <MESSAGE value="Added antialiasing for ball object" />
     <MESSAGE value="Updated README file" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated README file" />
+    <MESSAGE value="Removed redundant casting to int" />
+    <option name="LAST_COMMIT_MESSAGE" value="Removed redundant casting to int" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
