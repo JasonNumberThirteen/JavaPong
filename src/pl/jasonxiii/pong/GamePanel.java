@@ -10,7 +10,7 @@ public class GamePanel extends JPanel implements Runnable
 	private final Player playerB = new PlayerTwo();
 	private final Ball ball = new Ball(Constants.BALL_INITIAL_X, Constants.BALL_INITIAL_Y);
 	private final KeyboardInput input = new KeyboardInput(playerA.getPaddle(), playerB.getPaddle());
-	private final UI ui = new UI();
+	private final UI ui = new UI(playerA, playerB);
 
 	private boolean isRunning;
 
