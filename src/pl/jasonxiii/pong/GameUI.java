@@ -6,12 +6,12 @@ import pl.jasonxiii.pong.uitexts.PlayerWonText;
 
 import java.awt.*;
 
-public class UI implements Drawable
+public class GameUI implements Drawable
 {
 	private final Player[] players;
 	private final PlayerWonText playerWonText = new PlayerWonText();
 
-	public UI(Player... players)
+	public GameUI(Player... players)
 	{
 		this.players = players;
 	}
