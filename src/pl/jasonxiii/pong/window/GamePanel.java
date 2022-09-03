@@ -1,18 +1,12 @@
 package pl.jasonxiii.pong.window;
 
-import pl.jasonxiii.pong.Constants;
-import pl.jasonxiii.pong.GameRenderer;
-import pl.jasonxiii.pong.KeyboardInput;
-import pl.jasonxiii.pong.UI;
+import pl.jasonxiii.pong.*;
 import pl.jasonxiii.pong.gameobjects.Ball;
-import pl.jasonxiii.pong.interfaces.Updatable;
 import pl.jasonxiii.pong.players.Player;
 import pl.jasonxiii.pong.players.PlayerOne;
 import pl.jasonxiii.pong.players.PlayerTwo;
 
 import java.awt.*;
-import java.util.ArrayList;
-import java.util.Arrays;
 import javax.swing.*;
 
 public class GamePanel extends JPanel implements Runnable
@@ -23,7 +17,7 @@ public class GamePanel extends JPanel implements Runnable
 	private final Ball ball = new Ball();
 	private final KeyboardInput input = new KeyboardInput(playerA.getPaddle(), playerB.getPaddle());
 	private final UI ui = new UI(playerA, playerB);
-	private final ArrayList<Updatable> updatables = new ArrayList<>(Arrays.asList(playerA.getPaddle(), playerB.getPaddle(), ball));
+	private final GameBoard board = new GameBoard(playerA.getPaddle(), playerB.getPaddle(), ball);
 	private final GameRenderer renderer = new GameRenderer(playerA.getPaddle(), playerB.getPaddle(), ball, ui);
 
 	private boolean isRunning;
@@ -85,6 +79,6 @@ public class GamePanel extends JPanel implements Runnable
 
 	private void update()
 	{
-		updatables.forEach(Updatable::update);
+		board.update();
 	}
 }

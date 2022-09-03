@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ea342c66-e60c-4706-9bb0-07a8f29b3208" name="Changes" comment="Moved code to separate packages">
-      <change afterPath="$PROJECT_DIR$/src/pl/jasonxiii/pong/GameRenderer.java" afterDir="false" />
+    <list default="true" id="ea342c66-e60c-4706-9bb0-07a8f29b3208" name="Changes" comment="Added GameRenderer class">
+      <change afterPath="$PROJECT_DIR$/src/pl/jasonxiii/pong/GameBoard.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pl/jasonxiii/pong/window/GamePanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/jasonxiii/pong/window/GamePanel.java" afterDir="false" />
     </list>
@@ -403,7 +403,14 @@
       <option name="project" value="LOCAL" />
       <updated>1662192010635</updated>
     </task>
-    <option name="localTasksCounter" value="44" />
+    <task id="LOCAL-00044" summary="Added GameRenderer class">
+      <created>1662192316859</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1662192316859</updated>
+    </task>
+    <option name="localTasksCounter" value="45" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -418,7 +425,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added listeners list inside KeyboardInput class" />
     <MESSAGE value="Added paddle movement by pressing keys" />
     <MESSAGE value="Added constant for paddle movement speed" />
     <MESSAGE value="Added clamping for paddle Y position" />
@@ -443,7 +449,8 @@
     <MESSAGE value="Removed parameters from Ball class constructor" />
     <MESSAGE value="Added Counter class" />
     <MESSAGE value="Moved code to separate packages" />
-    <option name="LAST_COMMIT_MESSAGE" value="Moved code to separate packages" />
+    <MESSAGE value="Added GameRenderer class" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added GameRenderer class" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
