@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ea342c66-e60c-4706-9bb0-07a8f29b3208" name="Changes" comment="Moved code to separate package">
+    <list default="true" id="ea342c66-e60c-4706-9bb0-07a8f29b3208" name="Changes" comment="Modified parameters of GameBoard record constructor">
       <change afterPath="$PROJECT_DIR$/src/pl/jasonxiii/pong/GameManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pl/jasonxiii/pong/GameBoard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/jasonxiii/pong/GameBoard.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -101,13 +100,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1662027905581</updated>
-    </task>
-    <task id="LOCAL-00004" summary="Added GamePanel class">
-      <created>1662028878022</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1662028878022</updated>
     </task>
     <task id="LOCAL-00005" summary="Added Constants class">
       <created>1662029045650</created>
@@ -445,7 +437,14 @@
       <option name="project" value="LOCAL" />
       <updated>1662195706704</updated>
     </task>
-    <option name="localTasksCounter" value="53" />
+    <task id="LOCAL-00053" summary="Modified parameters of GameBoard record constructor">
+      <created>1662196243901</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1662196243901</updated>
+    </task>
+    <option name="localTasksCounter" value="54" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -460,7 +459,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added randomisation of ball direction" />
     <MESSAGE value="Added ball deflection from vertical edges of the screen" />
     <MESSAGE value="Added UI class" />
     <MESSAGE value="Added constant for UI font size" />
@@ -485,7 +483,8 @@
     <MESSAGE value="Added ScoreText class" />
     <MESSAGE value="Added PlayerInput class" />
     <MESSAGE value="Moved code to separate package" />
-    <option name="LAST_COMMIT_MESSAGE" value="Moved code to separate package" />
+    <MESSAGE value="Modified parameters of GameBoard record constructor" />
+    <option name="LAST_COMMIT_MESSAGE" value="Modified parameters of GameBoard record constructor" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
