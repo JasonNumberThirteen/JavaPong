@@ -1,10 +1,12 @@
 package pl.jasonxiii.pong;
 
-public class GameManager
+public enum GameManager
 {
-	private final GameBoard board;
+	INSTANCE;
 
-	public GameManager(GameBoard board)
+	private GameBoard board;
+
+	public void setBoard(GameBoard board)
 	{
 		this.board = board;
 	}

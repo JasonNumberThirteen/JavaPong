@@ -11,17 +11,11 @@ public class Ball extends GameObject implements Updatable, Drawable
 {
 	private int directionX;
 	private int directionY;
-	private GameManager manager;
 
 	public Ball()
 	{
 		super(Constants.BALL_INITIAL_X, Constants.BALL_INITIAL_Y);
 		randomiseDirection();
-	}
-
-	public void setGameManager(GameManager gm)
-	{
-		manager = gm;
 	}
 
 	@Override
@@ -38,13 +32,13 @@ public class Ball extends GameObject implements Updatable, Drawable
 		}
 		else if(position.x >= Constants.GAME_WIDTH)
 		{
-			manager.increaseScoreToPlayerOne();
+			GameManager.INSTANCE.increaseScoreToPlayerOne();
 			resetPosition();
 			randomiseDirection();
 		}
 		else if(position.x <= -Constants.BALL_RADIUS)
 		{
-			manager.increaseScoreToPlayerTwo();
+			GameManager.INSTANCE.increaseScoreToPlayerTwo();
 			resetPosition();
 			randomiseDirection();
 		}
