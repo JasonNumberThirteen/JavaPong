@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ea342c66-e60c-4706-9bb0-07a8f29b3208" name="Changes" comment="Added lists for updatable and drawable objects">
+    <list default="true" id="ea342c66-e60c-4706-9bb0-07a8f29b3208" name="Changes" comment="Removed parameters from Ball class constructor">
+      <change afterPath="$PROJECT_DIR$/src/pl/jasonxiii/pong/Counter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pl/jasonxiii/pong/Ball.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/jasonxiii/pong/Ball.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pl/jasonxiii/pong/GamePanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/jasonxiii/pong/GamePanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pl/jasonxiii/pong/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/jasonxiii/pong/Player.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -382,7 +382,14 @@
       <option name="project" value="LOCAL" />
       <updated>1662190954086</updated>
     </task>
-    <option name="localTasksCounter" value="41" />
+    <task id="LOCAL-00041" summary="Removed parameters from Ball class constructor">
+      <created>1662191040491</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1662191040491</updated>
+    </task>
+    <option name="localTasksCounter" value="42" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -397,7 +404,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added update method calls of game objects" />
     <MESSAGE value="Added paddle movement" />
     <MESSAGE value="Added KeyboardInput class" />
     <MESSAGE value="Added listeners list inside KeyboardInput class" />
@@ -422,7 +428,8 @@
     <MESSAGE value="Added drawing players current score" />
     <MESSAGE value="Added a constant for paddle initial Y position" />
     <MESSAGE value="Added lists for updatable and drawable objects" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added lists for updatable and drawable objects" />
+    <MESSAGE value="Removed parameters from Ball class constructor" />
+    <option name="LAST_COMMIT_MESSAGE" value="Removed parameters from Ball class constructor" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

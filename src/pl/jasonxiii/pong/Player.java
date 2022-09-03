@@ -4,7 +4,7 @@ public class Player
 {
 	private final Paddle paddle;
 
-	private int score = 0;
+	private final Counter score = new Counter(0);
 
 	public Player(int x, int upMovementCode, int downMovementCode)
 	{
@@ -13,7 +13,7 @@ public class Player
 
 	public void increaseScore()
 	{
-		++score;
+		score.increaseBy(1);
 	}
 
 	public Paddle getPaddle()
@@ -23,6 +23,6 @@ public class Player
 
 	public int getScore()
 	{
-		return score;
+		return score.getValue();
 	}
 }
