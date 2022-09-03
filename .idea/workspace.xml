@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ea342c66-e60c-4706-9bb0-07a8f29b3208" name="Changes" comment="Removed redundant casting to int">
-      <change afterPath="$PROJECT_DIR$/src/pl/jasonxiii/pong/Player.java" afterDir="false" />
+    <list default="true" id="ea342c66-e60c-4706-9bb0-07a8f29b3208" name="Changes" comment="Added Player class">
+      <change afterPath="$PROJECT_DIR$/src/pl/jasonxiii/pong/PlayerOne.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pl/jasonxiii/pong/GamePanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/jasonxiii/pong/GamePanel.java" afterDir="false" />
     </list>
@@ -340,7 +340,14 @@
       <option name="project" value="LOCAL" />
       <updated>1662189149089</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="Added Player class">
+      <created>1662189456939</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1662189456939</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -355,7 +362,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added Paddle class" />
     <MESSAGE value="Added two paddles" />
     <MESSAGE value="Added Ball class" />
     <MESSAGE value="Added a ball" />
@@ -380,7 +386,8 @@
     <MESSAGE value="Added antialiasing for ball object" />
     <MESSAGE value="Updated README file" />
     <MESSAGE value="Removed redundant casting to int" />
-    <option name="LAST_COMMIT_MESSAGE" value="Removed redundant casting to int" />
+    <MESSAGE value="Added Player class" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added Player class" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
