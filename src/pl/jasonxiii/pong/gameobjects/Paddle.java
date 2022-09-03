@@ -1,6 +1,7 @@
 package pl.jasonxiii.pong.gameobjects;
 
 import pl.jasonxiii.pong.Constants;
+import pl.jasonxiii.pong.GameManager;
 import pl.jasonxiii.pong.PlayerInput;
 import pl.jasonxiii.pong.interfaces.Drawable;
 import pl.jasonxiii.pong.Methods;

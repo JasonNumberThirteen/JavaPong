@@ -9,6 +9,11 @@ public record GameBoard(Player playerOne, Player playerTwo, Ball ball) implement
 	@Override
 	public void update()
 	{
+		if(GameManager.INSTANCE.isOver())
+		{
+			return;
+		}
+
 		playerOne.getPaddle().update();
 		playerTwo.getPaddle().update();
 		ball.update();
