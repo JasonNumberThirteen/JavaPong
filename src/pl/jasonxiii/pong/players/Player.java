@@ -17,7 +17,7 @@ public class Player
 	public Player(int x, PlayerInput input, int textXPosition)
 	{
 		paddle = new Paddle(x, input);
-		scoreText = new ScoreText(score.getValue(), new Point(textXPosition, 48));
+		scoreText = new ScoreText(score.getValue(), new Point(textXPosition, Constants.SCORE_TEXT_Y));
 	}
 
 	public void increaseScore()
