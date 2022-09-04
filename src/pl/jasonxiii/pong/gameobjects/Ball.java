@@ -12,35 +12,47 @@ public class Ball extends GameObject implements Updatable, Drawable
 	private int directionX;
 	private int directionY;
 
+	private float delayTimer;
+
 	public Ball()
 	{
 		super(Constants.BALL_INITIAL_X, Constants.BALL_INITIAL_Y);
 		randomiseDirection();
+		resetDelayTimer();
 	}
 
 	@Override
 	public void update(double delta)
 	{
-		int movementSpeed = Constants.BALL_INITIAL_MOVEMENT_SPEED;
+		if(delayTimer <= 0)
+		{
+			int movementSpeed = Constants.BALL_INITIAL_MOVEMENT_SPEED;
 
-		position.x += movementSpeed*directionX;
-		position.y += movementSpeed*directionY;
+			position.x += movementSpeed*directionX;
+			position.y += movementSpeed*directionY;
 
-		if(position.y <= 0 || position.y >= Constants.GAME_HEIGHT - Constants.BALL_RADIUS)
-		{
-			directionY = -directionY;
+			if(position.y <= 0 || position.y >= Constants.GAME_HEIGHT - Constants.BALL_RADIUS)
+			{
+				directionY = -directionY;
+			}
+			else if(position.x >= Constants.GAME_WIDTH)
+			{
+				GameManager.INSTANCE.increaseScoreToPlayerOne();
+				resetPosition();
+				randomiseDirection();
+				resetDelayTimer();
+			}
+			else if(position.x <= -Constants.BALL_RADIUS)
+			{
+				GameManager.INSTANCE.increaseScoreToPlayerTwo();
+				resetPosition();
+				randomiseDirection();
+				resetDelayTimer();
+			}
 		}
-		else if(position.x >= Constants.GAME_WIDTH)
+		else if(delayTimer > 0)
 		{
-			GameManager.INSTANCE.increaseScoreToPlayerOne();
-			resetPosition();
-			randomiseDirection();
-		}
-		else if(position.x <= -Constants.BALL_RADIUS)
-		{
-			GameManager.INSTANCE.increaseScoreToPlayerTwo();
-			resetPosition();
-			randomiseDirection();
+			delayTimer -= delta;
 		}
 	}
 
@@ -64,5 +76,10 @@ public class Ball extends GameObject implements Updatable, Drawable
 	{
 		position.x = Constants.BALL_INITIAL_X;
 		position.y = Constants.BALL_INITIAL_Y;
+	}
+
+	private void resetDelayTimer()
+	{
+		delayTimer = 1f;
 	}
 }
