@@ -1,8 +1,6 @@
 package pl.jasonxiii.pong.gameobjects;
 
-import pl.jasonxiii.pong.Constants;
-import pl.jasonxiii.pong.GameBoard;
-import pl.jasonxiii.pong.GameManager;
+import pl.jasonxiii.pong.*;
 import pl.jasonxiii.pong.interfaces.Collidable;
 import pl.jasonxiii.pong.interfaces.Drawable;
 import pl.jasonxiii.pong.interfaces.Updatable;
@@ -12,8 +10,9 @@ import java.awt.*;
 public class Ball extends GameObject implements Updatable, Drawable, Collidable
 {
 	private int directionX, directionY, movementSpeed;
-
 	private float delayTimer;
+
+	private final BoxCollider collider = new BoxCollider(this, new Rectangle(position.x, position.y, Constants.BALL_RADIUS, Constants.BALL_RADIUS));
 
 	public Ball()
 	{
@@ -129,15 +128,10 @@ public class Ball extends GameObject implements Updatable, Drawable, Collidable
 		{
 			Paddle paddle = (Paddle)c;
 
-			return paddle.collisionBox().intersects(collisionBox());
+			return paddle.collisionBox().intersects(collider.collisionBox());
 		}
 
 		return false;
-	}
-
-	private Rectangle collisionBox()
-	{
-		return new Rectangle(position.x, position.y, Constants.BALL_RADIUS, Constants.BALL_RADIUS);
 	}
 
 	private void deflectInXAxis()

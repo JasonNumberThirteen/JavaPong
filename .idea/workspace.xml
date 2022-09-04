@@ -1,9 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ea342c66-e60c-4706-9bb0-07a8f29b3208" name="Changes" comment="Optimised GamePanel class">
-      <change afterPath="$PROJECT_DIR$/src/pl/jasonxiii/pong/Collider.java" afterDir="false" />
+    <list default="true" id="ea342c66-e60c-4706-9bb0-07a8f29b3208" name="Changes" comment="Added Collider class">
+      <change afterPath="$PROJECT_DIR$/src/pl/jasonxiii/pong/BoxCollider.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pl/jasonxiii/pong/Collider.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/jasonxiii/pong/Collider.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pl/jasonxiii/pong/gameobjects/Ball.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/jasonxiii/pong/gameobjects/Ball.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pl/jasonxiii/pong/gameobjects/GameObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/jasonxiii/pong/gameobjects/GameObject.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -100,13 +103,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1662027905581</updated>
-    </task>
-    <task id="LOCAL-00033" summary="Removed redundant casting to int">
-      <created>1662189120833</created>
-      <option name="number" value="00033" />
-      <option name="presentableId" value="LOCAL-00033" />
-      <option name="project" value="LOCAL" />
-      <updated>1662189120833</updated>
     </task>
     <task id="LOCAL-00034" summary="Removed redundant casting to int">
       <created>1662189149089</created>
@@ -444,7 +440,14 @@
       <option name="project" value="LOCAL" />
       <updated>1662287859701</updated>
     </task>
-    <option name="localTasksCounter" value="82" />
+    <task id="LOCAL-00082" summary="Added Collider class">
+      <created>1662288335803</created>
+      <option name="number" value="00082" />
+      <option name="presentableId" value="LOCAL-00082" />
+      <option name="project" value="LOCAL" />
+      <updated>1662288335803</updated>
+    </task>
+    <option name="localTasksCounter" value="83" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -459,7 +462,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added PlayerWonText class" />
     <MESSAGE value="Replaced GameManager class with enum singleton" />
     <MESSAGE value="Added player won text display when the game is over" />
     <MESSAGE value="Added a constant for required player score to win" />
@@ -484,7 +486,8 @@
     <MESSAGE value="Added a constant for Y position of player score texts" />
     <MESSAGE value="Added overloading of UIText class constructor" />
     <MESSAGE value="Optimised GamePanel class" />
-    <option name="LAST_COMMIT_MESSAGE" value="Optimised GamePanel class" />
+    <MESSAGE value="Added Collider class" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added Collider class" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
