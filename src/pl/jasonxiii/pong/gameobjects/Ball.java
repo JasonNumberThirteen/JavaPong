@@ -12,6 +12,7 @@ public class Ball extends GameObject implements Updatable, Drawable, Collidable
 {
 	private int directionX;
 	private int directionY;
+	private int movementSpeed;
 
 	private float delayTimer;
 
@@ -20,6 +21,7 @@ public class Ball extends GameObject implements Updatable, Drawable, Collidable
 		super(Constants.BALL_INITIAL_X, Constants.BALL_INITIAL_Y);
 		randomiseDirection();
 		resetDelayTimer();
+		resetMovementSpeed();
 	}
 
 	@Override
@@ -27,10 +29,10 @@ public class Ball extends GameObject implements Updatable, Drawable, Collidable
 	{
 		if(delayTimer <= 0)
 		{
-			int movementSpeed = (int)(Constants.BALL_INITIAL_MOVEMENT_SPEED*delta);
+			int movementStep = (int)(movementSpeed*delta);
 
-			position.x += movementSpeed*directionX;
-			position.y += movementSpeed*directionY;
+			position.x += movementStep*directionX;
+			position.y += movementStep*directionY;
 
 			if(position.y <= 0 || position.y >= Constants.GAME_HEIGHT - Constants.BALL_RADIUS)
 			{
@@ -42,6 +44,7 @@ public class Ball extends GameObject implements Updatable, Drawable, Collidable
 				resetPosition();
 				randomiseDirection();
 				resetDelayTimer();
+				resetMovementSpeed();
 			}
 			else if(position.x <= -Constants.BALL_RADIUS)
 			{
@@ -49,11 +52,13 @@ public class Ball extends GameObject implements Updatable, Drawable, Collidable
 				resetPosition();
 				randomiseDirection();
 				resetDelayTimer();
+				resetMovementSpeed();
 			}
 
 			if(isCollidingWith(GameManager.INSTANCE.getBoard().playerOne().getPaddle()) || isCollidingWith(GameManager.INSTANCE.getBoard().playerTwo().getPaddle()))
 			{
 				directionX = -directionX;
+				movementSpeed += Constants.BALL_SPEED_INCREASE_PER_PADDLE_DEFLECT;
 			}
 		}
 		else if(delayTimer > 0)
@@ -101,5 +106,10 @@ public class Ball extends GameObject implements Updatable, Drawable, Collidable
 	private void resetDelayTimer()
 	{
 		delayTimer = 1f;
+	}
+
+	private void resetMovementSpeed()
+	{
+		movementSpeed = Constants.BALL_INITIAL_MOVEMENT_SPEED;
 	}
 }

@@ -26,15 +26,15 @@ public class Paddle extends GameObject implements Updatable, Drawable, Collidabl
 	@Override
 	public void update(double delta)
 	{
-		int movementSpeed = (int)(Constants.PADDLE_MOVEMENT_SPEED*delta);
+		int movementStep = (int)(Constants.PADDLE_MOVEMENT_SPEED*delta);
 
 		if(input.isMovingUp())
 		{
-			position.y = Methods.clampInt(0, position.y - movementSpeed, Constants.GAME_HEIGHT - Constants.PADDLE_HEIGHT);
+			position.y = Methods.clampInt(0, position.y - movementStep, Constants.GAME_HEIGHT - Constants.PADDLE_HEIGHT);
 		}
 		else if(input.isMovingDown())
 		{
-			position.y = Methods.clampInt(0, position.y + movementSpeed, Constants.GAME_HEIGHT - Constants.PADDLE_HEIGHT);
+			position.y = Methods.clampInt(0, position.y + movementStep, Constants.GAME_HEIGHT - Constants.PADDLE_HEIGHT);
 		}
 	}
 

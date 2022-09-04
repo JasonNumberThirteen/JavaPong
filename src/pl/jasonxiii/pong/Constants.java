@@ -24,6 +24,7 @@ public final class Constants
 	public static final int BALL_INITIAL_X = (GAME_WIDTH - BALL_RADIUS) >> 1;
 	public static final int BALL_INITIAL_Y = (GAME_HEIGHT - BALL_RADIUS) >> 1;
 	public static final int BALL_INITIAL_MOVEMENT_SPEED = 120;
+	public static final int BALL_SPEED_INCREASE_PER_PADDLE_DEFLECT = 20;
 	public static final Color BALL_COLOR = Color.WHITE;
 
 	public static final int UI_FONT_SIZE = 32;
