@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ea342c66-e60c-4706-9bb0-07a8f29b3208" name="Changes" comment="Added a constant for Y position of player score texts">
+    <list default="true" id="ea342c66-e60c-4706-9bb0-07a8f29b3208" name="Changes" comment="Added overloading of UIText class constructor">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pl/jasonxiii/pong/uitexts/PlayerWonText.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/jasonxiii/pong/uitexts/PlayerWonText.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pl/jasonxiii/pong/uitexts/UIText.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/jasonxiii/pong/uitexts/UIText.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pl/jasonxiii/pong/window/GamePanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/jasonxiii/pong/window/GamePanel.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -101,13 +100,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1662027905581</updated>
-    </task>
-    <task id="LOCAL-00031" summary="Added antialiasing for ball object">
-      <created>1662120250103</created>
-      <option name="number" value="00031" />
-      <option name="presentableId" value="LOCAL-00031" />
-      <option name="project" value="LOCAL" />
-      <updated>1662120250103</updated>
     </task>
     <task id="LOCAL-00032" summary="Updated README file">
       <created>1662120509649</created>
@@ -445,7 +437,14 @@
       <option name="project" value="LOCAL" />
       <updated>1662286170975</updated>
     </task>
-    <option name="localTasksCounter" value="80" />
+    <task id="LOCAL-00080" summary="Added overloading of UIText class constructor">
+      <created>1662286626433</created>
+      <option name="number" value="00080" />
+      <option name="presentableId" value="LOCAL-00080" />
+      <option name="project" value="LOCAL" />
+      <updated>1662286626433</updated>
+    </task>
+    <option name="localTasksCounter" value="81" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -460,7 +459,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added events when the ball is outside the board" />
     <MESSAGE value="Added score counters updating when player scores" />
     <MESSAGE value="Added PlayerWonText class" />
     <MESSAGE value="Replaced GameManager class with enum singleton" />
@@ -485,7 +483,8 @@
     <MESSAGE value="Optimised Ball class" />
     <MESSAGE value="Optimised Paddle class" />
     <MESSAGE value="Added a constant for Y position of player score texts" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added a constant for Y position of player score texts" />
+    <MESSAGE value="Added overloading of UIText class constructor" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added overloading of UIText class constructor" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

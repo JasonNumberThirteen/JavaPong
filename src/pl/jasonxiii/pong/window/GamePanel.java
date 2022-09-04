@@ -2,6 +2,7 @@ package pl.jasonxiii.pong.window;
 
 import pl.jasonxiii.pong.*;
 import pl.jasonxiii.pong.gameobjects.Ball;
+import pl.jasonxiii.pong.interfaces.Updatable;
 import pl.jasonxiii.pong.players.Player;
 import pl.jasonxiii.pong.players.PlayerOne;
 import pl.jasonxiii.pong.players.PlayerTwo;
@@ -9,9 +10,8 @@ import pl.jasonxiii.pong.players.PlayerTwo;
 import java.awt.*;
 import javax.swing.*;
 
-public class GamePanel extends JPanel implements Runnable
+public class GamePanel extends JPanel implements Runnable, Updatable
 {
-	private final Thread thread;
 	private final Player playerA = new PlayerOne();
 	private final Player playerB = new PlayerTwo();
 	private final Ball ball = new Ball();
@@ -20,7 +20,7 @@ public class GamePanel extends JPanel implements Runnable
 	private final GameBoard board = new GameBoard(playerA, playerB, ball);
 	private final GameRenderer renderer = new GameRenderer(playerA.getPaddle(), playerB.getPaddle(), ball, ui);
 
-	private boolean isRunning;
+	private boolean isRunning = true;
 
 	public GamePanel()
 	{
@@ -29,21 +29,14 @@ public class GamePanel extends JPanel implements Runnable
 		setFocusable(true);
 		setFocusTraversalKeysEnabled(false);
 		addKeyListener(input);
-		GameManager.INSTANCE.setBoard(board);
-		GameManager.INSTANCE.setUI(ui);
-
-		thread = new Thread(this);
-		isRunning = true;
-
-		thread.start();
+		assignDependenciesToGameManager();
+		start();
 	}
 
 	@Override
 	public void run()
 	{
 		long previousFrame = System.currentTimeMillis();
-		long difference;
-		long delay;
 		int ms = 1000 / Constants.GAME_FPS;
 		double delta = 1.0 / Constants.GAME_FPS;
 
@@ -52,17 +45,9 @@ public class GamePanel extends JPanel implements Runnable
 			update(delta);
 			repaint();
 
-			difference = System.currentTimeMillis() - previousFrame;
-			delay = ms - difference;
-
-			if(delay < 0)
-			{
-				delay = 2;
-			}
-
 			try
 			{
-				Thread.sleep(delay);
+				Thread.sleep(delay(ms, difference(previousFrame)));
 			}
 			catch (InterruptedException ie)
 			{
@@ -74,14 +59,42 @@ public class GamePanel extends JPanel implements Runnable
 	}
 
 	@Override
+	public void update(double delta)
+	{
+		board.update(delta);
+	}
+
+	@Override
 	protected void paintComponent(Graphics g)
 	{
 		super.paintComponent(g);
 		renderer.draw(g);
 	}
 
-	private void update(double delta)
+	private void assignDependenciesToGameManager()
 	{
-		board.update(delta);
+		GameManager gm = GameManager.INSTANCE;
+
+		gm.setBoard(board);
+		gm.setUI(ui);
+	}
+
+	private void start()
+	{
+		Thread thread = new Thread(this);
+
+		thread.start();
+	}
+
+	private long difference(long previousFrame)
+	{
+		return System.currentTimeMillis() - previousFrame;
+	}
+
+	private long delay(int ms, long difference)
+	{
+		long d = ms - difference;
+
+		return d < 0 ? 2 : d;
 	}
 }
