@@ -21,7 +21,10 @@
 
 ## Features
 - Resolution: 640x480
+- Realtime game loop using thread (used technique from [this link](https://zetcode.com/javagames/animation/ "Java games animation - creating animations in Java 2D"))
 - Two players mode
+- Scoring system when the ball goes outside the screen
+- UI system drawing centered texts in given color
 - Adjustable plenty of values in single class
 
 ## Usage

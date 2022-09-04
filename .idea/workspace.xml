@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ea342c66-e60c-4706-9bb0-07a8f29b3208" name="Changes" comment="Merged code controlling paddle movement by input">
+    <list default="true" id="ea342c66-e60c-4706-9bb0-07a8f29b3208" name="Changes" comment="Moved code controlling player input">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pl/jasonxiii/pong/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/jasonxiii/pong/Constants.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pl/jasonxiii/pong/PlayerInput.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/jasonxiii/pong/PlayerInput.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pl/jasonxiii/pong/gameobjects/Paddle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/jasonxiii/pong/gameobjects/Paddle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -102,13 +100,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1662027905581</updated>
-    </task>
-    <task id="LOCAL-00020" summary="Added constant for paddle movement speed">
-      <created>1662118065342</created>
-      <option name="number" value="00020" />
-      <option name="presentableId" value="LOCAL-00020" />
-      <option name="project" value="LOCAL" />
-      <updated>1662118065342</updated>
     </task>
     <task id="LOCAL-00021" summary="Added clamping for paddle Y position">
       <created>1662118362677</created>
@@ -446,7 +437,14 @@
       <option name="project" value="LOCAL" />
       <updated>1662275450531</updated>
     </task>
-    <option name="localTasksCounter" value="69" />
+    <task id="LOCAL-00069" summary="Moved code controlling player input">
+      <created>1662276056376</created>
+      <option name="number" value="00069" />
+      <option name="presentableId" value="LOCAL-00069" />
+      <option name="project" value="LOCAL" />
+      <updated>1662276056376</updated>
+    </task>
+    <option name="localTasksCounter" value="70" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -461,7 +459,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Moved code to separate packages" />
     <MESSAGE value="Added GameRenderer class" />
     <MESSAGE value="Added GameBoard record" />
     <MESSAGE value="Added UIText class" />
@@ -486,7 +483,8 @@
     <MESSAGE value="Replaced constant with player score getter" />
     <MESSAGE value="Added constants for UI text colors" />
     <MESSAGE value="Merged code controlling paddle movement by input" />
-    <option name="LAST_COMMIT_MESSAGE" value="Merged code controlling paddle movement by input" />
+    <MESSAGE value="Moved code controlling player input" />
+    <option name="LAST_COMMIT_MESSAGE" value="Moved code controlling player input" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
