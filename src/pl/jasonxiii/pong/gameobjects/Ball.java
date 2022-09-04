@@ -105,7 +105,7 @@ public class Ball extends GameObject implements Updatable, Drawable, Collidable
 
 	private void resetDelayTimer()
 	{
-		delayTimer = 1f;
+		delayTimer = Constants.BALL_INITIAL_DELAY_TIMER;
 	}
 
 	private void resetMovementSpeed()
