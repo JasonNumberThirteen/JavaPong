@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ea342c66-e60c-4706-9bb0-07a8f29b3208" name="Changes" comment="Added overloading of UIText class constructor">
+    <list default="true" id="ea342c66-e60c-4706-9bb0-07a8f29b3208" name="Changes" comment="Optimised GamePanel class">
+      <change afterPath="$PROJECT_DIR$/src/pl/jasonxiii/pong/Collider.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pl/jasonxiii/pong/window/GamePanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/jasonxiii/pong/window/GamePanel.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -13,8 +13,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -100,13 +100,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1662027905581</updated>
-    </task>
-    <task id="LOCAL-00032" summary="Updated README file">
-      <created>1662120509649</created>
-      <option name="number" value="00032" />
-      <option name="presentableId" value="LOCAL-00032" />
-      <option name="project" value="LOCAL" />
-      <updated>1662120509649</updated>
     </task>
     <task id="LOCAL-00033" summary="Removed redundant casting to int">
       <created>1662189120833</created>
@@ -444,7 +437,14 @@
       <option name="project" value="LOCAL" />
       <updated>1662286626433</updated>
     </task>
-    <option name="localTasksCounter" value="81" />
+    <task id="LOCAL-00081" summary="Optimised GamePanel class">
+      <created>1662287859701</created>
+      <option name="number" value="00081" />
+      <option name="presentableId" value="LOCAL-00081" />
+      <option name="project" value="LOCAL" />
+      <updated>1662287859701</updated>
+    </task>
+    <option name="localTasksCounter" value="82" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -459,7 +459,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added score counters updating when player scores" />
     <MESSAGE value="Added PlayerWonText class" />
     <MESSAGE value="Replaced GameManager class with enum singleton" />
     <MESSAGE value="Added player won text display when the game is over" />
@@ -484,7 +483,8 @@
     <MESSAGE value="Optimised Paddle class" />
     <MESSAGE value="Added a constant for Y position of player score texts" />
     <MESSAGE value="Added overloading of UIText class constructor" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added overloading of UIText class constructor" />
+    <MESSAGE value="Optimised GamePanel class" />
+    <option name="LAST_COMMIT_MESSAGE" value="Optimised GamePanel class" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
