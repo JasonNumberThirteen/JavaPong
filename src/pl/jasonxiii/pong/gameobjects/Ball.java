@@ -27,7 +27,7 @@ public class Ball extends GameObject implements Updatable, Drawable, Collidable
 	{
 		if(delayTimer <= 0)
 		{
-			int movementSpeed = Constants.BALL_INITIAL_MOVEMENT_SPEED;
+			int movementSpeed = (int)(Constants.BALL_INITIAL_MOVEMENT_SPEED*delta);
 
 			position.x += movementSpeed*directionX;
 			position.y += movementSpeed*directionY;
