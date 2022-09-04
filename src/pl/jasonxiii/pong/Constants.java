@@ -11,7 +11,7 @@ public final class Constants
 
 	public static final Color BACKGROUND_COLOR = Color.BLACK;
 
-	public static final int PLAYER_SCORE_TO_WIN = 1;
+	public static final int PLAYER_SCORE_TO_WIN = 11;
 
 	public static final int PADDLE_WIDTH = 8;
 	public static final int PADDLE_HEIGHT = 32;
