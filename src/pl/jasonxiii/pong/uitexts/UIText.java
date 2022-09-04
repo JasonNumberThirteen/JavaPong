@@ -51,7 +51,17 @@ public class UIText implements Drawable
 		g.setColor(color);
 		g.setFont(textFont());
 		g2D.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
-		g.drawString(stringBuilder.toString(), position.x, position.y);
+		drawCenteredString(g2D);
+	}
+
+	private void drawCenteredString(Graphics2D g2D)
+	{
+		FontMetrics fm = g2D.getFontMetrics(textFont());
+		String text = stringBuilder.toString();
+		int width = fm.stringWidth(text);
+		int height = (int)fm.getStringBounds(text, g2D).getHeight();
+
+		g2D.drawString(text, position.x - (width >> 1), position.y - (height >> 1));
 	}
 
 	private Font textFont()

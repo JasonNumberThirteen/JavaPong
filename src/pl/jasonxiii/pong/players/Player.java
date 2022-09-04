@@ -17,7 +17,7 @@ public class Player
 	public Player(int x, PlayerInput input, int textXPosition)
 	{
 		paddle = new Paddle(x, input);
-		scoreText = new ScoreText(0, new Point(textXPosition, Constants.UI_FONT_SIZE));
+		scoreText = new ScoreText(0, new Point(textXPosition, 48));
 	}
 
 	public void increaseScore()
