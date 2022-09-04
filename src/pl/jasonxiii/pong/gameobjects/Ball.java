@@ -2,12 +2,13 @@ package pl.jasonxiii.pong.gameobjects;
 
 import pl.jasonxiii.pong.Constants;
 import pl.jasonxiii.pong.GameManager;
+import pl.jasonxiii.pong.interfaces.Collidable;
 import pl.jasonxiii.pong.interfaces.Drawable;
 import pl.jasonxiii.pong.interfaces.Updatable;
 
 import java.awt.*;
 
-public class Ball extends GameObject implements Updatable, Drawable
+public class Ball extends GameObject implements Updatable, Drawable, Collidable
 {
 	private int directionX;
 	private int directionY;
@@ -49,6 +50,11 @@ public class Ball extends GameObject implements Updatable, Drawable
 				randomiseDirection();
 				resetDelayTimer();
 			}
+
+			if(isCollidingWith(GameManager.INSTANCE.getBoard().playerOne().getPaddle()) || isCollidingWith(GameManager.INSTANCE.getBoard().playerTwo().getPaddle()))
+			{
+				directionX = -directionX;
+			}
 		}
 		else if(delayTimer > 0)
 		{
@@ -64,6 +70,20 @@ public class Ball extends GameObject implements Updatable, Drawable
 		g.setColor(Constants.BALL_COLOR);
 		g2D.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
 		g.fillArc(position.x, position.y, Constants.BALL_RADIUS, Constants.BALL_RADIUS, 0, 360);
+	}
+
+	private boolean isCollidingWith(Collidable c)
+	{
+		if(c.getClass() == Paddle.class)
+		{
+			Paddle paddle = (Paddle)c;
+			Rectangle paddleCollisionBox = paddle.collisionBox();
+			Rectangle ballCollisionBox = new Rectangle(position.x, position.y, Constants.BALL_RADIUS, Constants.BALL_RADIUS);
+
+			return paddleCollisionBox.intersects(ballCollisionBox);
+		}
+
+		return false;
 	}
 
 	private void randomiseDirection()

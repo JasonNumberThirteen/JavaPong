@@ -3,6 +3,7 @@ package pl.jasonxiii.pong.gameobjects;
 import pl.jasonxiii.pong.Constants;
 import pl.jasonxiii.pong.GameManager;
 import pl.jasonxiii.pong.PlayerInput;
+import pl.jasonxiii.pong.interfaces.Collidable;
 import pl.jasonxiii.pong.interfaces.Drawable;
 import pl.jasonxiii.pong.Methods;
 import pl.jasonxiii.pong.interfaces.Updatable;
@@ -11,7 +12,7 @@ import java.awt.*;
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
 
-public class Paddle extends GameObject implements Updatable, Drawable, KeyListener
+public class Paddle extends GameObject implements Updatable, Drawable, Collidable, KeyListener
 {
 	private final PlayerInput input;
 
@@ -40,6 +41,7 @@ public class Paddle extends GameObject implements Updatable, Drawable, KeyListen
 	{
 		g.setColor(Constants.PADDLE_COLOR);
 		g.fillRect(position.x, position.y, Constants.PADDLE_WIDTH, Constants.PADDLE_HEIGHT);
+		g.setColor(Color.RED);
 	}
 
 	@Override
@@ -58,5 +60,10 @@ public class Paddle extends GameObject implements Updatable, Drawable, KeyListen
 	public void keyReleased(KeyEvent ke)
 	{
 		input.controlInput(ke, false);
+	}
+
+	public Rectangle collisionBox()
+	{
+		return new Rectangle(position.x, position.y, Constants.PADDLE_WIDTH, Constants.PADDLE_HEIGHT);
 	}
 }

@@ -17,6 +17,11 @@ public enum GameManager
 		this.ui = ui;
 	}
 
+	public GameBoard getBoard()
+	{
+		return board;
+	}
+
 	public void increaseScoreToPlayerOne()
 	{
 		board.playerOne().increaseScore();

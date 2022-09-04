@@ -1,9 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ea342c66-e60c-4706-9bb0-07a8f29b3208" name="Changes" comment="Added delta time parameter to update method">
+    <list default="true" id="ea342c66-e60c-4706-9bb0-07a8f29b3208" name="Changes" comment="Added delay timer to the ball">
+      <change afterPath="$PROJECT_DIR$/src/pl/jasonxiii/pong/interfaces/Collidable.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pl/jasonxiii/pong/GameManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/jasonxiii/pong/GameManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pl/jasonxiii/pong/gameobjects/Ball.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/jasonxiii/pong/gameobjects/Ball.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pl/jasonxiii/pong/gameobjects/Paddle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/jasonxiii/pong/gameobjects/Paddle.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -13,8 +16,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -100,13 +103,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1662027905581</updated>
-    </task>
-    <task id="LOCAL-00023" summary="Removed redundant GameObject constructor overloads">
-      <created>1662118615329</created>
-      <option name="number" value="00023" />
-      <option name="presentableId" value="LOCAL-00023" />
-      <option name="project" value="LOCAL" />
-      <updated>1662118615329</updated>
     </task>
     <task id="LOCAL-00024" summary="Added separate movement keys for paddles">
       <created>1662118865692</created>
@@ -444,7 +440,14 @@
       <option name="project" value="LOCAL" />
       <updated>1662277079525</updated>
     </task>
-    <option name="localTasksCounter" value="72" />
+    <task id="LOCAL-00072" summary="Added delay timer to the ball">
+      <created>1662277199443</created>
+      <option name="number" value="00072" />
+      <option name="presentableId" value="LOCAL-00072" />
+      <option name="project" value="LOCAL" />
+      <updated>1662277199443</updated>
+    </task>
+    <option name="localTasksCounter" value="73" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -459,7 +462,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added UIText class" />
     <MESSAGE value="Modified UIText class" />
     <MESSAGE value="Added position member variable to UIText class" />
     <MESSAGE value="Added ScoreText class" />
@@ -484,7 +486,8 @@
     <MESSAGE value="Moved code controlling player input" />
     <MESSAGE value="Updated README file" />
     <MESSAGE value="Added delta time parameter to update method" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added delta time parameter to update method" />
+    <MESSAGE value="Added delay timer to the ball" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added delay timer to the ball" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
