@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ea342c66-e60c-4706-9bb0-07a8f29b3208" name="Changes" comment="Centered position of UI texts">
+    <list default="true" id="ea342c66-e60c-4706-9bb0-07a8f29b3208" name="Changes" comment="Replaced constant with player score getter">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pl/jasonxiii/pong/players/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/jasonxiii/pong/players/Player.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pl/jasonxiii/pong/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/jasonxiii/pong/Constants.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pl/jasonxiii/pong/uitexts/PlayerWonText.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/jasonxiii/pong/uitexts/PlayerWonText.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pl/jasonxiii/pong/uitexts/ScoreText.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/jasonxiii/pong/uitexts/ScoreText.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -100,13 +102,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1662027905581</updated>
-    </task>
-    <task id="LOCAL-00017" summary="Added KeyboardInput class">
-      <created>1662116786519</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1662116786520</updated>
     </task>
     <task id="LOCAL-00018" summary="Added listeners list inside KeyboardInput class">
       <created>1662117886743</created>
@@ -444,7 +439,14 @@
       <option name="project" value="LOCAL" />
       <updated>1662274780282</updated>
     </task>
-    <option name="localTasksCounter" value="66" />
+    <task id="LOCAL-00066" summary="Replaced constant with player score getter">
+      <created>1662274896575</created>
+      <option name="number" value="00066" />
+      <option name="presentableId" value="LOCAL-00066" />
+      <option name="project" value="LOCAL" />
+      <updated>1662274896575</updated>
+    </task>
+    <option name="localTasksCounter" value="67" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -459,7 +461,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added lists for updatable and drawable objects" />
     <MESSAGE value="Removed parameters from Ball class constructor" />
     <MESSAGE value="Added Counter class" />
     <MESSAGE value="Moved code to separate packages" />
@@ -484,7 +485,8 @@
     <MESSAGE value="Replaced players array with score text instances" />
     <MESSAGE value="Added a text update when player has won the game" />
     <MESSAGE value="Centered position of UI texts" />
-    <option name="LAST_COMMIT_MESSAGE" value="Centered position of UI texts" />
+    <MESSAGE value="Replaced constant with player score getter" />
+    <option name="LAST_COMMIT_MESSAGE" value="Replaced constant with player score getter" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

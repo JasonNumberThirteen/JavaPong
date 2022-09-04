@@ -9,7 +9,7 @@ public class PlayerWonText extends UIText
 {
 	public PlayerWonText()
 	{
-		super("", new Point(Constants.GAME_WIDTH >> 1, Constants.GAME_HEIGHT >> 1), Color.ORANGE);
+		super("", new Point(Constants.GAME_WIDTH >> 1, Constants.GAME_HEIGHT >> 1), Constants.PLAYER_WON_TEXT_COLOR);
 	}
 
 	@Override

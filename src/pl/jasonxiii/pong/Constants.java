@@ -27,4 +27,6 @@ public final class Constants
 	public static final Color BALL_COLOR = Color.WHITE;
 
 	public static final int UI_FONT_SIZE = 32;
+	public static final Color SCORE_TEXT_COLOR = Color.WHITE;
+	public static final Color PLAYER_WON_TEXT_COLOR = Color.ORANGE;
 }
