@@ -45,10 +45,11 @@ public class GamePanel extends JPanel implements Runnable
 		long difference;
 		long delay;
 		int ms = 1000 / Constants.GAME_FPS;
+		double delta = 1.0 / Constants.GAME_FPS;
 
 		while (isRunning)
 		{
-			update();
+			update(delta);
 			repaint();
 
 			difference = System.currentTimeMillis() - previousFrame;
@@ -79,8 +80,8 @@ public class GamePanel extends JPanel implements Runnable
 		renderer.draw(g);
 	}
 
-	private void update()
+	private void update(double delta)
 	{
-		board.update();
+		board.update(delta);
 	}
 }

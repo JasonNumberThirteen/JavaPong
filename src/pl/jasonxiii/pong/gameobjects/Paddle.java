@@ -23,7 +23,7 @@ public class Paddle extends GameObject implements Updatable, Drawable, KeyListen
 	}
 
 	@Override
-	public void update()
+	public void update(double delta)
 	{
 		if(input.isMovingUp())
 		{

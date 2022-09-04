@@ -19,7 +19,7 @@ public class Ball extends GameObject implements Updatable, Drawable
 	}
 
 	@Override
-	public void update()
+	public void update(double delta)
 	{
 		int movementSpeed = Constants.BALL_INITIAL_MOVEMENT_SPEED;
 

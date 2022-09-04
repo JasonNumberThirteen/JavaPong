@@ -2,5 +2,5 @@ package pl.jasonxiii.pong.interfaces;
 
 public interface Updatable
 {
-	void update();
+	void update(double delta);
 }
