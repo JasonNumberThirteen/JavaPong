@@ -1,6 +1,7 @@
 package pl.jasonxiii.pong.gameobjects;
 
 import pl.jasonxiii.pong.Constants;
+import pl.jasonxiii.pong.GameBoard;
 import pl.jasonxiii.pong.GameManager;
 import pl.jasonxiii.pong.interfaces.Collidable;
 import pl.jasonxiii.pong.interfaces.Drawable;
@@ -10,60 +11,29 @@ import java.awt.*;
 
 public class Ball extends GameObject implements Updatable, Drawable, Collidable
 {
-	private int directionX;
-	private int directionY;
-	private int movementSpeed;
+	private int directionX, directionY, movementSpeed;
 
 	private float delayTimer;
 
 	public Ball()
 	{
 		super(Constants.BALL_INITIAL_X, Constants.BALL_INITIAL_Y);
-		randomiseDirection();
-		resetDelayTimer();
-		resetMovementSpeed();
+		onMoveOutsideField();
 	}
 
 	@Override
 	public void update(double delta)
 	{
-		if(delayTimer <= 0)
+		if(canMove())
 		{
-			int movementStep = (int)(movementSpeed*delta);
-
-			position.x += movementStep*directionX;
-			position.y += movementStep*directionY;
-
-			if(position.y <= 0 || position.y >= Constants.GAME_HEIGHT - Constants.BALL_RADIUS)
-			{
-				directionY = -directionY;
-			}
-			else if(position.x >= Constants.GAME_WIDTH)
-			{
-				GameManager.INSTANCE.increaseScoreToPlayerOne();
-				resetPosition();
-				randomiseDirection();
-				resetDelayTimer();
-				resetMovementSpeed();
-			}
-			else if(position.x <= -Constants.BALL_RADIUS)
-			{
-				GameManager.INSTANCE.increaseScoreToPlayerTwo();
-				resetPosition();
-				randomiseDirection();
-				resetDelayTimer();
-				resetMovementSpeed();
-			}
-
-			if(isCollidingWith(GameManager.INSTANCE.getBoard().playerOne().getPaddle()) || isCollidingWith(GameManager.INSTANCE.getBoard().playerTwo().getPaddle()))
-			{
-				directionX = -directionX;
-				movementSpeed += Constants.BALL_SPEED_INCREASE_PER_PADDLE_DEFLECT;
-			}
+			move(delta);
+			checkCollisionWithVerticalEdges();
+			checkHorizontalEdges();
+			checkCollisionBetweenPaddles();
 		}
-		else if(delayTimer > 0)
+		else
 		{
-			delayTimer -= delta;
+			decreaseDelayTimer(delta);
 		}
 	}
 
@@ -77,18 +47,117 @@ public class Ball extends GameObject implements Updatable, Drawable, Collidable
 		g.fillArc(position.x, position.y, Constants.BALL_RADIUS, Constants.BALL_RADIUS, 0, 360);
 	}
 
+	private void move(double delta)
+	{
+		int movementStep = (int)(movementSpeed*delta);
+
+		position.x += movementStep*directionX;
+		position.y += movementStep*directionY;
+	}
+
+	private void checkCollisionWithVerticalEdges()
+	{
+		if(isCollidingWithVerticalEdge())
+		{
+			deflectInYAxis();
+		}
+	}
+
+	private void checkHorizontalEdges()
+	{
+		GameManager gm = GameManager.INSTANCE;
+
+		if(reachedRightEdge())
+		{
+			gm.increaseScoreToPlayerOne();
+			onMoveOutsideField();
+		}
+		else if(reachedLeftEdge())
+		{
+			gm.increaseScoreToPlayerTwo();
+			onMoveOutsideField();
+		}
+	}
+
+	private void checkCollisionBetweenPaddles()
+	{
+		GameBoard gb = GameManager.INSTANCE.getBoard();
+
+		if(isCollidingWith(gb.playerOne().getPaddle()) || isCollidingWith(gb.playerTwo().getPaddle()))
+		{
+			onCollisionWithPaddle();
+		}
+	}
+
+	private void onCollisionWithPaddle()
+	{
+		deflectInXAxis();
+		increaseMovementSpeed();
+	}
+
+	private void onMoveOutsideField()
+	{
+		resetPosition();
+		randomiseDirection();
+		resetDelayTimer();
+		resetMovementSpeed();
+	}
+
+	private boolean canMove()
+	{
+		return delayTimer <= 0;
+	}
+
+	private boolean isCollidingWithVerticalEdge()
+	{
+		return position.y <= 0 || position.y >= Constants.GAME_HEIGHT - Constants.BALL_RADIUS;
+	}
+
+	private boolean reachedLeftEdge()
+	{
+		return position.x <= -Constants.BALL_RADIUS;
+	}
+
+	private boolean reachedRightEdge()
+	{
+		return position.x >= Constants.GAME_WIDTH;
+	}
+
 	private boolean isCollidingWith(Collidable c)
 	{
 		if(c.getClass() == Paddle.class)
 		{
 			Paddle paddle = (Paddle)c;
-			Rectangle paddleCollisionBox = paddle.collisionBox();
-			Rectangle ballCollisionBox = new Rectangle(position.x, position.y, Constants.BALL_RADIUS, Constants.BALL_RADIUS);
 
-			return paddleCollisionBox.intersects(ballCollisionBox);
+			return paddle.collisionBox().intersects(collisionBox());
 		}
 
 		return false;
+	}
+
+	private Rectangle collisionBox()
+	{
+		return new Rectangle(position.x, position.y, Constants.BALL_RADIUS, Constants.BALL_RADIUS);
+	}
+
+	private void deflectInXAxis()
+	{
+		directionX = -directionX;
+	}
+
+	private void deflectInYAxis()
+	{
+		directionY = -directionY;
+	}
+
+	private void resetMovementSpeed()
+	{
+		movementSpeed = Constants.BALL_INITIAL_MOVEMENT_SPEED;
+	}
+
+	private void increaseMovementSpeed()
+	{
+		movementSpeed += Constants.BALL_SPEED_INCREASE_PER_PADDLE_DEFLECT;
 	}
 
 	private void randomiseDirection()
@@ -108,8 +177,8 @@ public class Ball extends GameObject implements Updatable, Drawable, Collidable
 		delayTimer = Constants.BALL_INITIAL_DELAY_TIMER;
 	}
 
-	private void resetMovementSpeed()
+	private void decreaseDelayTimer(double delta)
 	{
-		movementSpeed = Constants.BALL_INITIAL_MOVEMENT_SPEED;
+		delayTimer -= delta;
 	}
 }

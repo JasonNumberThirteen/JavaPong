@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ea342c66-e60c-4706-9bb0-07a8f29b3208" name="Changes" comment="Added growth of the ball speed per deflect from paddle">
+    <list default="true" id="ea342c66-e60c-4706-9bb0-07a8f29b3208" name="Changes" comment="Added a constant for initial delay timer of the ball">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pl/jasonxiii/pong/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/jasonxiii/pong/Constants.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pl/jasonxiii/pong/gameobjects/Ball.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/jasonxiii/pong/gameobjects/Ball.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -101,13 +100,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1662027905581</updated>
-    </task>
-    <task id="LOCAL-00027" summary="Added ball deflection from vertical edges of the screen">
-      <created>1662119517073</created>
-      <option name="number" value="00027" />
-      <option name="presentableId" value="LOCAL-00027" />
-      <option name="project" value="LOCAL" />
-      <updated>1662119517073</updated>
     </task>
     <task id="LOCAL-00028" summary="Added UI class">
       <created>1662119917689</created>
@@ -445,7 +437,14 @@
       <option name="project" value="LOCAL" />
       <updated>1662282997919</updated>
     </task>
-    <option name="localTasksCounter" value="76" />
+    <task id="LOCAL-00076" summary="Added a constant for initial delay timer of the ball">
+      <created>1662284106189</created>
+      <option name="number" value="00076" />
+      <option name="presentableId" value="LOCAL-00076" />
+      <option name="project" value="LOCAL" />
+      <updated>1662284106189</updated>
+    </task>
+    <option name="localTasksCounter" value="77" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -460,7 +459,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added PlayerInput class" />
     <MESSAGE value="Moved code to separate package" />
     <MESSAGE value="Modified parameters of GameBoard record constructor" />
     <MESSAGE value="Added GameManager class" />
@@ -485,7 +483,8 @@
     <MESSAGE value="Added collision detection between the ball and the paddles" />
     <MESSAGE value="Did movement speed of objects independent of frame rate" />
     <MESSAGE value="Added growth of the ball speed per deflect from paddle" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added growth of the ball speed per deflect from paddle" />
+    <MESSAGE value="Added a constant for initial delay timer of the ball" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added a constant for initial delay timer of the ball" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
