@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ea342c66-e60c-4706-9bb0-07a8f29b3208" name="Changes" comment="Added a text update when player has won the game">
+    <list default="true" id="ea342c66-e60c-4706-9bb0-07a8f29b3208" name="Changes" comment="Centered position of UI texts">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pl/jasonxiii/pong/players/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/jasonxiii/pong/players/Player.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pl/jasonxiii/pong/uitexts/UIText.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/jasonxiii/pong/uitexts/UIText.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -101,13 +100,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1662027905581</updated>
-    </task>
-    <task id="LOCAL-00016" summary="Added paddle movement">
-      <created>1662116147583</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1662116147583</updated>
     </task>
     <task id="LOCAL-00017" summary="Added KeyboardInput class">
       <created>1662116786519</created>
@@ -445,7 +437,14 @@
       <option name="project" value="LOCAL" />
       <updated>1662199943532</updated>
     </task>
-    <option name="localTasksCounter" value="65" />
+    <task id="LOCAL-00065" summary="Centered position of UI texts">
+      <created>1662274780282</created>
+      <option name="number" value="00065" />
+      <option name="presentableId" value="LOCAL-00065" />
+      <option name="project" value="LOCAL" />
+      <updated>1662274780282</updated>
+    </task>
+    <option name="localTasksCounter" value="66" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -460,7 +459,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added a constant for paddle initial Y position" />
     <MESSAGE value="Added lists for updatable and drawable objects" />
     <MESSAGE value="Removed parameters from Ball class constructor" />
     <MESSAGE value="Added Counter class" />
@@ -485,7 +483,8 @@
     <MESSAGE value="Renamed UI class to GameUI" />
     <MESSAGE value="Replaced players array with score text instances" />
     <MESSAGE value="Added a text update when player has won the game" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added a text update when player has won the game" />
+    <MESSAGE value="Centered position of UI texts" />
+    <option name="LAST_COMMIT_MESSAGE" value="Centered position of UI texts" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
