@@ -4,15 +4,11 @@ import pl.jasonxiii.pong.gameobjects.GameObject;
 
 import java.awt.*;
 
-public class BoxCollider extends Collider
+public class BoxCollider extends Collider<Rectangle>
 {
-	private final Rectangle collider;
-
 	public BoxCollider(GameObject object, Rectangle collider)
 	{
 		super(object, collider);
-
-		this.collider = collider;
 	}
 
 	public Rectangle collisionBox()

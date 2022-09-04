@@ -5,13 +5,12 @@ import pl.jasonxiii.pong.interfaces.Collidable;
 
 import java.awt.*;
 
-public abstract class Collider implements Collidable
+public abstract class Collider<T extends Shape> implements Collidable
 {
 	protected final GameObject object;
+	protected final T collider;
 
-	private final Shape collider;
-
-	public Collider(GameObject object, Shape collider)
+	public Collider(GameObject object, T collider)
 	{
 		this.object = object;
 		this.collider = collider;
