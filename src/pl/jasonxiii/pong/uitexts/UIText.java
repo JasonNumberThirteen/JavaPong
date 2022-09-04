@@ -7,15 +7,22 @@ import java.awt.*;
 
 public class UIText implements Drawable
 {
-	private final StringBuilder stringBuilder;
-	private final Point position;
-	private final Color color;
+	private final StringBuilder stringBuilder = new StringBuilder();
+
+	private Point position;
+	private Color color;
 
 	public UIText(String text, Point position, Color color)
 	{
-		this.stringBuilder = new StringBuilder(text);
-		this.position = position;
-		this.color = color;
+		setText(text);
+		setPosition(position);
+		setColor(color);
+	}
+
+	public UIText(Point position, Color color)
+	{
+		setPosition(position);
+		setColor(color);
 	}
 
 	public void setText(String text)
@@ -23,14 +30,14 @@ public class UIText implements Drawable
 		stringBuilder.replace(0, stringBuilder.length(), text);
 	}
 
-	public void setX(int x)
+	public void setPosition(Point position)
 	{
-		position.x = x;
+		this.position = position;
 	}
 
-	public void setY(int y)
+	public void setColor(Color color)
 	{
-		position.y = y;
+		this.color = color;
 	}
 
 	public boolean isVisible()
