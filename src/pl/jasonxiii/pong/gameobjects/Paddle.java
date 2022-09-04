@@ -54,30 +54,26 @@ public class Paddle extends GameObject implements Updatable, Drawable, KeyListen
 	@Override
 	public void keyPressed(KeyEvent ke)
 	{
-		int code = ke.getKeyCode();
-
-		if(code == input.upMovementCode() && !isMovingUp)
-		{
-			isMovingUp = true;
-		}
-		else if(code == input.downMovementCode() && !isMovingDown)
-		{
-			isMovingDown = true;
-		}
+		controlInput(ke, true);
 	}
 
 	@Override
 	public void keyReleased(KeyEvent ke)
 	{
+		controlInput(ke, false);
+	}
+
+	private void controlInput(KeyEvent ke, boolean enable)
+	{
 		int code = ke.getKeyCode();
 
-		if(code == input.upMovementCode() && isMovingUp)
+		if(code == input.upMovementCode() && isMovingUp != enable)
 		{
-			isMovingUp = false;
+			isMovingUp = enable;
 		}
-		else if(code == input.downMovementCode() && isMovingDown)
+		else if(code == input.downMovementCode() && isMovingDown != enable)
 		{
-			isMovingDown = false;
+			isMovingDown = enable;
 		}
 	}
 }
