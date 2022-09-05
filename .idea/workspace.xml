@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ea342c66-e60c-4706-9bb0-07a8f29b3208" name="Changes" comment="Moved code to separate package">
-      <change beforePath="$PROJECT_DIR$/src/pl/jasonxiii/pong/counters/Counter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/jasonxiii/pong/counters/Counter.java" afterDir="false" />
+    <list default="true" id="ea342c66-e60c-4706-9bb0-07a8f29b3208" name="Changes" comment="Added final modifiers to some methods">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pl/jasonxiii/pong/gameobjects/Ball.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/jasonxiii/pong/gameobjects/Ball.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pl/jasonxiii/pong/gameobjects/GameObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/jasonxiii/pong/gameobjects/GameObject.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -99,13 +101,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1662027905581</updated>
-    </task>
-    <task id="LOCAL-00041" summary="Removed parameters from Ball class constructor">
-      <created>1662191040491</created>
-      <option name="number" value="00041" />
-      <option name="presentableId" value="LOCAL-00041" />
-      <option name="project" value="LOCAL" />
-      <updated>1662191040491</updated>
     </task>
     <task id="LOCAL-00042" summary="Added Counter class">
       <created>1662191352732</created>
@@ -443,7 +438,14 @@
       <option name="project" value="LOCAL" />
       <updated>1662369967132</updated>
     </task>
-    <option name="localTasksCounter" value="90" />
+    <task id="LOCAL-00090" summary="Added final modifiers to some methods">
+      <created>1662370007310</created>
+      <option name="number" value="00090" />
+      <option name="presentableId" value="LOCAL-00090" />
+      <option name="project" value="LOCAL" />
+      <updated>1662370007310</updated>
+    </task>
+    <option name="localTasksCounter" value="91" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -458,7 +460,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Centered position of UI texts" />
     <MESSAGE value="Replaced constant with player score getter" />
     <MESSAGE value="Added constants for UI text colors" />
     <MESSAGE value="Merged code controlling paddle movement by input" />
@@ -483,7 +484,8 @@
     <MESSAGE value="Added a generic type to Counter class" />
     <MESSAGE value="Added DelayTimerCounter class" />
     <MESSAGE value="Moved code to separate package" />
-    <option name="LAST_COMMIT_MESSAGE" value="Moved code to separate package" />
+    <MESSAGE value="Added final modifiers to some methods" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added final modifiers to some methods" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

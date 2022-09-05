@@ -97,7 +97,7 @@ public class Ball extends GameObject implements Updatable, Drawable, Collidable
 
 	private void onMoveOutsideField()
 	{
-		resetPosition();
+		setPosition(Constants.BALL_INITIAL_X, Constants.BALL_INITIAL_Y);
 		randomiseDirection();
 		delayTimer.setTo(Constants.BALL_INITIAL_DELAY_TIMER);
 		resetMovementSpeed();
@@ -159,11 +159,5 @@ public class Ball extends GameObject implements Updatable, Drawable, Collidable
 	{
 		directionX = Math.random() < 0.5 ? -1 : 1;
 		directionY = Math.random() < 0.5 ? -1 : 1;
-	}
-
-	private void resetPosition()
-	{
-		position.x = Constants.BALL_INITIAL_X;
-		position.y = Constants.BALL_INITIAL_Y;
 	}
 }

@@ -11,6 +11,11 @@ public abstract class GameObject
 		this.position = new Point(x, y);
 	}
 
+	public void setPosition(int x, int y)
+	{
+		position.setLocation(x, y);
+	}
+
 	public Point getPosition()
 	{
 		return position;
