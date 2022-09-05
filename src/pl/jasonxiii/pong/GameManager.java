@@ -1,5 +1,7 @@
 package pl.jasonxiii.pong;
 
+import pl.jasonxiii.pong.players.Player;
+
 public enum GameManager
 {
 	INSTANCE;
@@ -22,23 +24,13 @@ public enum GameManager
 		return board;
 	}
 
-	public void increaseScoreToPlayerOne()
+	public void increasePlayerScore(Player player)
 	{
-		board.playerOne().increaseScore();
+		player.increaseScore();
 
 		if(isOver())
 		{
-			ui.setPlayerWonText("PLAYER 1 WON!");
-		}
-	}
-
-	public void increaseScoreToPlayerTwo()
-	{
-		board.playerTwo().increaseScore();
-
-		if(isOver())
-		{
-			ui.setPlayerWonText("PLAYER 2 WON!");
+			ui.setPlayerWonText(String.format("PLAYER %d WON!", player.getNumber()));
 		}
 	}
 

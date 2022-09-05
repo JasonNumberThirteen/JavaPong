@@ -11,4 +11,10 @@ public class PlayerOne extends Player
 	{
 		super(Constants.PADDLE_WIDTH, new PlayerInput(KeyEvent.VK_W, KeyEvent.VK_S), (Constants.GAME_WIDTH >> 1) - 48);
 	}
+
+	@Override
+	public int getNumber()
+	{
+		return 1;
+	}
 }

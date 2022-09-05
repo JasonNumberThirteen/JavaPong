@@ -40,4 +40,9 @@ public class Player
 	{
 		return scoreText;
 	}
+
+	public int getNumber()
+	{
+		return 0;
+	}
 }

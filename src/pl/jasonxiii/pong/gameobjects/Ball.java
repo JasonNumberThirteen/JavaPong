@@ -72,12 +72,12 @@ public class Ball extends GameObject implements Updatable, Drawable, Collidable
 
 		if(reachedRightEdge())
 		{
-			gm.increaseScoreToPlayerOne();
+			gm.increasePlayerScore(gm.getBoard().playerOne());
 			onMoveOutsideField();
 		}
 		else if(reachedLeftEdge())
 		{
-			gm.increaseScoreToPlayerTwo();
+			gm.increasePlayerScore(gm.getBoard().playerTwo());
 			onMoveOutsideField();
 		}
 	}
