@@ -1,6 +1,7 @@
 package pl.jasonxiii.pong.gameobjects;
 
 import pl.jasonxiii.pong.*;
+import pl.jasonxiii.pong.colliders.BoxCollider;
 import pl.jasonxiii.pong.counters.FloatCounter;
 import pl.jasonxiii.pong.counters.IntegerCounter;
 import pl.jasonxiii.pong.interfaces.Collidable;

@@ -1,4 +1,4 @@
-package pl.jasonxiii.pong;
+package pl.jasonxiii.pong.colliders;
 
 import pl.jasonxiii.pong.gameobjects.GameObject;
 import pl.jasonxiii.pong.interfaces.Collidable;
