@@ -10,8 +10,8 @@ import java.awt.*;
 public class Ball extends GameObject implements Updatable, Drawable, Collidable
 {
 	private int directionX, directionY, movementSpeed;
-	private float delayTimer;
 
+	private final DelayTimerCounter delayTimer = new DelayTimerCounter(0f);
 	private final BoxCollider collider = new BoxCollider(this, new Rectangle(position.x, position.y, Constants.BALL_RADIUS, Constants.BALL_RADIUS));
 
 	public Ball()
@@ -32,7 +32,7 @@ public class Ball extends GameObject implements Updatable, Drawable, Collidable
 		}
 		else
 		{
-			decreaseDelayTimer(delta);
+			delayTimer.decreaseBy((float)delta);
 		}
 	}
 
@@ -98,13 +98,13 @@ public class Ball extends GameObject implements Updatable, Drawable, Collidable
 	{
 		resetPosition();
 		randomiseDirection();
-		resetDelayTimer();
+		delayTimer.setTo(Constants.BALL_INITIAL_DELAY_TIMER);
 		resetMovementSpeed();
 	}
 
 	private boolean canMove()
 	{
-		return delayTimer <= 0;
+		return delayTimer.getValue() <= 0;
 	}
 
 	private boolean isCollidingWithVerticalEdge()
@@ -164,15 +164,5 @@ public class Ball extends GameObject implements Updatable, Drawable, Collidable
 	{
 		position.x = Constants.BALL_INITIAL_X;
 		position.y = Constants.BALL_INITIAL_Y;
-	}
-
-	private void resetDelayTimer()
-	{
-		delayTimer = Constants.BALL_INITIAL_DELAY_TIMER;
-	}
-
-	private void decreaseDelayTimer(double delta)
-	{
-		delayTimer -= delta;
 	}
 }

@@ -9,6 +9,11 @@ public abstract class Counter<T extends Number>
 		this.value = value;
 	}
 
+	public void setTo(T value)
+	{
+		this.value = value;
+	}
+
 	public T getValue()
 	{
 		return value;
