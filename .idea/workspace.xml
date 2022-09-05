@@ -1,12 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ea342c66-e60c-4706-9bb0-07a8f29b3208" name="Changes" comment="Moved code to separate package">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pl/jasonxiii/pong/colliders/BoxCollider.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/jasonxiii/pong/colliders/BoxCollider.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pl/jasonxiii/pong/colliders/Collider.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/jasonxiii/pong/colliders/Collider.java" afterDir="false" />
+    <list default="true" id="ea342c66-e60c-4706-9bb0-07a8f29b3208" name="Changes" comment="Optimised methods for collision detection between game objects">
       <change beforePath="$PROJECT_DIR$/src/pl/jasonxiii/pong/gameobjects/Ball.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/jasonxiii/pong/gameobjects/Ball.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pl/jasonxiii/pong/gameobjects/Paddle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/jasonxiii/pong/gameobjects/Paddle.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -103,13 +99,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1662027905581</updated>
-    </task>
-    <task id="LOCAL-00047" summary="Modified UIText class">
-      <created>1662193485937</created>
-      <option name="number" value="00047" />
-      <option name="presentableId" value="LOCAL-00047" />
-      <option name="project" value="LOCAL" />
-      <updated>1662193485937</updated>
     </task>
     <task id="LOCAL-00048" summary="Modified UIText class">
       <created>1662193766348</created>
@@ -447,7 +436,14 @@
       <option name="project" value="LOCAL" />
       <updated>1662370453615</updated>
     </task>
-    <option name="localTasksCounter" value="96" />
+    <task id="LOCAL-00096" summary="Optimised methods for collision detection between game objects">
+      <created>1662370989530</created>
+      <option name="number" value="00096" />
+      <option name="presentableId" value="LOCAL-00096" />
+      <option name="project" value="LOCAL" />
+      <updated>1662370989530</updated>
+    </task>
+    <option name="localTasksCounter" value="97" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -462,7 +458,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Updated README file" />
     <MESSAGE value="Added delta time parameter to update method" />
     <MESSAGE value="Added delay timer to the ball" />
     <MESSAGE value="Added collision detection between the ball and the paddles" />
@@ -487,7 +482,8 @@
     <MESSAGE value="Renamed DelayTimerCounter class to FloatCounter" />
     <MESSAGE value="Replaced integer with IntegerCounter instance" />
     <MESSAGE value="Moved code to separate package" />
-    <option name="LAST_COMMIT_MESSAGE" value="Moved code to separate package" />
+    <MESSAGE value="Optimised methods for collision detection between game objects" />
+    <option name="LAST_COMMIT_MESSAGE" value="Optimised methods for collision detection between game objects" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

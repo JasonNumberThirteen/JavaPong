@@ -126,20 +126,6 @@ public class Ball extends GameObject implements Updatable, Drawable, Collidable
 		return position.x >= Constants.GAME_WIDTH;
 	}
 
-	/*
-	private boolean isCollidingWith(Collidable c)
-	{
-		if(c.getClass() == Paddle.class)
-		{
-			Paddle paddle = (Paddle)c;
-
-			return paddle.collisionBox().intersects(collider.collisionBox());
-		}
-
-		return false;
-	}
-	*/
-
 	private void deflectInXAxis()
 	{
 		directionX = -directionX;
