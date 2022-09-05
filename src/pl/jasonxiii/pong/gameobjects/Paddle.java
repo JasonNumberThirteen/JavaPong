@@ -47,13 +47,15 @@ public class Paddle extends GameObject implements Updatable, Drawable, Collidabl
 	@Override
 	public void keyPressed(KeyEvent ke)
 	{
-		input.controlInput(ke, true);
+		input.setKeyEvent(ke);
+		input.controlInput(true);
 	}
 
 	@Override
 	public void keyReleased(KeyEvent ke)
 	{
-		input.controlInput(ke, false);
+		input.setKeyEvent(ke);
+		input.controlInput(false);
 	}
 
 	private void move(double delta)

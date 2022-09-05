@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ea342c66-e60c-4706-9bb0-07a8f29b3208" name="Changes" comment="Renamed PlayerInput class to PlayerKeyboardInput" />
+    <list default="true" id="ea342c66-e60c-4706-9bb0-07a8f29b3208" name="Changes" comment="Renamed KeyboardInput class to KeyboardInputListener">
+      <change afterPath="$PROJECT_DIR$/src/pl/jasonxiii/pong/PlayerInput.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pl/jasonxiii/pong/PlayerKeyboardInput.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/jasonxiii/pong/PlayerKeyboardInput.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pl/jasonxiii/pong/gameobjects/Paddle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/jasonxiii/pong/gameobjects/Paddle.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -97,13 +102,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1662027905581</updated>
-    </task>
-    <task id="LOCAL-00053" summary="Modified parameters of GameBoard record constructor">
-      <created>1662196243901</created>
-      <option name="number" value="00053" />
-      <option name="presentableId" value="LOCAL-00053" />
-      <option name="project" value="LOCAL" />
-      <updated>1662196243901</updated>
     </task>
     <task id="LOCAL-00054" summary="Added GameManager class">
       <created>1662196390166</created>
@@ -441,7 +439,14 @@
       <option name="project" value="LOCAL" />
       <updated>1662372239175</updated>
     </task>
-    <option name="localTasksCounter" value="102" />
+    <task id="LOCAL-00102" summary="Renamed KeyboardInput class to KeyboardInputListener">
+      <created>1662372819433</created>
+      <option name="number" value="00102" />
+      <option name="presentableId" value="LOCAL-00102" />
+      <option name="project" value="LOCAL" />
+      <updated>1662372819433</updated>
+    </task>
+    <option name="localTasksCounter" value="103" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -456,7 +461,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added growth of the ball speed per deflect from paddle" />
     <MESSAGE value="Added a constant for initial delay timer of the ball" />
     <MESSAGE value="Optimised Ball class" />
     <MESSAGE value="Optimised Paddle class" />
@@ -481,7 +485,8 @@
     <MESSAGE value="Merged two similar methods to one" />
     <MESSAGE value="Added a member variable for player number" />
     <MESSAGE value="Renamed PlayerInput class to PlayerKeyboardInput" />
-    <option name="LAST_COMMIT_MESSAGE" value="Renamed PlayerInput class to PlayerKeyboardInput" />
+    <MESSAGE value="Renamed KeyboardInput class to KeyboardInputListener" />
+    <option name="LAST_COMMIT_MESSAGE" value="Renamed KeyboardInput class to KeyboardInputListener" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

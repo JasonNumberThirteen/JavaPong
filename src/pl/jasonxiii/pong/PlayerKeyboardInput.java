@@ -2,12 +2,12 @@ package pl.jasonxiii.pong;
 
 import java.awt.event.KeyEvent;
 
-public class PlayerKeyboardInput
+public class PlayerKeyboardInput extends PlayerInput
 {
 	private final int upMovementCode;
 	private final int downMovementCode;
 
-	private boolean isMovingUp, isMovingDown;
+	private KeyEvent keyEvent;
 
 	public PlayerKeyboardInput(int upMovementCode, int downMovementCode)
 	{
@@ -15,37 +15,20 @@ public class PlayerKeyboardInput
 		this.downMovementCode = downMovementCode;
 	}
 
-	public void controlInput(KeyEvent ke, boolean enable)
+	public void setKeyEvent(KeyEvent ke)
 	{
-		int code = ke.getKeyCode();
-
-		if(pressedMovingUpKey(code, enable))
-		{
-			isMovingUp = enable;
-		}
-		else if(pressedMovingDownKey(code, enable))
-		{
-			isMovingDown = enable;
-		}
+		keyEvent = ke;
 	}
 
-	public boolean isMovingUp()
+	@Override
+	public boolean triggeredMovingUp(boolean enable)
 	{
-		return isMovingUp;
+		return keyEvent.getKeyCode() == upMovementCode && isMovingUp() != enable;
 	}
 
-	public boolean isMovingDown()
+	@Override
+	public boolean triggeredMovingDown(boolean enable)
 	{
-		return isMovingDown;
-	}
-
-	private boolean pressedMovingUpKey(int code, boolean enable)
-	{
-		return code == upMovementCode && isMovingUp != enable;
-	}
-
-	private boolean pressedMovingDownKey(int code, boolean enable)
-	{
-		return code == downMovementCode && isMovingDown != enable;
+		return keyEvent.getKeyCode() == downMovementCode && isMovingDown() != enable;
 	}
 }
