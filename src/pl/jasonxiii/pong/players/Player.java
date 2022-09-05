@@ -13,11 +13,18 @@ public class Player
 	private final Paddle paddle;
 	private final IntegerCounter score = new IntegerCounter(0);
 	private final ScoreText scoreText;
+	private final int number;
 
-	public Player(int x, PlayerInput input, int textXPosition)
+	public Player(int x, PlayerInput input, int textXPosition, int number)
 	{
 		paddle = new Paddle(x, input);
 		scoreText = new ScoreText(score.getValue(), new Point(textXPosition, Constants.SCORE_TEXT_Y));
+		this.number = number;
+	}
+
+	public int getNumber()
+	{
+		return number;
 	}
 
 	public void increaseScore()
@@ -39,10 +46,5 @@ public class Player
 	public ScoreText getScoreText()
 	{
 		return scoreText;
-	}
-
-	public int getNumber()
-	{
-		return 0;
 	}
 }
