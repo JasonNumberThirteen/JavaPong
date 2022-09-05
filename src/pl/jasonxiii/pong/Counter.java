@@ -11,12 +11,12 @@ public class Counter
 
 	public void increaseBy(int n)
 	{
-		value += n;
+		this.value += n;
 	}
 
 	public void decreaseBy(int n)
 	{
-		value -= n;
+		this.value -= n;
 	}
 
 	public int getValue()
