@@ -2,6 +2,8 @@ package pl.jasonxiii.pong.window;
 
 import pl.jasonxiii.pong.*;
 import pl.jasonxiii.pong.gameobjects.Ball;
+import pl.jasonxiii.pong.inputlisteners.InputListener;
+import pl.jasonxiii.pong.inputlisteners.KeyboardInputListener;
 import pl.jasonxiii.pong.interfaces.Updatable;
 import pl.jasonxiii.pong.players.Player;
 import pl.jasonxiii.pong.players.PlayerOne;
