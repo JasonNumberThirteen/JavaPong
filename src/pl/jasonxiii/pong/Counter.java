@@ -1,26 +1,19 @@
 package pl.jasonxiii.pong;
 
-public class Counter
+public abstract class Counter<T extends Number>
 {
-	private int value;
+	protected T value;
 
-	public Counter(int value)
+	public Counter(T value)
 	{
 		this.value = value;
 	}
 
-	public void increaseBy(int n)
-	{
-		this.value += n;
-	}
-
-	public void decreaseBy(int n)
-	{
-		this.value -= n;
-	}
-
-	public int getValue()
+	public T getValue()
 	{
 		return value;
 	}
+
+	public abstract void increaseBy(T n);
+	public abstract void decreaseBy(T n);
 }
