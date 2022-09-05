@@ -86,7 +86,7 @@ public class Ball extends GameObject implements Updatable, Drawable, Collidable
 	{
 		GameBoard gb = GameManager.INSTANCE.getBoard();
 
-		if(isCollidingWith(gb.playerOne().getPaddle()) || isCollidingWith(gb.playerTwo().getPaddle()))
+		if(collider.isCollidingWith(gb.playerOne().getPaddle().getCollider()) || collider.isCollidingWith(gb.playerTwo().getPaddle().getCollider()))
 		{
 			onCollisionWithPaddle();
 		}
@@ -126,6 +126,7 @@ public class Ball extends GameObject implements Updatable, Drawable, Collidable
 		return position.x >= Constants.GAME_WIDTH;
 	}
 
+	/*
 	private boolean isCollidingWith(Collidable c)
 	{
 		if(c.getClass() == Paddle.class)
@@ -137,6 +138,7 @@ public class Ball extends GameObject implements Updatable, Drawable, Collidable
 
 		return false;
 	}
+	*/
 
 	private void deflectInXAxis()
 	{
