@@ -5,11 +5,11 @@ import java.awt.event.KeyListener;
 import java.util.ArrayList;
 import java.util.Arrays;
 
-public class KeyboardInput implements KeyListener
+public class KeyboardInputListener implements KeyListener
 {
 	private final ArrayList<KeyListener> listeners = new ArrayList<>();
 
-	public KeyboardInput(KeyListener... listeners)
+	public KeyboardInputListener(KeyListener... listeners)
 	{
 		this.listeners.addAll(Arrays.asList(listeners));
 	}

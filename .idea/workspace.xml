@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ea342c66-e60c-4706-9bb0-07a8f29b3208" name="Changes" comment="Added a member variable for player number">
-      <change afterPath="$PROJECT_DIR$/src/pl/jasonxiii/pong/Input.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="ea342c66-e60c-4706-9bb0-07a8f29b3208" name="Changes" comment="Renamed PlayerInput class to PlayerKeyboardInput" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -100,13 +97,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1662027905581</updated>
-    </task>
-    <task id="LOCAL-00052" summary="Moved code to separate package">
-      <created>1662195706704</created>
-      <option name="number" value="00052" />
-      <option name="presentableId" value="LOCAL-00052" />
-      <option name="project" value="LOCAL" />
-      <updated>1662195706704</updated>
     </task>
     <task id="LOCAL-00053" summary="Modified parameters of GameBoard record constructor">
       <created>1662196243901</created>
@@ -444,7 +434,14 @@
       <option name="project" value="LOCAL" />
       <updated>1662371832652</updated>
     </task>
-    <option name="localTasksCounter" value="101" />
+    <task id="LOCAL-00101" summary="Renamed PlayerInput class to PlayerKeyboardInput">
+      <created>1662372239175</created>
+      <option name="number" value="00101" />
+      <option name="presentableId" value="LOCAL-00101" />
+      <option name="project" value="LOCAL" />
+      <updated>1662372239175</updated>
+    </task>
+    <option name="localTasksCounter" value="102" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -459,7 +456,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Did movement speed of objects independent of frame rate" />
     <MESSAGE value="Added growth of the ball speed per deflect from paddle" />
     <MESSAGE value="Added a constant for initial delay timer of the ball" />
     <MESSAGE value="Optimised Ball class" />
@@ -484,7 +480,8 @@
     <MESSAGE value="Removed commented code" />
     <MESSAGE value="Merged two similar methods to one" />
     <MESSAGE value="Added a member variable for player number" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added a member variable for player number" />
+    <MESSAGE value="Renamed PlayerInput class to PlayerKeyboardInput" />
+    <option name="LAST_COMMIT_MESSAGE" value="Renamed PlayerInput class to PlayerKeyboardInput" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
