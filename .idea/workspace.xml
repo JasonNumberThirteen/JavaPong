@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ea342c66-e60c-4706-9bb0-07a8f29b3208" name="Changes" comment="Moved code to separate package">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pl/jasonxiii/pong/GameRenderer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/jasonxiii/pong/GameRenderer.java" afterDir="false" />
+    <list default="true" id="ea342c66-e60c-4706-9bb0-07a8f29b3208" name="Changes" comment="Replaced array of drawables with ArrayList">
+      <change beforePath="$PROJECT_DIR$/src/pl/jasonxiii/pong/window/GamePanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/jasonxiii/pong/window/GamePanel.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -100,13 +99,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1662027905581</updated>
-    </task>
-    <task id="LOCAL-00058" summary="Replaced GameManager class with enum singleton">
-      <created>1662198644456</created>
-      <option name="number" value="00058" />
-      <option name="presentableId" value="LOCAL-00058" />
-      <option name="project" value="LOCAL" />
-      <updated>1662198644456</updated>
     </task>
     <task id="LOCAL-00059" summary="Added player won text display when the game is over">
       <created>1662198719557</created>
@@ -444,7 +436,14 @@
       <option name="project" value="LOCAL" />
       <updated>1662403218124</updated>
     </task>
-    <option name="localTasksCounter" value="107" />
+    <task id="LOCAL-00107" summary="Replaced array of drawables with ArrayList">
+      <created>1662403691312</created>
+      <option name="number" value="00107" />
+      <option name="presentableId" value="LOCAL-00107" />
+      <option name="project" value="LOCAL" />
+      <updated>1662403691313</updated>
+    </task>
+    <option name="localTasksCounter" value="108" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -459,7 +458,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Optimised Paddle class" />
     <MESSAGE value="Added a constant for Y position of player score texts" />
     <MESSAGE value="Added overloading of UIText class constructor" />
     <MESSAGE value="Optimised GamePanel class" />
@@ -484,7 +482,8 @@
     <MESSAGE value="Added PlayerInput class" />
     <MESSAGE value="Added InputListener class" />
     <MESSAGE value="Moved code to separate package" />
-    <option name="LAST_COMMIT_MESSAGE" value="Moved code to separate package" />
+    <MESSAGE value="Replaced array of drawables with ArrayList" />
+    <option name="LAST_COMMIT_MESSAGE" value="Replaced array of drawables with ArrayList" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

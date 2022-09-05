@@ -17,7 +17,6 @@ public class GamePanel extends JPanel implements Runnable, Updatable
 	private final Player playerA = new PlayerOne();
 	private final Player playerB = new PlayerTwo();
 	private final Ball ball = new Ball();
-	private final InputListener inputListener = new KeyboardInputListener(playerA.getPaddle(), playerB.getPaddle());
 	private final GameUI ui = new GameUI(playerA.getScoreText(), playerB.getScoreText());
 	private final GameBoard board = new GameBoard(playerA, playerB, ball);
 	private final GameRenderer renderer = new GameRenderer(playerA.getPaddle(), playerB.getPaddle(), ball, ui);
@@ -30,7 +29,7 @@ public class GamePanel extends JPanel implements Runnable, Updatable
 		setPreferredSize(new Dimension(Constants.GAME_WIDTH, Constants.GAME_HEIGHT));
 		setFocusable(true);
 		setFocusTraversalKeysEnabled(false);
-		inputListener.enable(this);
+		enableInput();
 		assignDependenciesToGameManager();
 		start();
 	}
@@ -71,6 +70,13 @@ public class GamePanel extends JPanel implements Runnable, Updatable
 	{
 		super.paintComponent(g);
 		renderer.draw(g);
+	}
+
+	private void enableInput()
+	{
+		InputListener inputListener = new KeyboardInputListener(playerA.getPaddle(), playerB.getPaddle());
+
+		inputListener.enable(this);
 	}
 
 	private void assignDependenciesToGameManager()
