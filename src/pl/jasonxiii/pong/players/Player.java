@@ -2,7 +2,7 @@ package pl.jasonxiii.pong.players;
 
 import pl.jasonxiii.pong.Constants;
 import pl.jasonxiii.pong.PlayerInput;
-import pl.jasonxiii.pong.counters.ScoreCounter;
+import pl.jasonxiii.pong.counters.IntegerCounter;
 import pl.jasonxiii.pong.uitexts.ScoreText;
 import pl.jasonxiii.pong.gameobjects.Paddle;
 
@@ -11,7 +11,7 @@ import java.awt.*;
 public class Player
 {
 	private final Paddle paddle;
-	private final ScoreCounter score = new ScoreCounter(0);
+	private final IntegerCounter score = new IntegerCounter(0);
 	private final ScoreText scoreText;
 
 	public Player(int x, PlayerInput input, int textXPosition)

@@ -1,8 +1,8 @@
 package pl.jasonxiii.pong.counters;
 
-public class ScoreCounter extends Counter<Integer>
+public class IntegerCounter extends Counter<Integer>
 {
-	public ScoreCounter(int value)
+	public IntegerCounter(int value)
 	{
 		super(value);
 	}
