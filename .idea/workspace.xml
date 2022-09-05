@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ea342c66-e60c-4706-9bb0-07a8f29b3208" name="Changes" comment="Added final modifiers to some methods">
+    <list default="true" id="ea342c66-e60c-4706-9bb0-07a8f29b3208" name="Changes" comment="Renamed DelayTimerCounter class to FloatCounter">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pl/jasonxiii/pong/gameobjects/Ball.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/jasonxiii/pong/gameobjects/Ball.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pl/jasonxiii/pong/gameobjects/GameObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/jasonxiii/pong/gameobjects/GameObject.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -101,27 +100,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1662027905581</updated>
-    </task>
-    <task id="LOCAL-00042" summary="Added Counter class">
-      <created>1662191352732</created>
-      <option name="number" value="00042" />
-      <option name="presentableId" value="LOCAL-00042" />
-      <option name="project" value="LOCAL" />
-      <updated>1662191352732</updated>
-    </task>
-    <task id="LOCAL-00043" summary="Moved code to separate packages">
-      <created>1662192010635</created>
-      <option name="number" value="00043" />
-      <option name="presentableId" value="LOCAL-00043" />
-      <option name="project" value="LOCAL" />
-      <updated>1662192010635</updated>
-    </task>
-    <task id="LOCAL-00044" summary="Added GameRenderer class">
-      <created>1662192316859</created>
-      <option name="number" value="00044" />
-      <option name="presentableId" value="LOCAL-00044" />
-      <option name="project" value="LOCAL" />
-      <updated>1662192316859</updated>
     </task>
     <task id="LOCAL-00045" summary="Added GameBoard record">
       <created>1662193001578</created>
@@ -445,7 +423,28 @@
       <option name="project" value="LOCAL" />
       <updated>1662370007310</updated>
     </task>
-    <option name="localTasksCounter" value="91" />
+    <task id="LOCAL-00091" summary="Added a method for setting position to game object">
+      <created>1662370179075</created>
+      <option name="number" value="00091" />
+      <option name="presentableId" value="LOCAL-00091" />
+      <option name="project" value="LOCAL" />
+      <updated>1662370179075</updated>
+    </task>
+    <task id="LOCAL-00092" summary="Renamed ScoreCounter class to IntegerCounter">
+      <created>1662370239283</created>
+      <option name="number" value="00092" />
+      <option name="presentableId" value="LOCAL-00092" />
+      <option name="project" value="LOCAL" />
+      <updated>1662370239283</updated>
+    </task>
+    <task id="LOCAL-00093" summary="Renamed DelayTimerCounter class to FloatCounter">
+      <created>1662370262967</created>
+      <option name="number" value="00093" />
+      <option name="presentableId" value="LOCAL-00093" />
+      <option name="project" value="LOCAL" />
+      <updated>1662370262967</updated>
+    </task>
+    <option name="localTasksCounter" value="94" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -460,9 +459,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Replaced constant with player score getter" />
-    <MESSAGE value="Added constants for UI text colors" />
-    <MESSAGE value="Merged code controlling paddle movement by input" />
     <MESSAGE value="Moved code controlling player input" />
     <MESSAGE value="Updated README file" />
     <MESSAGE value="Added delta time parameter to update method" />
@@ -485,7 +481,10 @@
     <MESSAGE value="Added DelayTimerCounter class" />
     <MESSAGE value="Moved code to separate package" />
     <MESSAGE value="Added final modifiers to some methods" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added final modifiers to some methods" />
+    <MESSAGE value="Added a method for setting position to game object" />
+    <MESSAGE value="Renamed ScoreCounter class to IntegerCounter" />
+    <MESSAGE value="Renamed DelayTimerCounter class to FloatCounter" />
+    <option name="LAST_COMMIT_MESSAGE" value="Renamed DelayTimerCounter class to FloatCounter" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

@@ -2,6 +2,7 @@ package pl.jasonxiii.pong.gameobjects;
 
 import pl.jasonxiii.pong.*;
 import pl.jasonxiii.pong.counters.FloatCounter;
+import pl.jasonxiii.pong.counters.IntegerCounter;
 import pl.jasonxiii.pong.interfaces.Collidable;
 import pl.jasonxiii.pong.interfaces.Drawable;
 import pl.jasonxiii.pong.interfaces.Updatable;
@@ -10,8 +11,9 @@ import java.awt.*;
 
 public class Ball extends GameObject implements Updatable, Drawable, Collidable
 {
-	private int directionX, directionY, movementSpeed;
+	private int directionX, directionY;
 
+	private final IntegerCounter movementSpeed = new IntegerCounter(0);
 	private final FloatCounter delayTimer = new FloatCounter(0f);
 	private final BoxCollider collider = new BoxCollider(this, new Rectangle(position.x, position.y, Constants.BALL_RADIUS, Constants.BALL_RADIUS));
 
@@ -49,7 +51,7 @@ public class Ball extends GameObject implements Updatable, Drawable, Collidable
 
 	private void move(double delta)
 	{
-		int movementStep = (int)(movementSpeed*delta);
+		int movementStep = (int)(movementSpeed.getValue()*delta);
 
 		position.x += movementStep*directionX;
 		position.y += movementStep*directionY;
@@ -92,7 +94,7 @@ public class Ball extends GameObject implements Updatable, Drawable, Collidable
 	private void onCollisionWithPaddle()
 	{
 		deflectInXAxis();
-		increaseMovementSpeed();
+		movementSpeed.increaseBy(Constants.BALL_SPEED_INCREASE_PER_PADDLE_DEFLECT);
 	}
 
 	private void onMoveOutsideField()
@@ -100,7 +102,7 @@ public class Ball extends GameObject implements Updatable, Drawable, Collidable
 		setPosition(Constants.BALL_INITIAL_X, Constants.BALL_INITIAL_Y);
 		randomiseDirection();
 		delayTimer.setTo(Constants.BALL_INITIAL_DELAY_TIMER);
-		resetMovementSpeed();
+		movementSpeed.setTo(Constants.BALL_INITIAL_MOVEMENT_SPEED);
 	}
 
 	private boolean canMove()
@@ -143,16 +145,6 @@ public class Ball extends GameObject implements Updatable, Drawable, Collidable
 	private void deflectInYAxis()
 	{
 		directionY = -directionY;
-	}
-
-	private void resetMovementSpeed()
-	{
-		movementSpeed = Constants.BALL_INITIAL_MOVEMENT_SPEED;
-	}
-
-	private void increaseMovementSpeed()
-	{
-		movementSpeed += Constants.BALL_SPEED_INCREASE_PER_PADDLE_DEFLECT;
 	}
 
 	private void randomiseDirection()
