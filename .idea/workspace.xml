@@ -1,11 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ea342c66-e60c-4706-9bb0-07a8f29b3208" name="Changes" comment="Added a generic type to Counter class">
-      <change afterPath="$PROJECT_DIR$/src/pl/jasonxiii/pong/DelayTimerCounter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pl/jasonxiii/pong/Counter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/jasonxiii/pong/Counter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pl/jasonxiii/pong/gameobjects/Ball.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/jasonxiii/pong/gameobjects/Ball.java" afterDir="false" />
+    <list default="true" id="ea342c66-e60c-4706-9bb0-07a8f29b3208" name="Changes" comment="Moved code to separate package">
+      <change beforePath="$PROJECT_DIR$/src/pl/jasonxiii/pong/counters/Counter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/jasonxiii/pong/counters/Counter.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -102,20 +99,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1662027905581</updated>
-    </task>
-    <task id="LOCAL-00039" summary="Added a constant for paddle initial Y position">
-      <created>1662190573593</created>
-      <option name="number" value="00039" />
-      <option name="presentableId" value="LOCAL-00039" />
-      <option name="project" value="LOCAL" />
-      <updated>1662190573593</updated>
-    </task>
-    <task id="LOCAL-00040" summary="Added lists for updatable and drawable objects">
-      <created>1662190954086</created>
-      <option name="number" value="00040" />
-      <option name="presentableId" value="LOCAL-00040" />
-      <option name="project" value="LOCAL" />
-      <updated>1662190954086</updated>
     </task>
     <task id="LOCAL-00041" summary="Removed parameters from Ball class constructor">
       <created>1662191040491</created>
@@ -446,7 +429,21 @@
       <option name="project" value="LOCAL" />
       <updated>1662369705208</updated>
     </task>
-    <option name="localTasksCounter" value="88" />
+    <task id="LOCAL-00088" summary="Added DelayTimerCounter class">
+      <created>1662369935926</created>
+      <option name="number" value="00088" />
+      <option name="presentableId" value="LOCAL-00088" />
+      <option name="project" value="LOCAL" />
+      <updated>1662369935926</updated>
+    </task>
+    <task id="LOCAL-00089" summary="Moved code to separate package">
+      <created>1662369967132</created>
+      <option name="number" value="00089" />
+      <option name="presentableId" value="LOCAL-00089" />
+      <option name="project" value="LOCAL" />
+      <updated>1662369967132</updated>
+    </task>
+    <option name="localTasksCounter" value="90" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -461,8 +458,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Replaced players array with score text instances" />
-    <MESSAGE value="Added a text update when player has won the game" />
     <MESSAGE value="Centered position of UI texts" />
     <MESSAGE value="Replaced constant with player score getter" />
     <MESSAGE value="Added constants for UI text colors" />
@@ -486,7 +481,9 @@
     <MESSAGE value="Removed unnecessary this keywords" />
     <MESSAGE value="Added ScoreCounter class" />
     <MESSAGE value="Added a generic type to Counter class" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added a generic type to Counter class" />
+    <MESSAGE value="Added DelayTimerCounter class" />
+    <MESSAGE value="Moved code to separate package" />
+    <option name="LAST_COMMIT_MESSAGE" value="Moved code to separate package" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
