@@ -1,7 +1,7 @@
 package pl.jasonxiii.pong.gameobjects;
 
 import pl.jasonxiii.pong.Constants;
-import pl.jasonxiii.pong.PlayerKeyboardInput;
+import pl.jasonxiii.pong.playerinput.PlayerKeyboardInput;
 import pl.jasonxiii.pong.colliders.BoxCollider;
 import pl.jasonxiii.pong.interfaces.Collidable;
 import pl.jasonxiii.pong.interfaces.Drawable;

@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ea342c66-e60c-4706-9bb0-07a8f29b3208" name="Changes" comment="Renamed KeyboardInput class to KeyboardInputListener">
-      <change afterPath="$PROJECT_DIR$/src/pl/jasonxiii/pong/PlayerInput.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pl/jasonxiii/pong/PlayerKeyboardInput.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/jasonxiii/pong/PlayerKeyboardInput.java" afterDir="false" />
+    <list default="true" id="ea342c66-e60c-4706-9bb0-07a8f29b3208" name="Changes" comment="Added PlayerInput class">
+      <change beforePath="$PROJECT_DIR$/src/pl/jasonxiii/pong/PlayerInput.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/jasonxiii/pong/playerinput/PlayerInput.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pl/jasonxiii/pong/PlayerKeyboardInput.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/jasonxiii/pong/playerinput/PlayerKeyboardInput.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pl/jasonxiii/pong/gameobjects/Paddle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/jasonxiii/pong/gameobjects/Paddle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pl/jasonxiii/pong/players/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/jasonxiii/pong/players/Player.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pl/jasonxiii/pong/players/PlayerOne.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/jasonxiii/pong/players/PlayerOne.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pl/jasonxiii/pong/players/PlayerTwo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/jasonxiii/pong/players/PlayerTwo.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -102,13 +104,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1662027905581</updated>
-    </task>
-    <task id="LOCAL-00054" summary="Added GameManager class">
-      <created>1662196390166</created>
-      <option name="number" value="00054" />
-      <option name="presentableId" value="LOCAL-00054" />
-      <option name="project" value="LOCAL" />
-      <updated>1662196390166</updated>
     </task>
     <task id="LOCAL-00055" summary="Added events when the ball is outside the board">
       <created>1662197719833</created>
@@ -446,7 +441,14 @@
       <option name="project" value="LOCAL" />
       <updated>1662372819433</updated>
     </task>
-    <option name="localTasksCounter" value="103" />
+    <task id="LOCAL-00103" summary="Added PlayerInput class">
+      <created>1662402147480</created>
+      <option name="number" value="00103" />
+      <option name="presentableId" value="LOCAL-00103" />
+      <option name="project" value="LOCAL" />
+      <updated>1662402147480</updated>
+    </task>
+    <option name="localTasksCounter" value="104" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -461,7 +463,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added a constant for initial delay timer of the ball" />
     <MESSAGE value="Optimised Ball class" />
     <MESSAGE value="Optimised Paddle class" />
     <MESSAGE value="Added a constant for Y position of player score texts" />
@@ -486,7 +487,8 @@
     <MESSAGE value="Added a member variable for player number" />
     <MESSAGE value="Renamed PlayerInput class to PlayerKeyboardInput" />
     <MESSAGE value="Renamed KeyboardInput class to KeyboardInputListener" />
-    <option name="LAST_COMMIT_MESSAGE" value="Renamed KeyboardInput class to KeyboardInputListener" />
+    <MESSAGE value="Added PlayerInput class" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added PlayerInput class" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

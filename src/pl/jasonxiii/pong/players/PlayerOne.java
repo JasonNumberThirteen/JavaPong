@@ -1,7 +1,7 @@
 package pl.jasonxiii.pong.players;
 
 import pl.jasonxiii.pong.Constants;
-import pl.jasonxiii.pong.PlayerKeyboardInput;
+import pl.jasonxiii.pong.playerinput.PlayerKeyboardInput;
 
 import java.awt.event.KeyEvent;
 

@@ -1,4 +1,4 @@
-package pl.jasonxiii.pong;
+package pl.jasonxiii.pong.playerinput;
 
 import java.awt.event.KeyEvent;
 
