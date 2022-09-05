@@ -1,4 +1,4 @@
-package pl.jasonxiii.pong;
+package pl.jasonxiii.pong.counters;
 
 public class DelayTimerCounter extends Counter<Float>
 {

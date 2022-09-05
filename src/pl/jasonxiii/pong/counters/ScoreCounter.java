@@ -1,4 +1,4 @@
-package pl.jasonxiii.pong;
+package pl.jasonxiii.pong.counters;
 
 public class ScoreCounter extends Counter<Integer>
 {

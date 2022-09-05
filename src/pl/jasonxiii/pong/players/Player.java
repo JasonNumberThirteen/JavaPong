@@ -2,7 +2,7 @@ package pl.jasonxiii.pong.players;
 
 import pl.jasonxiii.pong.Constants;
 import pl.jasonxiii.pong.PlayerInput;
-import pl.jasonxiii.pong.ScoreCounter;
+import pl.jasonxiii.pong.counters.ScoreCounter;
 import pl.jasonxiii.pong.uitexts.ScoreText;
 import pl.jasonxiii.pong.gameobjects.Paddle;
 

@@ -1,4 +1,4 @@
-package pl.jasonxiii.pong;
+package pl.jasonxiii.pong.counters;
 
 public abstract class Counter<T extends Number>
 {
