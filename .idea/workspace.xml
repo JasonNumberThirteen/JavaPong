@@ -1,13 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ea342c66-e60c-4706-9bb0-07a8f29b3208" name="Changes" comment="Added PlayerInput class">
-      <change beforePath="$PROJECT_DIR$/src/pl/jasonxiii/pong/PlayerInput.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/jasonxiii/pong/playerinput/PlayerInput.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pl/jasonxiii/pong/PlayerKeyboardInput.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/jasonxiii/pong/playerinput/PlayerKeyboardInput.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pl/jasonxiii/pong/gameobjects/Paddle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/jasonxiii/pong/gameobjects/Paddle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pl/jasonxiii/pong/players/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/jasonxiii/pong/players/Player.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pl/jasonxiii/pong/players/PlayerOne.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/jasonxiii/pong/players/PlayerOne.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pl/jasonxiii/pong/players/PlayerTwo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/jasonxiii/pong/players/PlayerTwo.java" afterDir="false" />
+    <list default="true" id="ea342c66-e60c-4706-9bb0-07a8f29b3208" name="Changes" comment="Moved code to separate package">
+      <change afterPath="$PROJECT_DIR$/src/pl/jasonxiii/pong/InputListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pl/jasonxiii/pong/KeyboardInputListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/jasonxiii/pong/KeyboardInputListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pl/jasonxiii/pong/window/GamePanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/jasonxiii/pong/window/GamePanel.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -104,13 +102,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1662027905581</updated>
-    </task>
-    <task id="LOCAL-00055" summary="Added events when the ball is outside the board">
-      <created>1662197719833</created>
-      <option name="number" value="00055" />
-      <option name="presentableId" value="LOCAL-00055" />
-      <option name="project" value="LOCAL" />
-      <updated>1662197719833</updated>
     </task>
     <task id="LOCAL-00056" summary="Added score counters updating when player scores">
       <created>1662198017597</created>
@@ -448,7 +439,14 @@
       <option name="project" value="LOCAL" />
       <updated>1662402147480</updated>
     </task>
-    <option name="localTasksCounter" value="104" />
+    <task id="LOCAL-00104" summary="Moved code to separate package">
+      <created>1662402365483</created>
+      <option name="number" value="00104" />
+      <option name="presentableId" value="LOCAL-00104" />
+      <option name="project" value="LOCAL" />
+      <updated>1662402365483</updated>
+    </task>
+    <option name="localTasksCounter" value="105" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -480,7 +478,6 @@
     <MESSAGE value="Renamed ScoreCounter class to IntegerCounter" />
     <MESSAGE value="Renamed DelayTimerCounter class to FloatCounter" />
     <MESSAGE value="Replaced integer with IntegerCounter instance" />
-    <MESSAGE value="Moved code to separate package" />
     <MESSAGE value="Optimised methods for collision detection between game objects" />
     <MESSAGE value="Removed commented code" />
     <MESSAGE value="Merged two similar methods to one" />
@@ -488,7 +485,8 @@
     <MESSAGE value="Renamed PlayerInput class to PlayerKeyboardInput" />
     <MESSAGE value="Renamed KeyboardInput class to KeyboardInputListener" />
     <MESSAGE value="Added PlayerInput class" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added PlayerInput class" />
+    <MESSAGE value="Moved code to separate package" />
+    <option name="LAST_COMMIT_MESSAGE" value="Moved code to separate package" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

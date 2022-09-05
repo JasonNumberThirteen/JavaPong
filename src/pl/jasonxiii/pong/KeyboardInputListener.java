@@ -1,11 +1,12 @@
 package pl.jasonxiii.pong;
 
+import javax.swing.*;
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
 import java.util.ArrayList;
 import java.util.Arrays;
 
-public class KeyboardInputListener implements KeyListener
+public class KeyboardInputListener extends InputListener implements KeyListener
 {
 	private final ArrayList<KeyListener> listeners = new ArrayList<>();
 
@@ -30,5 +31,11 @@ public class KeyboardInputListener implements KeyListener
 	public void keyReleased(KeyEvent ke)
 	{
 		listeners.forEach(l -> l.keyReleased(ke));
+	}
+
+	@Override
+	public void enable(JPanel panel)
+	{
+		panel.addKeyListener(this);
 	}
 }
