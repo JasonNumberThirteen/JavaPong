@@ -1,24 +1,23 @@
 package pl.jasonxiii.pong.gameobjects;
 
 import pl.jasonxiii.pong.Constants;
-import pl.jasonxiii.pong.PlayerInput;
+import pl.jasonxiii.pong.PlayerKeyboardInput;
 import pl.jasonxiii.pong.colliders.BoxCollider;
 import pl.jasonxiii.pong.interfaces.Collidable;
 import pl.jasonxiii.pong.interfaces.Drawable;
 import pl.jasonxiii.pong.Methods;
 import pl.jasonxiii.pong.interfaces.Updatable;
 
-import javax.swing.*;
 import java.awt.*;
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
 
 public class Paddle extends GameObject implements Updatable, Drawable, Collidable, KeyListener
 {
-	private final PlayerInput input;
+	private final PlayerKeyboardInput input;
 	private final BoxCollider collider = new BoxCollider(this, new Rectangle(position.x, position.y, Constants.PADDLE_WIDTH, Constants.PADDLE_HEIGHT));
 
-	public Paddle(int x, PlayerInput input)
+	public Paddle(int x, PlayerKeyboardInput input)
 	{
 		super(x, Constants.PADDLE_INITIAL_Y);
 

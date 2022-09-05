@@ -2,14 +2,14 @@ package pl.jasonxiii.pong;
 
 import java.awt.event.KeyEvent;
 
-public class PlayerInput
+public class PlayerKeyboardInput
 {
 	private final int upMovementCode;
 	private final int downMovementCode;
 
 	private boolean isMovingUp, isMovingDown;
 
-	public PlayerInput(int upMovementCode, int downMovementCode)
+	public PlayerKeyboardInput(int upMovementCode, int downMovementCode)
 	{
 		this.upMovementCode = upMovementCode;
 		this.downMovementCode = downMovementCode;

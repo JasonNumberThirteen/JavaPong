@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ea342c66-e60c-4706-9bb0-07a8f29b3208" name="Changes" comment="Merged two similar methods to one">
+    <list default="true" id="ea342c66-e60c-4706-9bb0-07a8f29b3208" name="Changes" comment="Added a member variable for player number">
+      <change afterPath="$PROJECT_DIR$/src/pl/jasonxiii/pong/Input.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pl/jasonxiii/pong/players/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/jasonxiii/pong/players/Player.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pl/jasonxiii/pong/players/PlayerOne.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/jasonxiii/pong/players/PlayerOne.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pl/jasonxiii/pong/players/PlayerTwo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/jasonxiii/pong/players/PlayerTwo.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -102,20 +100,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1662027905581</updated>
-    </task>
-    <task id="LOCAL-00050" summary="Added ScoreText class">
-      <created>1662194595316</created>
-      <option name="number" value="00050" />
-      <option name="presentableId" value="LOCAL-00050" />
-      <option name="project" value="LOCAL" />
-      <updated>1662194595316</updated>
-    </task>
-    <task id="LOCAL-00051" summary="Added PlayerInput class">
-      <created>1662195037054</created>
-      <option name="number" value="00051" />
-      <option name="presentableId" value="LOCAL-00051" />
-      <option name="project" value="LOCAL" />
-      <updated>1662195037054</updated>
     </task>
     <task id="LOCAL-00052" summary="Moved code to separate package">
       <created>1662195706704</created>
@@ -446,7 +430,21 @@
       <option name="project" value="LOCAL" />
       <updated>1662371658836</updated>
     </task>
-    <option name="localTasksCounter" value="99" />
+    <task id="LOCAL-00099" summary="Added a member variable for player number">
+      <created>1662371822110</created>
+      <option name="number" value="00099" />
+      <option name="presentableId" value="LOCAL-00099" />
+      <option name="project" value="LOCAL" />
+      <updated>1662371822110</updated>
+    </task>
+    <task id="LOCAL-00100" summary="Added a member variable for player number">
+      <created>1662371832652</created>
+      <option name="number" value="00100" />
+      <option name="presentableId" value="LOCAL-00100" />
+      <option name="project" value="LOCAL" />
+      <updated>1662371832652</updated>
+    </task>
+    <option name="localTasksCounter" value="101" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -461,7 +459,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added collision detection between the ball and the paddles" />
     <MESSAGE value="Did movement speed of objects independent of frame rate" />
     <MESSAGE value="Added growth of the ball speed per deflect from paddle" />
     <MESSAGE value="Added a constant for initial delay timer of the ball" />
@@ -486,7 +483,8 @@
     <MESSAGE value="Optimised methods for collision detection between game objects" />
     <MESSAGE value="Removed commented code" />
     <MESSAGE value="Merged two similar methods to one" />
-    <option name="LAST_COMMIT_MESSAGE" value="Merged two similar methods to one" />
+    <MESSAGE value="Added a member variable for player number" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added a member variable for player number" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
