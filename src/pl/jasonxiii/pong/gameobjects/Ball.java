@@ -1,7 +1,7 @@
 package pl.jasonxiii.pong.gameobjects;
 
 import pl.jasonxiii.pong.*;
-import pl.jasonxiii.pong.counters.DelayTimerCounter;
+import pl.jasonxiii.pong.counters.FloatCounter;
 import pl.jasonxiii.pong.interfaces.Collidable;
 import pl.jasonxiii.pong.interfaces.Drawable;
 import pl.jasonxiii.pong.interfaces.Updatable;
@@ -12,7 +12,7 @@ public class Ball extends GameObject implements Updatable, Drawable, Collidable
 {
 	private int directionX, directionY, movementSpeed;
 
-	private final DelayTimerCounter delayTimer = new DelayTimerCounter(0f);
+	private final FloatCounter delayTimer = new FloatCounter(0f);
 	private final BoxCollider collider = new BoxCollider(this, new Rectangle(position.x, position.y, Constants.BALL_RADIUS, Constants.BALL_RADIUS));
 
 	public Ball()

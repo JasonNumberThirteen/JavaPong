@@ -1,8 +1,8 @@
 package pl.jasonxiii.pong.counters;
 
-public class DelayTimerCounter extends Counter<Float>
+public class FloatCounter extends Counter<Float>
 {
-	public DelayTimerCounter(Float value)
+	public FloatCounter(Float value)
 	{
 		super(value);
 	}
