@@ -4,6 +4,7 @@ import pl.jasonxiii.pong.gameobjects.GameObject;
 import pl.jasonxiii.pong.interfaces.Collidable;
 
 import java.awt.*;
+import java.awt.geom.Area;
 
 public abstract class Collider<T extends Shape> implements Collidable
 {
@@ -17,7 +18,23 @@ public abstract class Collider<T extends Shape> implements Collidable
 	}
 
 	public abstract void updateColliderPosition();
-	public abstract <U extends Collider<?>> boolean isCollidingWith(U collider);
+
+	public final <U extends Collider<?>> boolean isCollidingWith(U collider)
+	{
+		if(collider instanceof BoxCollider bc)
+		{
+			return getCollider().intersects(bc.getCollider());
+		}
+		else if(collider instanceof CircleCollider cc)
+		{
+			Area caa = new Area(getCollider());
+			Area cab = new Area(cc.getCollider());
+
+			return caa.intersects(cab.getBounds());
+		}
+
+		return false;
+	}
 
 	public final T getCollider()
 	{

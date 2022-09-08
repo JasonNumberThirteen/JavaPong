@@ -16,15 +16,4 @@ public class BoxCollider extends Collider<Rectangle>
 	{
 		collider.setLocation(object.getPosition());
 	}
-
-	@Override
-	public <U extends Collider<?>> boolean isCollidingWith(U collider)
-	{
-		if(collider instanceof BoxCollider bc)
-		{
-			return bc.getCollider().intersects(getCollider());
-		}
-
-		return false;
-	}
 }
