@@ -1,8 +1,6 @@
 package pl.jasonxiii.pong.colliders;
 
 import pl.jasonxiii.pong.gameobjects.GameObject;
-import pl.jasonxiii.pong.gameobjects.Paddle;
-import pl.jasonxiii.pong.interfaces.Collidable;
 
 import java.awt.*;
 
@@ -11,13 +9,6 @@ public class BoxCollider extends Collider<Rectangle>
 	public BoxCollider(GameObject object, Rectangle collider)
 	{
 		super(object, collider);
-	}
-
-	public Rectangle collisionBox()
-	{
-		updateColliderPosition();
-
-		return collider;
 	}
 
 	@Override
@@ -31,7 +22,7 @@ public class BoxCollider extends Collider<Rectangle>
 	{
 		if(collider instanceof BoxCollider bc)
 		{
-			return bc.collisionBox().intersects(collisionBox());
+			return bc.getCollider().intersects(getCollider());
 		}
 
 		return false;
