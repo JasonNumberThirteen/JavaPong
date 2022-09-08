@@ -18,7 +18,7 @@ public class BoxCollider extends Collider<Rectangle>
 	}
 
 	@Override
-	public <U extends Collider<Rectangle>> boolean isCollidingWith(U collider)
+	public <U extends Collider<?>> boolean isCollidingWith(U collider)
 	{
 		if(collider instanceof BoxCollider bc)
 		{

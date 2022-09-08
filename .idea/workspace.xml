@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ea342c66-e60c-4706-9bb0-07a8f29b3208" name="Changes" comment="Added a method for enabling input in game panel">
+    <list default="true" id="ea342c66-e60c-4706-9bb0-07a8f29b3208" name="Changes" comment="Added a getter in Collider class">
+      <change afterPath="$PROJECT_DIR$/src/pl/jasonxiii/pong/colliders/CircleCollider.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pl/jasonxiii/pong/colliders/BoxCollider.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/jasonxiii/pong/colliders/BoxCollider.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pl/jasonxiii/pong/colliders/Collider.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/jasonxiii/pong/colliders/Collider.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pl/jasonxiii/pong/gameobjects/Ball.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/jasonxiii/pong/gameobjects/Ball.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -101,13 +103,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1662027905581</updated>
-    </task>
-    <task id="LOCAL-00060" summary="Added a constant for required player score to win">
-      <created>1662198858119</created>
-      <option name="number" value="00060" />
-      <option name="presentableId" value="LOCAL-00060" />
-      <option name="project" value="LOCAL" />
-      <updated>1662198858119</updated>
     </task>
     <task id="LOCAL-00061" summary="Added game stop when it is over">
       <created>1662199184877</created>
@@ -445,7 +440,14 @@
       <option name="project" value="LOCAL" />
       <updated>1662403793535</updated>
     </task>
-    <option name="localTasksCounter" value="109" />
+    <task id="LOCAL-00109" summary="Added a getter in Collider class">
+      <created>1662644204863</created>
+      <option name="number" value="00109" />
+      <option name="presentableId" value="LOCAL-00109" />
+      <option name="project" value="LOCAL" />
+      <updated>1662644204863</updated>
+    </task>
+    <option name="localTasksCounter" value="110" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -460,7 +462,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added overloading of UIText class constructor" />
     <MESSAGE value="Optimised GamePanel class" />
     <MESSAGE value="Added Collider class" />
     <MESSAGE value="Added BoxCollider class" />
@@ -485,7 +486,8 @@
     <MESSAGE value="Moved code to separate package" />
     <MESSAGE value="Replaced array of drawables with ArrayList" />
     <MESSAGE value="Added a method for enabling input in game panel" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added a method for enabling input in game panel" />
+    <MESSAGE value="Added a getter in Collider class" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added a getter in Collider class" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
