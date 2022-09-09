@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ea342c66-e60c-4706-9bb0-07a8f29b3208" name="Changes" comment="Replaced constructor with the empty one">
+    <list default="true" id="ea342c66-e60c-4706-9bb0-07a8f29b3208" name="Changes" comment="Fixed collision detection between the ball and the paddles">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pl/jasonxiii/pong/colliders/CircleCollider.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/jasonxiii/pong/colliders/CircleCollider.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pl/jasonxiii/pong/gameobjects/Ball.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/jasonxiii/pong/gameobjects/Ball.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -100,13 +101,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1662027905581</updated>
-    </task>
-    <task id="LOCAL-00064" summary="Added a text update when player has won the game">
-      <created>1662199943532</created>
-      <option name="number" value="00064" />
-      <option name="presentableId" value="LOCAL-00064" />
-      <option name="project" value="LOCAL" />
-      <updated>1662199943532</updated>
     </task>
     <task id="LOCAL-00065" summary="Centered position of UI texts">
       <created>1662274780282</created>
@@ -444,7 +438,14 @@
       <option name="project" value="LOCAL" />
       <updated>1662724773510</updated>
     </task>
-    <option name="localTasksCounter" value="113" />
+    <task id="LOCAL-00113" summary="Fixed collision detection between the ball and the paddles">
+      <created>1662725475625</created>
+      <option name="number" value="00113" />
+      <option name="presentableId" value="LOCAL-00113" />
+      <option name="project" value="LOCAL" />
+      <updated>1662725475625</updated>
+    </task>
+    <option name="localTasksCounter" value="114" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -459,7 +460,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added a generic type to Collider class" />
     <MESSAGE value="Removed unnecessary this keywords" />
     <MESSAGE value="Added ScoreCounter class" />
     <MESSAGE value="Added a generic type to Counter class" />
@@ -484,7 +484,8 @@
     <MESSAGE value="Added CircleCollider class" />
     <MESSAGE value="Defined collision conditions in Collider class" />
     <MESSAGE value="Replaced constructor with the empty one" />
-    <option name="LAST_COMMIT_MESSAGE" value="Replaced constructor with the empty one" />
+    <MESSAGE value="Fixed collision detection between the ball and the paddles" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed collision detection between the ball and the paddles" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
