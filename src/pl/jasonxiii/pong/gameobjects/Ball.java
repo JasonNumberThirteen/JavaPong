@@ -18,7 +18,7 @@ public class Ball extends GameObject implements Updatable, Drawable, Collidable
 
 	private final IntegerCounter movementSpeed = new IntegerCounter(0);
 	private final FloatCounter delayTimer = new FloatCounter(0f);
-	private final CircleCollider collider = new CircleCollider(this, new Arc2D.Float(new Rectangle2D.Float(Constants.BALL_INITIAL_X, Constants.BALL_INITIAL_Y, Constants.BALL_RADIUS, Constants.BALL_RADIUS), 0, 360, Arc2D.CHORD));
+	private final CircleCollider collider = new CircleCollider(this, new Arc2D.Float(new Rectangle2D.Float(), 0, 360, Arc2D.CHORD));
 
 	public Ball()
 	{

@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ea342c66-e60c-4706-9bb0-07a8f29b3208" name="Changes" comment="Added CircleCollider class">
+    <list default="true" id="ea342c66-e60c-4706-9bb0-07a8f29b3208" name="Changes" comment="Defined collision conditions in Collider class">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pl/jasonxiii/pong/colliders/BoxCollider.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/jasonxiii/pong/colliders/BoxCollider.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pl/jasonxiii/pong/colliders/CircleCollider.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/jasonxiii/pong/colliders/CircleCollider.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pl/jasonxiii/pong/colliders/Collider.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/jasonxiii/pong/colliders/Collider.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pl/jasonxiii/pong/gameobjects/Ball.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/jasonxiii/pong/gameobjects/Ball.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -102,13 +100,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1662027905581</updated>
-    </task>
-    <task id="LOCAL-00062" summary="Renamed UI class to GameUI">
-      <created>1662199513702</created>
-      <option name="number" value="00062" />
-      <option name="presentableId" value="LOCAL-00062" />
-      <option name="project" value="LOCAL" />
-      <updated>1662199513702</updated>
     </task>
     <task id="LOCAL-00063" summary="Replaced players array with score text instances">
       <created>1662199618483</created>
@@ -446,7 +437,14 @@
       <option name="project" value="LOCAL" />
       <updated>1662646429485</updated>
     </task>
-    <option name="localTasksCounter" value="111" />
+    <task id="LOCAL-00111" summary="Defined collision conditions in Collider class">
+      <created>1662646721147</created>
+      <option name="number" value="00111" />
+      <option name="presentableId" value="LOCAL-00111" />
+      <option name="project" value="LOCAL" />
+      <updated>1662646721147</updated>
+    </task>
+    <option name="localTasksCounter" value="112" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -461,7 +459,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added Collider class" />
     <MESSAGE value="Added BoxCollider class" />
     <MESSAGE value="Added a generic type to Collider class" />
     <MESSAGE value="Removed unnecessary this keywords" />
@@ -486,7 +483,8 @@
     <MESSAGE value="Added a method for enabling input in game panel" />
     <MESSAGE value="Added a getter in Collider class" />
     <MESSAGE value="Added CircleCollider class" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added CircleCollider class" />
+    <MESSAGE value="Defined collision conditions in Collider class" />
+    <option name="LAST_COMMIT_MESSAGE" value="Defined collision conditions in Collider class" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
