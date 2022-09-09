@@ -88,10 +88,18 @@ public class Ball extends GameObject implements Updatable, Drawable, Collidable
 	{
 		GameBoard gb = GameManager.INSTANCE.getBoard();
 
-		if(collider.isCollidingWith(gb.playerOne().getPaddle().getCollider()) || collider.isCollidingWith(gb.playerTwo().getPaddle().getCollider()))
+		if(isCollidingWithPaddle(gb.playerOne().getPaddle()) || isCollidingWithPaddle(gb.playerTwo().getPaddle()))
 		{
 			onCollisionWithPaddle();
 		}
+	}
+
+	private boolean isCollidingWithPaddle(Paddle paddle)
+	{
+		int requiredDirection = (int)Math.signum(paddle.position.x - position.x);
+		boolean directionIsCorrect = requiredDirection < 0 ? directionX < 0 : directionX > 0;
+
+		return collider.isCollidingWith(paddle.getCollider()) && directionIsCorrect;
 	}
 
 	private void onCollisionWithPaddle()
