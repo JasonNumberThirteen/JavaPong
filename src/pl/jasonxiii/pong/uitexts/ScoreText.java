@@ -6,9 +6,9 @@ import java.awt.*;
 
 public class ScoreText extends UIText
 {
-	public ScoreText(int score, Point position)
+	public ScoreText(Point position)
 	{
-		super(String.valueOf(score), position, Constants.SCORE_TEXT_COLOR);
+		super(String.valueOf(Constants.PLAYER_INITIAL_SCORE), position, Constants.SCORE_TEXT_COLOR);
 	}
 
 	public void updateText(int score)
