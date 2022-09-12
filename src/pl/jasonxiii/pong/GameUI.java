@@ -9,8 +9,8 @@ import java.awt.*;
 
 public class GameUI implements Drawable
 {
-	private final ScoreText playerOneScoreText = new ScoreText(new Point((Constants.GAME_WIDTH >> 1) - 48, Constants.SCORE_TEXT_Y));
-	private final ScoreText playerTwoScoreText = new ScoreText(new Point((Constants.GAME_WIDTH >> 1) + 48, Constants.SCORE_TEXT_Y));
+	private final ScoreText playerOneScoreText = new ScoreText(new Point(Constants.PLAYER_ONE_SCORE_X, Constants.SCORE_TEXT_Y));
+	private final ScoreText playerTwoScoreText = new ScoreText(new Point(Constants.PLAYER_TWO_SCORE_X, Constants.SCORE_TEXT_Y));
 	private final PlayerWonText playerWonText = new PlayerWonText();
 
 	public GameUI(Player playerOne, Player playerTwo)
