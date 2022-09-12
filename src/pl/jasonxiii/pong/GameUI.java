@@ -40,7 +40,7 @@ public class GameUI implements Drawable
 
 		if(gm.isOver())
 		{
-			playerWonText.setText(String.format("PLAYER %d WON!", gm.wonPlayerNumber()));
+			playerWonText.setText(String.format(Constants.PLAYER_WON_TEXT_STRING, gm.wonPlayerNumber()));
 		}
 	}
 }

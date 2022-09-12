@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ea342c66-e60c-4706-9bb0-07a8f29b3208" name="Changes" comment="Moved code setting player won text to UI class">
+    <list default="true" id="ea342c66-e60c-4706-9bb0-07a8f29b3208" name="Changes" comment="Added constants for X position of player score texts">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pl/jasonxiii/pong/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/jasonxiii/pong/Constants.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pl/jasonxiii/pong/GameUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/jasonxiii/pong/GameUI.java" afterDir="false" />
@@ -101,13 +101,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1662027905581</updated>
-    </task>
-    <task id="LOCAL-00072" summary="Added delay timer to the ball">
-      <created>1662277199443</created>
-      <option name="number" value="00072" />
-      <option name="presentableId" value="LOCAL-00072" />
-      <option name="project" value="LOCAL" />
-      <updated>1662277199443</updated>
     </task>
     <task id="LOCAL-00073" summary="Added collision detection between the ball and the paddles">
       <created>1662281977028</created>
@@ -445,7 +438,14 @@
       <option name="project" value="LOCAL" />
       <updated>1662997949547</updated>
     </task>
-    <option name="localTasksCounter" value="121" />
+    <task id="LOCAL-00121" summary="Added constants for X position of player score texts">
+      <created>1662998082958</created>
+      <option name="number" value="00121" />
+      <option name="presentableId" value="LOCAL-00121" />
+      <option name="project" value="LOCAL" />
+      <updated>1662998082958</updated>
+    </task>
+    <option name="localTasksCounter" value="122" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -460,7 +460,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Renamed DelayTimerCounter class to FloatCounter" />
     <MESSAGE value="Replaced integer with IntegerCounter instance" />
     <MESSAGE value="Optimised methods for collision detection between game objects" />
     <MESSAGE value="Removed commented code" />
@@ -485,7 +484,8 @@
     <MESSAGE value="Added a method for checking if player won the game" />
     <MESSAGE value="Removed a number member variable from Player class" />
     <MESSAGE value="Moved code setting player won text to UI class" />
-    <option name="LAST_COMMIT_MESSAGE" value="Moved code setting player won text to UI class" />
+    <MESSAGE value="Added constants for X position of player score texts" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added constants for X position of player score texts" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

@@ -34,5 +34,6 @@ public final class Constants
 	public static final int PLAYER_TWO_SCORE_X = (Constants.GAME_WIDTH >> 1) + 48;
 	public static final int SCORE_TEXT_Y = 48;
 	public static final Color SCORE_TEXT_COLOR = Color.WHITE;
+	public static final String PLAYER_WON_TEXT_STRING = "PLAYER %d WON!";
 	public static final Color PLAYER_WON_TEXT_COLOR = Color.ORANGE;
 }
