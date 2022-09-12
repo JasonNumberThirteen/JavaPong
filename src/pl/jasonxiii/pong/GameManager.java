@@ -28,11 +28,6 @@ public enum GameManager
 	{
 		player.increaseScore();
 		ui.update();
-
-		if(isOver())
-		{
-			ui.setPlayerWonText(String.format("PLAYER %d WON!", wonPlayerNumber()));
-		}
 	}
 
 	public boolean isOver()

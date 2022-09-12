@@ -31,10 +31,16 @@ public class GameUI implements Drawable
 	{
 		playerOneScoreText.updateText();
 		playerTwoScoreText.updateText();
+		updatePlayerWonText();
 	}
 
-	public void setPlayerWonText(String text)
+	private void updatePlayerWonText()
 	{
-		playerWonText.setText(text);
+		GameManager gm = GameManager.INSTANCE;
+
+		if(gm.isOver())
+		{
+			playerWonText.setText(String.format("PLAYER %d WON!", gm.wonPlayerNumber()));
+		}
 	}
 }

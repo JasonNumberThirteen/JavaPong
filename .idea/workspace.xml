@@ -1,12 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ea342c66-e60c-4706-9bb0-07a8f29b3208" name="Changes" comment="Added a method for checking if player won the game">
+    <list default="true" id="ea342c66-e60c-4706-9bb0-07a8f29b3208" name="Changes" comment="Removed a number member variable from Player class">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pl/jasonxiii/pong/GameManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/jasonxiii/pong/GameManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pl/jasonxiii/pong/players/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/jasonxiii/pong/players/Player.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pl/jasonxiii/pong/players/PlayerOne.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/jasonxiii/pong/players/PlayerOne.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pl/jasonxiii/pong/players/PlayerTwo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/jasonxiii/pong/players/PlayerTwo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pl/jasonxiii/pong/GameUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/jasonxiii/pong/GameUI.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -103,13 +101,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1662027905581</updated>
-    </task>
-    <task id="LOCAL-00070" summary="Updated README file">
-      <created>1662276368517</created>
-      <option name="number" value="00070" />
-      <option name="presentableId" value="LOCAL-00070" />
-      <option name="project" value="LOCAL" />
-      <updated>1662276368517</updated>
     </task>
     <task id="LOCAL-00071" summary="Added delta time parameter to update method">
       <created>1662277079525</created>
@@ -447,7 +438,14 @@
       <option name="project" value="LOCAL" />
       <updated>1662996997655</updated>
     </task>
-    <option name="localTasksCounter" value="119" />
+    <task id="LOCAL-00119" summary="Removed a number member variable from Player class">
+      <created>1662997614489</created>
+      <option name="number" value="00119" />
+      <option name="presentableId" value="LOCAL-00119" />
+      <option name="project" value="LOCAL" />
+      <updated>1662997614489</updated>
+    </task>
+    <option name="localTasksCounter" value="120" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -462,7 +460,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added a method for setting position to game object" />
     <MESSAGE value="Renamed ScoreCounter class to IntegerCounter" />
     <MESSAGE value="Renamed DelayTimerCounter class to FloatCounter" />
     <MESSAGE value="Replaced integer with IntegerCounter instance" />
@@ -487,7 +484,8 @@
     <MESSAGE value="Added a constant for player initial score" />
     <MESSAGE value="Removed score text member variable from Player class" />
     <MESSAGE value="Added a method for checking if player won the game" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added a method for checking if player won the game" />
+    <MESSAGE value="Removed a number member variable from Player class" />
+    <option name="LAST_COMMIT_MESSAGE" value="Removed a number member variable from Player class" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
