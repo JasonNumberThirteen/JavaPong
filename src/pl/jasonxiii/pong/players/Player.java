@@ -9,17 +9,10 @@ public class Player
 {
 	private final Paddle paddle;
 	private final IntegerCounter score = new IntegerCounter(Constants.PLAYER_INITIAL_SCORE);
-	private final int number;
 
-	public Player(int x, PlayerKeyboardInput input, int number)
+	public Player(int x, PlayerKeyboardInput input)
 	{
 		paddle = new Paddle(x, input);
-		this.number = number;
-	}
-
-	public int getNumber()
-	{
-		return number;
 	}
 
 	public void increaseScore()

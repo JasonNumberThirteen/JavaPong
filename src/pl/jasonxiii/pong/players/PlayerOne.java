@@ -9,6 +9,6 @@ public class PlayerOne extends Player
 {
 	public PlayerOne()
 	{
-		super(Constants.PADDLE_WIDTH, new PlayerKeyboardInput(KeyEvent.VK_W, KeyEvent.VK_S), 1);
+		super(Constants.PADDLE_WIDTH, new PlayerKeyboardInput(KeyEvent.VK_W, KeyEvent.VK_S));
 	}
 }

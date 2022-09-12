@@ -31,12 +31,26 @@ public enum GameManager
 
 		if(isOver())
 		{
-			ui.setPlayerWonText(String.format("PLAYER %d WON!", player.getNumber()));
+			ui.setPlayerWonText(String.format("PLAYER %d WON!", wonPlayerNumber()));
 		}
 	}
 
 	public boolean isOver()
 	{
 		return board.playerOne().wonTheGame() || board.playerTwo().wonTheGame();
+	}
+
+	public int wonPlayerNumber()
+	{
+		if(board.playerOne().wonTheGame())
+		{
+			return 1;
+		}
+		else if(board.playerTwo().wonTheGame())
+		{
+			return 2;
+		}
+
+		return 0;
 	}
 }
