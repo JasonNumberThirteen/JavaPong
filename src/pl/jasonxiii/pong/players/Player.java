@@ -36,4 +36,9 @@ public class Player
 	{
 		return score.getValue();
 	}
+
+	public boolean wonTheGame()
+	{
+		return getScore() == Constants.PLAYER_SCORE_TO_WIN;
+	}
 }
