@@ -1,6 +1,7 @@
 package pl.jasonxiii.pong;
 
 import pl.jasonxiii.pong.interfaces.Drawable;
+import pl.jasonxiii.pong.players.Player;
 import pl.jasonxiii.pong.uitexts.PlayerWonText;
 import pl.jasonxiii.pong.uitexts.ScoreText;
 
@@ -8,18 +9,14 @@ import java.awt.*;
 
 public class GameUI implements Drawable
 {
-	private final ScoreText playerOneScoreText, playerTwoScoreText;
+	private final ScoreText playerOneScoreText = new ScoreText(new Point((Constants.GAME_WIDTH >> 1) - 48, Constants.SCORE_TEXT_Y));
+	private final ScoreText playerTwoScoreText = new ScoreText(new Point((Constants.GAME_WIDTH >> 1) + 48, Constants.SCORE_TEXT_Y));
 	private final PlayerWonText playerWonText = new PlayerWonText();
 
-	public GameUI(ScoreText playerOneScoreText, ScoreText playerTwoScoreText)
+	public GameUI(Player playerOne, Player playerTwo)
 	{
-		this.playerOneScoreText = playerOneScoreText;
-		this.playerTwoScoreText = playerTwoScoreText;
-	}
-
-	public void setPlayerWonText(String text)
-	{
-		playerWonText.setText(text);
+		playerOneScoreText.setPlayer(playerOne);
+		playerTwoScoreText.setPlayer(playerTwo);
 	}
 
 	@Override
@@ -28,5 +25,16 @@ public class GameUI implements Drawable
 		playerOneScoreText.draw(g);
 		playerTwoScoreText.draw(g);
 		playerWonText.draw(g);
+	}
+
+	public void update()
+	{
+		playerOneScoreText.updateText();
+		playerTwoScoreText.updateText();
+	}
+
+	public void setPlayerWonText(String text)
+	{
+		playerWonText.setText(text);
 	}
 }

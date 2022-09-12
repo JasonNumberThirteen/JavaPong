@@ -27,6 +27,7 @@ public enum GameManager
 	public void increasePlayerScore(Player player)
 	{
 		player.increaseScore();
+		ui.update();
 
 		if(isOver())
 		{
