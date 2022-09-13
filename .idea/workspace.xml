@@ -1,10 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ea342c66-e60c-4706-9bb0-07a8f29b3208" name="Changes" comment="Adjusted condition for considering player as the winner">
-      <change afterPath="$PROJECT_DIR$/src/pl/jasonxiii/pong/colliders/BallCollider.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pl/jasonxiii/pong/gameobjects/Ball.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/jasonxiii/pong/gameobjects/Ball.java" afterDir="false" />
+    <list default="true" id="ea342c66-e60c-4706-9bb0-07a8f29b3208" name="Changes" comment="Added BallCollider class">
+      <change beforePath="$PROJECT_DIR$/src/pl/jasonxiii/pong/gameobjects/Paddle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/jasonxiii/pong/gameobjects/Paddle.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -104,13 +102,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1662027905581</updated>
-    </task>
-    <task id="LOCAL-00076" summary="Added a constant for initial delay timer of the ball">
-      <created>1662284106189</created>
-      <option name="number" value="00076" />
-      <option name="presentableId" value="LOCAL-00076" />
-      <option name="project" value="LOCAL" />
-      <updated>1662284106189</updated>
     </task>
     <task id="LOCAL-00077" summary="Optimised Ball class">
       <created>1662285643038</created>
@@ -448,7 +439,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663080022582</updated>
     </task>
-    <option name="localTasksCounter" value="125" />
+    <task id="LOCAL-00125" summary="Added BallCollider class">
+      <created>1663081654765</created>
+      <option name="number" value="00125" />
+      <option name="presentableId" value="LOCAL-00125" />
+      <option name="project" value="LOCAL" />
+      <updated>1663081654765</updated>
+    </task>
+    <option name="localTasksCounter" value="126" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -463,7 +461,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Merged two similar methods to one" />
     <MESSAGE value="Added a member variable for player number" />
     <MESSAGE value="Renamed PlayerInput class to PlayerKeyboardInput" />
     <MESSAGE value="Renamed KeyboardInput class to KeyboardInputListener" />
@@ -488,7 +485,8 @@
     <MESSAGE value="Added a constant for player won text string" />
     <MESSAGE value="Added constants for half of game window size" />
     <MESSAGE value="Adjusted condition for considering player as the winner" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adjusted condition for considering player as the winner" />
+    <MESSAGE value="Added BallCollider class" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added BallCollider class" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

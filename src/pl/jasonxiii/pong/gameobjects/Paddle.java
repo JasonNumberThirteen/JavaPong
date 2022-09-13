@@ -35,7 +35,6 @@ public class Paddle extends GameObject implements Updatable, Drawable, Collidabl
 	{
 		g.setColor(Constants.PADDLE_COLOR);
 		g.fillRect(position.x, position.y, Constants.PADDLE_WIDTH, Constants.PADDLE_HEIGHT);
-		g.setColor(Color.RED);
 	}
 
 	@Override
