@@ -32,6 +32,6 @@ public class Player
 
 	public boolean wonTheGame()
 	{
-		return getScore() == Constants.PLAYER_SCORE_TO_WIN;
+		return getScore() >= Constants.PLAYER_SCORE_TO_WIN;
 	}
 }

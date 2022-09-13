@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ea342c66-e60c-4706-9bb0-07a8f29b3208" name="Changes" comment="Added a constant for player won text string">
+    <list default="true" id="ea342c66-e60c-4706-9bb0-07a8f29b3208" name="Changes" comment="Added constants for half of game window size">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pl/jasonxiii/pong/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/jasonxiii/pong/Constants.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pl/jasonxiii/pong/uitexts/PlayerWonText.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/jasonxiii/pong/uitexts/PlayerWonText.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pl/jasonxiii/pong/players/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/jasonxiii/pong/players/Player.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -104,13 +103,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1662027905581</updated>
-    </task>
-    <task id="LOCAL-00074" summary="Did movement speed of objects independent of frame rate">
-      <created>1662282308152</created>
-      <option name="number" value="00074" />
-      <option name="presentableId" value="LOCAL-00074" />
-      <option name="project" value="LOCAL" />
-      <updated>1662282308152</updated>
     </task>
     <task id="LOCAL-00075" summary="Added growth of the ball speed per deflect from paddle">
       <created>1662282997919</created>
@@ -448,7 +440,14 @@
       <option name="project" value="LOCAL" />
       <updated>1662998616810</updated>
     </task>
-    <option name="localTasksCounter" value="123" />
+    <task id="LOCAL-00123" summary="Added constants for half of game window size">
+      <created>1663079715274</created>
+      <option name="number" value="00123" />
+      <option name="presentableId" value="LOCAL-00123" />
+      <option name="project" value="LOCAL" />
+      <updated>1663079715274</updated>
+    </task>
+    <option name="localTasksCounter" value="124" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -463,7 +462,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Optimised methods for collision detection between game objects" />
     <MESSAGE value="Removed commented code" />
     <MESSAGE value="Merged two similar methods to one" />
     <MESSAGE value="Added a member variable for player number" />
@@ -488,7 +486,8 @@
     <MESSAGE value="Moved code setting player won text to UI class" />
     <MESSAGE value="Added constants for X position of player score texts" />
     <MESSAGE value="Added a constant for player won text string" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added a constant for player won text string" />
+    <MESSAGE value="Added constants for half of game window size" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added constants for half of game window size" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
