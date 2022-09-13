@@ -7,6 +7,8 @@ public final class Constants
 	public static final String GAME_TITLE = "Pong";
 	public static final int GAME_WIDTH = 640;
 	public static final int GAME_HEIGHT = 480;
+	public static final int HALF_OF_GAME_WIDTH = GAME_WIDTH >> 1;
+	public static final int HALF_OF_GAME_HEIGHT = GAME_HEIGHT >> 1;
 	public static final int GAME_FPS = 60;
 
 	public static final Color BACKGROUND_COLOR = Color.BLACK;
@@ -30,8 +32,8 @@ public final class Constants
 	public static final Color BALL_COLOR = Color.WHITE;
 
 	public static final int UI_FONT_SIZE = 32;
-	public static final int PLAYER_ONE_SCORE_X = (Constants.GAME_WIDTH >> 1) - 48;
-	public static final int PLAYER_TWO_SCORE_X = (Constants.GAME_WIDTH >> 1) + 48;
+	public static final int PLAYER_ONE_SCORE_X = HALF_OF_GAME_WIDTH - 48;
+	public static final int PLAYER_TWO_SCORE_X = HALF_OF_GAME_WIDTH + 48;
 	public static final int SCORE_TEXT_Y = 48;
 	public static final Color SCORE_TEXT_COLOR = Color.WHITE;
 	public static final String PLAYER_WON_TEXT_STRING = "PLAYER %d WON!";

@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ea342c66-e60c-4706-9bb0-07a8f29b3208" name="Changes" comment="Added constants for X position of player score texts">
+    <list default="true" id="ea342c66-e60c-4706-9bb0-07a8f29b3208" name="Changes" comment="Added a constant for player won text string">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pl/jasonxiii/pong/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/jasonxiii/pong/Constants.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pl/jasonxiii/pong/GameUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/jasonxiii/pong/GameUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pl/jasonxiii/pong/uitexts/PlayerWonText.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/jasonxiii/pong/uitexts/PlayerWonText.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,6 +69,9 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
 }</component>
@@ -101,13 +104,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1662027905581</updated>
-    </task>
-    <task id="LOCAL-00073" summary="Added collision detection between the ball and the paddles">
-      <created>1662281977028</created>
-      <option name="number" value="00073" />
-      <option name="presentableId" value="LOCAL-00073" />
-      <option name="project" value="LOCAL" />
-      <updated>1662281977028</updated>
     </task>
     <task id="LOCAL-00074" summary="Did movement speed of objects independent of frame rate">
       <created>1662282308152</created>
@@ -445,7 +441,14 @@
       <option name="project" value="LOCAL" />
       <updated>1662998082958</updated>
     </task>
-    <option name="localTasksCounter" value="122" />
+    <task id="LOCAL-00122" summary="Added a constant for player won text string">
+      <created>1662998616810</created>
+      <option name="number" value="00122" />
+      <option name="presentableId" value="LOCAL-00122" />
+      <option name="project" value="LOCAL" />
+      <updated>1662998616810</updated>
+    </task>
+    <option name="localTasksCounter" value="123" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -460,7 +463,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Replaced integer with IntegerCounter instance" />
     <MESSAGE value="Optimised methods for collision detection between game objects" />
     <MESSAGE value="Removed commented code" />
     <MESSAGE value="Merged two similar methods to one" />
@@ -485,7 +487,8 @@
     <MESSAGE value="Removed a number member variable from Player class" />
     <MESSAGE value="Moved code setting player won text to UI class" />
     <MESSAGE value="Added constants for X position of player score texts" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added constants for X position of player score texts" />
+    <MESSAGE value="Added a constant for player won text string" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added a constant for player won text string" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
