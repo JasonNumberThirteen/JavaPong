@@ -5,9 +5,9 @@ import pl.jasonxiii.pong.GameManager;
 
 import java.awt.*;
 
-public class PlayerWonText extends UIText
+public class SideWonText extends UIText
 {
-	public PlayerWonText()
+	public SideWonText()
 	{
 		super(new Point(Constants.HALF_OF_GAME_WIDTH, Constants.HALF_OF_GAME_HEIGHT), Constants.SIDE_WON_TEXT_COLOR);
 	}
