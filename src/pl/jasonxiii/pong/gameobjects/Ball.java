@@ -46,14 +46,6 @@ public class Ball extends GameObject implements Updatable, Drawable, Collidable
 		g.fillArc(position.x, position.y, Constants.BALL_RADIUS, Constants.BALL_RADIUS, 0, 360);
 	}
 
-	public void reset()
-	{
-		setPosition(Constants.BALL_INITIAL_X, Constants.BALL_INITIAL_Y);
-		movementDirection.randomise();
-		delayTimer.setTo(Constants.BALL_INITIAL_DELAY_TIMER);
-		movementSpeed.setTo(Constants.BALL_INITIAL_MOVEMENT_SPEED);
-	}
-
 	public boolean isGoingToPaddle(Paddle paddle)
 	{
 		int requiredDirection = (int)Math.signum(paddle.position.x - position.x);
@@ -73,12 +65,25 @@ public class Ball extends GameObject implements Updatable, Drawable, Collidable
 		movementDirection.deflectInYAxis();
 	}
 
+	public void onMoveOutsideField()
+	{
+		reset();
+	}
+
 	private void move(double delta)
 	{
 		int movementStep = (int)(movementSpeed.getValue()*delta);
 
 		position.x += movementStep*movementDirection.getDirectionX();
 		position.y += movementStep*movementDirection.getDirectionY();
+	}
+
+	private void reset()
+	{
+		setPosition(Constants.BALL_INITIAL_X, Constants.BALL_INITIAL_Y);
+		movementDirection.randomise();
+		delayTimer.setTo(Constants.BALL_INITIAL_DELAY_TIMER);
+		movementSpeed.setTo(Constants.BALL_INITIAL_MOVEMENT_SPEED);
 	}
 
 	private boolean canMove()

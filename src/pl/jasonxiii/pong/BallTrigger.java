@@ -23,18 +23,13 @@ public class BallTrigger
 		if(reachedRightEdge())
 		{
 			gm.increasePlayerScore(gm.getBoard().playerOne());
-			onMoveOutsideField();
+			ball.onMoveOutsideField();
 		}
 		else if(reachedLeftEdge())
 		{
 			gm.increasePlayerScore(gm.getBoard().playerTwo());
-			onMoveOutsideField();
+			ball.onMoveOutsideField();
 		}
-	}
-
-	private void onMoveOutsideField()
-	{
-		ball.reset();
 	}
 
 	private boolean reachedLeftEdge()
