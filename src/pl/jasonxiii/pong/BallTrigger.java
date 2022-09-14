@@ -22,12 +22,12 @@ public class BallTrigger
 
 		if(reachedRightEdge())
 		{
-			gm.increasePlayerScore(gm.getBoard().playerOne());
+			gm.increaseLeftSideScore();
 			ball.onMoveOutsideField();
 		}
 		else if(reachedLeftEdge())
 		{
-			gm.increasePlayerScore(gm.getBoard().playerTwo());
+			gm.increaseRightSideScore();
 			ball.onMoveOutsideField();
 		}
 	}

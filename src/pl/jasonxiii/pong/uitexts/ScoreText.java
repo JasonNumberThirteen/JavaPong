@@ -1,26 +1,26 @@
 package pl.jasonxiii.pong.uitexts;
 
 import pl.jasonxiii.pong.Constants;
-import pl.jasonxiii.pong.players.Player;
+import pl.jasonxiii.pong.counters.IntegerCounter;
 
 import java.awt.*;
 
 public class ScoreText extends UIText
 {
-	private Player player;
+	private IntegerCounter counter;
 
 	public ScoreText(Point position)
 	{
-		super(String.valueOf(Constants.PLAYER_INITIAL_SCORE), position, Constants.SCORE_TEXT_COLOR);
+		super(String.valueOf(Constants.SIDE_INITIAL_SCORE), position, Constants.SIDE_SCORE_TEXT_COLOR);
 	}
 
-	public void setPlayer(Player player)
+	public void setCounter(IntegerCounter ic)
 	{
-		this.player = player;
+		counter = ic;
 	}
 
 	public void updateText()
 	{
-		setText(String.valueOf(player.getScore()));
+		setText(String.valueOf(counter.getValue()));
 	}
 }

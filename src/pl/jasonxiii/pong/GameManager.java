@@ -1,10 +1,13 @@
 package pl.jasonxiii.pong;
 
-import pl.jasonxiii.pong.players.Player;
+import pl.jasonxiii.pong.counters.IntegerCounter;
 
 public enum GameManager
 {
 	INSTANCE;
+
+	private final IntegerCounter leftSideScore = new IntegerCounter(Constants.SIDE_INITIAL_SCORE);
+	private final IntegerCounter rightSideScore = new IntegerCounter(Constants.SIDE_INITIAL_SCORE);
 
 	private GameBoard board;
 	private GameUI ui;
@@ -24,28 +27,35 @@ public enum GameManager
 		return board;
 	}
 
-	public void increasePlayerScore(Player player)
+	public void increaseLeftSideScore()
 	{
-		player.increaseScore();
+		leftSideScore.increaseBy(1);
+		ui.update();
+	}
+
+	public void increaseRightSideScore()
+	{
+		rightSideScore.increaseBy(1);
 		ui.update();
 	}
 
 	public boolean isOver()
 	{
-		return board.playerOne().wonTheGame() || board.playerTwo().wonTheGame();
+		return leftSideScore.getValue() >= Constants.SIDE_SCORE_TO_WIN || rightSideScore.getValue() >= Constants.SIDE_SCORE_TO_WIN;
 	}
 
-	public int wonPlayerNumber()
+	public String wonSide()
 	{
-		if(board.playerOne().wonTheGame())
-		{
-			return 1;
-		}
-		else if(board.playerTwo().wonTheGame())
-		{
-			return 2;
-		}
+		return leftSideScore.getValue() >= Constants.SIDE_SCORE_TO_WIN ? "LEFT" : "RIGHT";
+	}
 
-		return 0;
+	public IntegerCounter getLeftSideScore()
+	{
+		return leftSideScore;
+	}
+
+	public IntegerCounter getRightSideScore()
+	{
+		return rightSideScore;
 	}
 }

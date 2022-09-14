@@ -1,7 +1,7 @@
 package pl.jasonxiii.pong;
 
+import pl.jasonxiii.pong.counters.IntegerCounter;
 import pl.jasonxiii.pong.interfaces.Drawable;
-import pl.jasonxiii.pong.players.Player;
 import pl.jasonxiii.pong.uitexts.PlayerWonText;
 import pl.jasonxiii.pong.uitexts.ScoreText;
 
@@ -9,29 +9,33 @@ import java.awt.*;
 
 public class GameUI implements Drawable
 {
-	private final ScoreText playerOneScoreText = new ScoreText(new Point(Constants.PLAYER_ONE_SCORE_X, Constants.SCORE_TEXT_Y));
-	private final ScoreText playerTwoScoreText = new ScoreText(new Point(Constants.PLAYER_TWO_SCORE_X, Constants.SCORE_TEXT_Y));
+	private final ScoreText leftSideScoreText = new ScoreText(new Point(Constants.LEFT_SIDE_SCORE_X, Constants.SIDE_SCORE_TEXT_Y));
+	private final ScoreText rightSideScoreText = new ScoreText(new Point(Constants.RIGHT_SIDE_SCORE_X, Constants.SIDE_SCORE_TEXT_Y));
 	private final PlayerWonText playerWonText = new PlayerWonText();
-
-	public GameUI(Player playerOne, Player playerTwo)
-	{
-		playerOneScoreText.setPlayer(playerOne);
-		playerTwoScoreText.setPlayer(playerTwo);
-	}
 
 	@Override
 	public void draw(Graphics g)
 	{
-		playerOneScoreText.draw(g);
-		playerTwoScoreText.draw(g);
+		leftSideScoreText.draw(g);
+		rightSideScoreText.draw(g);
 		playerWonText.draw(g);
 	}
 
 	public void update()
 	{
-		playerOneScoreText.updateText();
-		playerTwoScoreText.updateText();
+		leftSideScoreText.updateText();
+		rightSideScoreText.updateText();
 		updatePlayerWonText();
+	}
+
+	public void setCounterToLeftSideScoreText(IntegerCounter ic)
+	{
+		leftSideScoreText.setCounter(ic);
+	}
+
+	public void setCounterToRightSideScoreText(IntegerCounter ic)
+	{
+		rightSideScoreText.setCounter(ic);
 	}
 
 	private void updatePlayerWonText()
@@ -40,7 +44,7 @@ public class GameUI implements Drawable
 
 		if(gm.isOver())
 		{
-			playerWonText.setText(String.format(Constants.PLAYER_WON_TEXT_STRING, gm.wonPlayerNumber()));
+			playerWonText.setText(String.format(Constants.SIDE_WON_TEXT_STRING, gm.wonSide()));
 		}
 	}
 }

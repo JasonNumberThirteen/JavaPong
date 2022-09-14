@@ -13,8 +13,8 @@ public final class Constants
 
 	public static final Color BACKGROUND_COLOR = Color.BLACK;
 
-	public static final int PLAYER_INITIAL_SCORE = 0;
-	public static final int PLAYER_SCORE_TO_WIN = 11;
+	public static final int SIDE_INITIAL_SCORE = 0;
+	public static final int SIDE_SCORE_TO_WIN = 11;
 
 	public static final int PADDLE_WIDTH = 8;
 	public static final int PADDLE_HEIGHT = 32;
@@ -32,10 +32,10 @@ public final class Constants
 	public static final Color BALL_COLOR = Color.WHITE;
 
 	public static final int UI_FONT_SIZE = 32;
-	public static final int PLAYER_ONE_SCORE_X = HALF_OF_GAME_WIDTH - 48;
-	public static final int PLAYER_TWO_SCORE_X = HALF_OF_GAME_WIDTH + 48;
-	public static final int SCORE_TEXT_Y = 48;
-	public static final Color SCORE_TEXT_COLOR = Color.WHITE;
-	public static final String PLAYER_WON_TEXT_STRING = "PLAYER %d WON!";
-	public static final Color PLAYER_WON_TEXT_COLOR = Color.ORANGE;
+	public static final int LEFT_SIDE_SCORE_X = HALF_OF_GAME_WIDTH - 48;
+	public static final int RIGHT_SIDE_SCORE_X = HALF_OF_GAME_WIDTH + 48;
+	public static final int SIDE_SCORE_TEXT_Y = 48;
+	public static final Color SIDE_SCORE_TEXT_COLOR = Color.WHITE;
+	public static final String SIDE_WON_TEXT_STRING = "%s SIDE WON!";
+	public static final Color SIDE_WON_TEXT_COLOR = Color.ORANGE;
 }

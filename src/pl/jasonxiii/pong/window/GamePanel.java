@@ -10,6 +10,8 @@ import pl.jasonxiii.pong.players.PlayerOne;
 import pl.jasonxiii.pong.players.PlayerTwo;
 
 import java.awt.*;
+import java.util.ArrayList;
+import java.util.Arrays;
 import javax.swing.*;
 
 public class GamePanel extends JPanel implements Runnable, Updatable
@@ -17,8 +19,8 @@ public class GamePanel extends JPanel implements Runnable, Updatable
 	private final Player playerA = new PlayerOne();
 	private final Player playerB = new PlayerTwo();
 	private final Ball ball = new Ball();
-	private final GameUI ui = new GameUI(playerA, playerB);
-	private final GameBoard board = new GameBoard(playerA, playerB, ball);
+	private final GameUI ui = new GameUI();
+	private final GameBoard board = new GameBoard(new ArrayList<>(Arrays.asList(playerA, playerB)), ball);
 	private final GameRenderer renderer = new GameRenderer();
 
 	private boolean isRunning = true;
@@ -32,6 +34,7 @@ public class GamePanel extends JPanel implements Runnable, Updatable
 		enableInput();
 		assignDependenciesToGameManager();
 		addDrawablesToRenderer();
+		assignSidesScoreToTexts();
 		start();
 	}
 
@@ -94,6 +97,12 @@ public class GamePanel extends JPanel implements Runnable, Updatable
 		renderer.addDrawable(playerB.getPaddle());
 		renderer.addDrawable(ball);
 		renderer.addDrawable(ui);
+	}
+
+	private void assignSidesScoreToTexts()
+	{
+		ui.setCounterToLeftSideScoreText(GameManager.INSTANCE.getLeftSideScore());
+		ui.setCounterToRightSideScoreText(GameManager.INSTANCE.getRightSideScore());
 	}
 
 	private void start()
