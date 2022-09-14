@@ -2,11 +2,8 @@ package pl.jasonxiii.pong.gameobjects;
 
 import pl.jasonxiii.pong.*;
 import pl.jasonxiii.pong.colliders.BallCollider;
-import pl.jasonxiii.pong.counters.FloatCounter;
-import pl.jasonxiii.pong.counters.IntegerCounter;
-import pl.jasonxiii.pong.interfaces.Collidable;
-import pl.jasonxiii.pong.interfaces.Drawable;
-import pl.jasonxiii.pong.interfaces.Updatable;
+import pl.jasonxiii.pong.counters.*;
+import pl.jasonxiii.pong.interfaces.*;
 
 import java.awt.*;
 
@@ -17,11 +14,12 @@ public class Ball extends GameObject implements Updatable, Drawable, Collidable
 	private final IntegerCounter movementSpeed = new IntegerCounter(0);
 	private final FloatCounter delayTimer = new FloatCounter(0f);
 	private final BallCollider collider = new BallCollider(this);
+	private final BallTrigger trigger = new BallTrigger(this);
 
 	public Ball()
 	{
 		super(Constants.BALL_INITIAL_X, Constants.BALL_INITIAL_Y);
-		onMoveOutsideField();
+		reset();
 	}
 
 	@Override
@@ -30,9 +28,8 @@ public class Ball extends GameObject implements Updatable, Drawable, Collidable
 		if(canMove())
 		{
 			move(delta);
-			collider.checkCollisionWithVerticalEdges();
-			collider.checkHorizontalEdges();
-			collider.checkCollisionBetweenPaddles();
+			collider.checkCollisions();
+			trigger.checkTriggers();
 		}
 		else
 		{
@@ -50,6 +47,14 @@ public class Ball extends GameObject implements Updatable, Drawable, Collidable
 		g.fillArc(position.x, position.y, Constants.BALL_RADIUS, Constants.BALL_RADIUS, 0, 360);
 	}
 
+	public void reset()
+	{
+		setPosition(Constants.BALL_INITIAL_X, Constants.BALL_INITIAL_Y);
+		randomiseDirection();
+		delayTimer.setTo(Constants.BALL_INITIAL_DELAY_TIMER);
+		movementSpeed.setTo(Constants.BALL_INITIAL_MOVEMENT_SPEED);
+	}
+
 	public boolean isGoingToPaddle(Paddle paddle)
 	{
 		int requiredDirection = (int)Math.signum(paddle.position.x - position.x);
@@ -61,14 +66,6 @@ public class Ball extends GameObject implements Updatable, Drawable, Collidable
 	{
 		deflectInXAxis();
 		movementSpeed.increaseBy(Constants.BALL_SPEED_INCREASE_PER_PADDLE_DEFLECT);
-	}
-
-	public void onMoveOutsideField()
-	{
-		setPosition(Constants.BALL_INITIAL_X, Constants.BALL_INITIAL_Y);
-		randomiseDirection();
-		delayTimer.setTo(Constants.BALL_INITIAL_DELAY_TIMER);
-		movementSpeed.setTo(Constants.BALL_INITIAL_MOVEMENT_SPEED);
 	}
 
 	public void deflectInXAxis()

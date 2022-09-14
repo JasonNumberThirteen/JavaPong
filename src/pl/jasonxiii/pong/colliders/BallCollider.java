@@ -20,7 +20,13 @@ public class BallCollider
 		collider = new CircleCollider(ball, new Arc2D.Float(new Rectangle2D.Float(), 0, 360, Arc2D.CHORD), Constants.BALL_RADIUS);
 	}
 
-	public void checkCollisionWithVerticalEdges()
+	public void checkCollisions()
+	{
+		checkCollisionWithVerticalEdges();
+		checkCollisionBetweenPaddles();
+	}
+
+	private void checkCollisionWithVerticalEdges()
 	{
 		if(isCollidingWithVerticalEdge())
 		{
@@ -28,23 +34,14 @@ public class BallCollider
 		}
 	}
 
-	public void checkHorizontalEdges()
+	private boolean isCollidingWithVerticalEdge()
 	{
-		GameManager gm = GameManager.INSTANCE;
+		int y = ball.getPosition().y;
 
-		if(reachedRightEdge())
-		{
-			gm.increasePlayerScore(gm.getBoard().playerOne());
-			ball.onMoveOutsideField();
-		}
-		else if(reachedLeftEdge())
-		{
-			gm.increasePlayerScore(gm.getBoard().playerTwo());
-			ball.onMoveOutsideField();
-		}
+		return y <= 0 || y >= Constants.GAME_HEIGHT - Constants.BALL_RADIUS;
 	}
 
-	public void checkCollisionBetweenPaddles()
+	private void checkCollisionBetweenPaddles()
 	{
 		GameBoard gb = GameManager.INSTANCE.getBoard();
 
@@ -57,22 +54,5 @@ public class BallCollider
 	private boolean isCollidingWithPaddle(Paddle paddle)
 	{
 		return collider.isCollidingWith(paddle.getCollider()) && ball.isGoingToPaddle(paddle);
-	}
-
-	private boolean isCollidingWithVerticalEdge()
-	{
-		int y = ball.getPosition().y;
-
-		return y <= 0 || y >= Constants.GAME_HEIGHT - Constants.BALL_RADIUS;
-	}
-
-	private boolean reachedLeftEdge()
-	{
-		return ball.getPosition().x <= -Constants.BALL_RADIUS;
-	}
-
-	private boolean reachedRightEdge()
-	{
-		return ball.getPosition().x >= Constants.GAME_WIDTH;
 	}
 }

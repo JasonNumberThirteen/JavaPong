@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ea342c66-e60c-4706-9bb0-07a8f29b3208" name="Changes" comment="Replaced constructor parameter type">
+    <list default="true" id="ea342c66-e60c-4706-9bb0-07a8f29b3208" name="Changes" comment="Optimised UIText class">
+      <change afterPath="$PROJECT_DIR$/src/pl/jasonxiii/pong/BallTrigger.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pl/jasonxiii/pong/uitexts/UIText.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/jasonxiii/pong/uitexts/UIText.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pl/jasonxiii/pong/colliders/BallCollider.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/jasonxiii/pong/colliders/BallCollider.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pl/jasonxiii/pong/gameobjects/Ball.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/jasonxiii/pong/gameobjects/Ball.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -103,13 +105,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1662027905581</updated>
-    </task>
-    <task id="LOCAL-00079" summary="Added a constant for Y position of player score texts">
-      <created>1662286170975</created>
-      <option name="number" value="00079" />
-      <option name="presentableId" value="LOCAL-00079" />
-      <option name="project" value="LOCAL" />
-      <updated>1662286170975</updated>
     </task>
     <task id="LOCAL-00080" summary="Added overloading of UIText class constructor">
       <created>1662286626433</created>
@@ -447,7 +442,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663145090610</updated>
     </task>
-    <option name="localTasksCounter" value="128" />
+    <task id="LOCAL-00128" summary="Optimised UIText class">
+      <created>1663146155802</created>
+      <option name="number" value="00128" />
+      <option name="presentableId" value="LOCAL-00128" />
+      <option name="project" value="LOCAL" />
+      <updated>1663146155802</updated>
+    </task>
+    <option name="localTasksCounter" value="129" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -462,7 +464,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Renamed KeyboardInput class to KeyboardInputListener" />
     <MESSAGE value="Added PlayerInput class" />
     <MESSAGE value="Added InputListener class" />
     <MESSAGE value="Moved code to separate package" />
@@ -487,7 +488,8 @@
     <MESSAGE value="Added BallCollider class" />
     <MESSAGE value="Removed unnecessary method call" />
     <MESSAGE value="Replaced constructor parameter type" />
-    <option name="LAST_COMMIT_MESSAGE" value="Replaced constructor parameter type" />
+    <MESSAGE value="Optimised UIText class" />
+    <option name="LAST_COMMIT_MESSAGE" value="Optimised UIText class" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
