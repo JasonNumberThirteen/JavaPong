@@ -23,8 +23,18 @@ public class MovementDirection
 
 	public void randomise()
 	{
-		direction.x = randomDirection();
-		direction.y = randomDirection();
+		setDirectionX(randomDirection());
+		setDirectionY(randomDirection());
+	}
+
+	public void setDirectionX(int x)
+	{
+		direction.x = x;
+	}
+
+	public void setDirectionY(int y)
+	{
+		direction.y = y;
 	}
 
 	public int getDirectionX()
