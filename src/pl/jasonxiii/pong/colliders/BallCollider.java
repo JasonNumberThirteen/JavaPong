@@ -5,7 +5,6 @@ import pl.jasonxiii.pong.GameBoard;
 import pl.jasonxiii.pong.GameManager;
 import pl.jasonxiii.pong.gameobjects.Ball;
 import pl.jasonxiii.pong.gameobjects.Paddle;
-import pl.jasonxiii.pong.players.Player;
 
 import java.awt.geom.Arc2D;
 import java.awt.geom.Rectangle2D;
@@ -46,9 +45,9 @@ public class BallCollider
 	{
 		GameBoard gb = GameManager.INSTANCE.getBoard();
 
-		for (Player p : gb.getPlayers())
+		for (Paddle p : gb.getPaddles())
 		{
-			if(isCollidingWithPaddle(p.getPaddle()))
+			if(isCollidingWithPaddle(p))
 			{
 				ball.onCollisionWithPaddle();
 			}

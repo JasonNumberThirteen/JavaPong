@@ -1,10 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ea342c66-e60c-4706-9bb0-07a8f29b3208" name="Changes" comment="Refactored code to make game work independently of amount of players">
+    <list default="true" id="ea342c66-e60c-4706-9bb0-07a8f29b3208" name="Changes" comment="Added several constants">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pl/jasonxiii/pong/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/jasonxiii/pong/Constants.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pl/jasonxiii/pong/GameManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/jasonxiii/pong/GameManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pl/jasonxiii/pong/GameBoard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/jasonxiii/pong/GameBoard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pl/jasonxiii/pong/colliders/BallCollider.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/jasonxiii/pong/colliders/BallCollider.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pl/jasonxiii/pong/players/Player.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pl/jasonxiii/pong/players/PlayerOne.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pl/jasonxiii/pong/players/PlayerTwo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pl/jasonxiii/pong/window/GamePanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/jasonxiii/pong/window/GamePanel.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -104,13 +108,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1662027905581</updated>
-    </task>
-    <task id="LOCAL-00087" summary="Added a generic type to Counter class">
-      <created>1662369705208</created>
-      <option name="number" value="00087" />
-      <option name="presentableId" value="LOCAL-00087" />
-      <option name="project" value="LOCAL" />
-      <updated>1662369705208</updated>
     </task>
     <task id="LOCAL-00088" summary="Added DelayTimerCounter class">
       <created>1662369935926</created>
@@ -448,7 +445,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663154412247</updated>
     </task>
-    <option name="localTasksCounter" value="136" />
+    <task id="LOCAL-00136" summary="Added several constants">
+      <created>1663154759899</created>
+      <option name="number" value="00136" />
+      <option name="presentableId" value="LOCAL-00136" />
+      <option name="project" value="LOCAL" />
+      <updated>1663154759899</updated>
+    </task>
+    <option name="localTasksCounter" value="137" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -463,7 +467,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Defined collision conditions in Collider class" />
     <MESSAGE value="Replaced constructor with the empty one" />
     <MESSAGE value="Fixed collision detection between the ball and the paddles" />
     <MESSAGE value="Added a member variable in CircleCollider class" />
@@ -488,7 +491,8 @@
     <MESSAGE value="Optimised Ball class" />
     <MESSAGE value="Added methods for adding and removing drawables" />
     <MESSAGE value="Refactored code to make game work independently of amount of players" />
-    <option name="LAST_COMMIT_MESSAGE" value="Refactored code to make game work independently of amount of players" />
+    <MESSAGE value="Added several constants" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added several constants" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

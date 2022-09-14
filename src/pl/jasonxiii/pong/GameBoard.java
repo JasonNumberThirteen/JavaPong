@@ -1,19 +1,19 @@
 package pl.jasonxiii.pong;
 
 import pl.jasonxiii.pong.gameobjects.Ball;
+import pl.jasonxiii.pong.gameobjects.Paddle;
 import pl.jasonxiii.pong.interfaces.Updatable;
-import pl.jasonxiii.pong.players.Player;
 
 import java.util.ArrayList;
 
 public class GameBoard implements Updatable
 {
-	private final ArrayList<Player> players;
+	private final ArrayList<Paddle> paddles;
 	private final Ball ball;
 
-	public GameBoard(ArrayList<Player> players, Ball ball)
+	public GameBoard(ArrayList<Paddle> paddles, Ball ball)
 	{
-		this.players = players;
+		this.paddles = paddles;
 		this.ball = ball;
 	}
 
@@ -25,22 +25,22 @@ public class GameBoard implements Updatable
 			return;
 		}
 
-		players.forEach(p -> p.getPaddle().update(delta));
+		paddles.forEach(p -> p.update(delta));
 		ball.update(delta);
 	}
 
-	public void addPlayer(Player player)
+	public void addPaddle(Paddle paddle)
 	{
-		players.add(player);
+		paddles.add(paddle);
 	}
 
-	public void removePlayer(Player player)
+	public void removePaddle(Paddle paddle)
 	{
-		players.remove(player);
+		paddles.remove(paddle);
 	}
 
-	public ArrayList<Player> getPlayers()
+	public ArrayList<Paddle> getPaddles()
 	{
-		return players;
+		return paddles;
 	}
 }

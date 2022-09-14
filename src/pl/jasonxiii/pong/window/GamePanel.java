@@ -2,25 +2,25 @@ package pl.jasonxiii.pong.window;
 
 import pl.jasonxiii.pong.*;
 import pl.jasonxiii.pong.gameobjects.Ball;
+import pl.jasonxiii.pong.gameobjects.Paddle;
 import pl.jasonxiii.pong.inputlisteners.InputListener;
 import pl.jasonxiii.pong.inputlisteners.KeyboardInputListener;
 import pl.jasonxiii.pong.interfaces.Updatable;
-import pl.jasonxiii.pong.players.Player;
-import pl.jasonxiii.pong.players.PlayerOne;
-import pl.jasonxiii.pong.players.PlayerTwo;
+import pl.jasonxiii.pong.playerinput.PlayerKeyboardInput;
 
 import java.awt.*;
+import java.awt.event.KeyEvent;
 import java.util.ArrayList;
 import java.util.Arrays;
 import javax.swing.*;
 
 public class GamePanel extends JPanel implements Runnable, Updatable
 {
-	private final Player playerA = new PlayerOne();
-	private final Player playerB = new PlayerTwo();
+	private final Paddle leftPaddle = new Paddle(Constants.PADDLE_WIDTH, new PlayerKeyboardInput(KeyEvent.VK_W, KeyEvent.VK_S));
+	private final Paddle rightPaddle = new Paddle(Constants.GAME_WIDTH - Constants.PADDLE_WIDTH - Constants.PADDLE_OFFSET_FROM_EDGE, new PlayerKeyboardInput(KeyEvent.VK_O, KeyEvent.VK_L));
 	private final Ball ball = new Ball();
 	private final GameUI ui = new GameUI();
-	private final GameBoard board = new GameBoard(new ArrayList<>(Arrays.asList(playerA, playerB)), ball);
+	private final GameBoard board = new GameBoard(new ArrayList<>(Arrays.asList(leftPaddle, rightPaddle)), ball);
 	private final GameRenderer renderer = new GameRenderer();
 
 	private boolean isRunning = true;
@@ -78,7 +78,7 @@ public class GamePanel extends JPanel implements Runnable, Updatable
 
 	private void enableInput()
 	{
-		InputListener inputListener = new KeyboardInputListener(playerA.getPaddle(), playerB.getPaddle());
+		InputListener inputListener = new KeyboardInputListener(leftPaddle, rightPaddle);
 
 		inputListener.enable(this);
 	}
@@ -93,8 +93,8 @@ public class GamePanel extends JPanel implements Runnable, Updatable
 
 	private void addDrawablesToRenderer()
 	{
-		renderer.addDrawable(playerA.getPaddle());
-		renderer.addDrawable(playerB.getPaddle());
+		renderer.addDrawable(leftPaddle);
+		renderer.addDrawable(rightPaddle);
 		renderer.addDrawable(ball);
 		renderer.addDrawable(ui);
 	}
