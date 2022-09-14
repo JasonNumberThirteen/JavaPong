@@ -30,7 +30,7 @@ public class BallCollider
 	{
 		if(isCollidingWithVerticalEdge())
 		{
-			ball.deflectInYAxis();
+			ball.onCollisionWithVerticalEdge();
 		}
 	}
 

@@ -9,8 +9,7 @@ import java.awt.*;
 
 public class Ball extends GameObject implements Updatable, Drawable, Collidable
 {
-	private int directionX, directionY;
-
+	private final MovementDirection movementDirection = new MovementDirection();
 	private final IntegerCounter movementSpeed = new IntegerCounter(0);
 	private final FloatCounter delayTimer = new FloatCounter(0f);
 	private final BallCollider collider = new BallCollider(this);
@@ -50,7 +49,7 @@ public class Ball extends GameObject implements Updatable, Drawable, Collidable
 	public void reset()
 	{
 		setPosition(Constants.BALL_INITIAL_X, Constants.BALL_INITIAL_Y);
-		randomiseDirection();
+		movementDirection.randomise();
 		delayTimer.setTo(Constants.BALL_INITIAL_DELAY_TIMER);
 		movementSpeed.setTo(Constants.BALL_INITIAL_MOVEMENT_SPEED);
 	}
@@ -58,42 +57,32 @@ public class Ball extends GameObject implements Updatable, Drawable, Collidable
 	public boolean isGoingToPaddle(Paddle paddle)
 	{
 		int requiredDirection = (int)Math.signum(paddle.position.x - position.x);
+		int directionX = movementDirection.getDirectionX();
 
 		return requiredDirection < 0 ? directionX < 0 : directionX > 0;
 	}
 
 	public void onCollisionWithPaddle()
 	{
-		deflectInXAxis();
+		movementDirection.deflectInXAxis();
 		movementSpeed.increaseBy(Constants.BALL_SPEED_INCREASE_PER_PADDLE_DEFLECT);
 	}
 
-	public void deflectInXAxis()
+	public void onCollisionWithVerticalEdge()
 	{
-		directionX = -directionX;
-	}
-
-	public void deflectInYAxis()
-	{
-		directionY = -directionY;
+		movementDirection.deflectInYAxis();
 	}
 
 	private void move(double delta)
 	{
 		int movementStep = (int)(movementSpeed.getValue()*delta);
 
-		position.x += movementStep*directionX;
-		position.y += movementStep*directionY;
+		position.x += movementStep*movementDirection.getDirectionX();
+		position.y += movementStep*movementDirection.getDirectionY();
 	}
 
 	private boolean canMove()
 	{
 		return delayTimer.getValue() <= 0;
-	}
-
-	private void randomiseDirection()
-	{
-		directionX = Math.random() < 0.5 ? -1 : 1;
-		directionY = Math.random() < 0.5 ? -1 : 1;
 	}
 }

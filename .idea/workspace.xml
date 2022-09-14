@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ea342c66-e60c-4706-9bb0-07a8f29b3208" name="Changes" comment="Optimised UIText class">
-      <change afterPath="$PROJECT_DIR$/src/pl/jasonxiii/pong/BallTrigger.java" afterDir="false" />
+    <list default="true" id="ea342c66-e60c-4706-9bb0-07a8f29b3208" name="Changes" comment="Added BallTrigger class">
+      <change afterPath="$PROJECT_DIR$/src/pl/jasonxiii/pong/MovementDirection.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pl/jasonxiii/pong/colliders/BallCollider.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/jasonxiii/pong/colliders/BallCollider.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pl/jasonxiii/pong/gameobjects/Ball.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/jasonxiii/pong/gameobjects/Ball.java" afterDir="false" />
@@ -105,13 +105,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1662027905581</updated>
-    </task>
-    <task id="LOCAL-00080" summary="Added overloading of UIText class constructor">
-      <created>1662286626433</created>
-      <option name="number" value="00080" />
-      <option name="presentableId" value="LOCAL-00080" />
-      <option name="project" value="LOCAL" />
-      <updated>1662286626433</updated>
     </task>
     <task id="LOCAL-00081" summary="Optimised GamePanel class">
       <created>1662287859701</created>
@@ -449,7 +442,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663146155802</updated>
     </task>
-    <option name="localTasksCounter" value="129" />
+    <task id="LOCAL-00129" summary="Added BallTrigger class">
+      <created>1663147806670</created>
+      <option name="number" value="00129" />
+      <option name="presentableId" value="LOCAL-00129" />
+      <option name="project" value="LOCAL" />
+      <updated>1663147806670</updated>
+    </task>
+    <option name="localTasksCounter" value="130" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -464,7 +464,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added PlayerInput class" />
     <MESSAGE value="Added InputListener class" />
     <MESSAGE value="Moved code to separate package" />
     <MESSAGE value="Replaced array of drawables with ArrayList" />
@@ -489,7 +488,8 @@
     <MESSAGE value="Removed unnecessary method call" />
     <MESSAGE value="Replaced constructor parameter type" />
     <MESSAGE value="Optimised UIText class" />
-    <option name="LAST_COMMIT_MESSAGE" value="Optimised UIText class" />
+    <MESSAGE value="Added BallTrigger class" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added BallTrigger class" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
