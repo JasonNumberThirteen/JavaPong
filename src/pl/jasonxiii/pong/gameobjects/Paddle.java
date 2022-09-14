@@ -15,7 +15,7 @@ import java.awt.event.KeyListener;
 public class Paddle extends GameObject implements Updatable, Drawable, Collidable, KeyListener
 {
 	private final PlayerKeyboardInput input;
-	private final BoxCollider collider = new BoxCollider(this, new Rectangle(position.x, position.y, Constants.PADDLE_WIDTH, Constants.PADDLE_HEIGHT));
+	private final BoxCollider collider = new BoxCollider(this, new Point(Constants.PADDLE_WIDTH, Constants.PADDLE_HEIGHT));
 
 	public Paddle(int x, PlayerKeyboardInput input)
 	{

@@ -6,9 +6,9 @@ import java.awt.*;
 
 public class BoxCollider extends Collider<Rectangle>
 {
-	public BoxCollider(GameObject object, Rectangle collider)
+	public BoxCollider(GameObject object, Point size)
 	{
-		super(object, collider);
+		super(object, new Rectangle(object.getPosition().x, object.getPosition().y, size.x, size.y));
 	}
 
 	@Override

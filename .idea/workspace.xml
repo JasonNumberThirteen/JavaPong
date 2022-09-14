@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ea342c66-e60c-4706-9bb0-07a8f29b3208" name="Changes" comment="Added BallCollider class">
-      <change beforePath="$PROJECT_DIR$/src/pl/jasonxiii/pong/gameobjects/Paddle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/jasonxiii/pong/gameobjects/Paddle.java" afterDir="false" />
+    <list default="true" id="ea342c66-e60c-4706-9bb0-07a8f29b3208" name="Changes" comment="Removed unnecessary method call">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pl/jasonxiii/pong/colliders/BoxCollider.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/jasonxiii/pong/colliders/BoxCollider.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -102,13 +103,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1662027905581</updated>
-    </task>
-    <task id="LOCAL-00077" summary="Optimised Ball class">
-      <created>1662285643038</created>
-      <option name="number" value="00077" />
-      <option name="presentableId" value="LOCAL-00077" />
-      <option name="project" value="LOCAL" />
-      <updated>1662285643038</updated>
     </task>
     <task id="LOCAL-00078" summary="Optimised Paddle class">
       <created>1662286063206</created>
@@ -446,7 +440,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663081654765</updated>
     </task>
-    <option name="localTasksCounter" value="126" />
+    <task id="LOCAL-00126" summary="Removed unnecessary method call">
+      <created>1663081876222</created>
+      <option name="number" value="00126" />
+      <option name="presentableId" value="LOCAL-00126" />
+      <option name="project" value="LOCAL" />
+      <updated>1663081876222</updated>
+    </task>
+    <option name="localTasksCounter" value="127" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -461,7 +462,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added a member variable for player number" />
     <MESSAGE value="Renamed PlayerInput class to PlayerKeyboardInput" />
     <MESSAGE value="Renamed KeyboardInput class to KeyboardInputListener" />
     <MESSAGE value="Added PlayerInput class" />
@@ -486,7 +486,8 @@
     <MESSAGE value="Added constants for half of game window size" />
     <MESSAGE value="Adjusted condition for considering player as the winner" />
     <MESSAGE value="Added BallCollider class" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added BallCollider class" />
+    <MESSAGE value="Removed unnecessary method call" />
+    <option name="LAST_COMMIT_MESSAGE" value="Removed unnecessary method call" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
