@@ -19,7 +19,7 @@ public class GamePanel extends JPanel implements Runnable, Updatable
 	private final Ball ball = new Ball();
 	private final GameUI ui = new GameUI(playerA, playerB);
 	private final GameBoard board = new GameBoard(playerA, playerB, ball);
-	private final GameRenderer renderer = new GameRenderer(playerA.getPaddle(), playerB.getPaddle(), ball, ui);
+	private final GameRenderer renderer = new GameRenderer();
 
 	private boolean isRunning = true;
 
@@ -31,6 +31,7 @@ public class GamePanel extends JPanel implements Runnable, Updatable
 		setFocusTraversalKeysEnabled(false);
 		enableInput();
 		assignDependenciesToGameManager();
+		addDrawablesToRenderer();
 		start();
 	}
 
@@ -85,6 +86,14 @@ public class GamePanel extends JPanel implements Runnable, Updatable
 
 		gm.setBoard(board);
 		gm.setUI(ui);
+	}
+
+	private void addDrawablesToRenderer()
+	{
+		renderer.addDrawable(playerA.getPaddle());
+		renderer.addDrawable(playerB.getPaddle());
+		renderer.addDrawable(ball);
+		renderer.addDrawable(ui);
 	}
 
 	private void start()

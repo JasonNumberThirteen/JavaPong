@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ea342c66-e60c-4706-9bb0-07a8f29b3208" name="Changes" comment="Optimised Paddle class">
+    <list default="true" id="ea342c66-e60c-4706-9bb0-07a8f29b3208" name="Changes" comment="Optimised Ball class">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pl/jasonxiii/pong/gameobjects/Ball.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/jasonxiii/pong/gameobjects/Ball.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pl/jasonxiii/pong/GameRenderer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/jasonxiii/pong/GameRenderer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pl/jasonxiii/pong/window/GamePanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/jasonxiii/pong/window/GamePanel.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -103,13 +104,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1662027905581</updated>
-    </task>
-    <task id="LOCAL-00084" summary="Added a generic type to Collider class">
-      <created>1662289429998</created>
-      <option name="number" value="00084" />
-      <option name="presentableId" value="LOCAL-00084" />
-      <option name="project" value="LOCAL" />
-      <updated>1662289429998</updated>
     </task>
     <task id="LOCAL-00085" summary="Removed unnecessary this keywords">
       <created>1662367973701</created>
@@ -447,7 +441,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663148883480</updated>
     </task>
-    <option name="localTasksCounter" value="133" />
+    <task id="LOCAL-00133" summary="Optimised Ball class">
+      <created>1663148970638</created>
+      <option name="number" value="00133" />
+      <option name="presentableId" value="LOCAL-00133" />
+      <option name="project" value="LOCAL" />
+      <updated>1663148970638</updated>
+    </task>
+    <option name="localTasksCounter" value="134" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -462,7 +463,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added a method for enabling input in game panel" />
     <MESSAGE value="Added a getter in Collider class" />
     <MESSAGE value="Added CircleCollider class" />
     <MESSAGE value="Defined collision conditions in Collider class" />
@@ -487,7 +487,8 @@
     <MESSAGE value="Added MovementDirection class" />
     <MESSAGE value="Moved a method for event when the ball moves outside the field" />
     <MESSAGE value="Optimised Paddle class" />
-    <option name="LAST_COMMIT_MESSAGE" value="Optimised Paddle class" />
+    <MESSAGE value="Optimised Ball class" />
+    <option name="LAST_COMMIT_MESSAGE" value="Optimised Ball class" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

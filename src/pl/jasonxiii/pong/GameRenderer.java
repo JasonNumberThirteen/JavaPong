@@ -15,6 +15,16 @@ public class GameRenderer implements Drawable
 		this.drawables.addAll(Arrays.asList(drawables));
 	}
 
+	public void addDrawable(Drawable drawable)
+	{
+		drawables.add(drawable);
+	}
+
+	public void removeDrawable(Drawable drawable)
+	{
+		drawables.remove(drawable);
+	}
+
 	@Override
 	public void draw(Graphics g)
 	{
