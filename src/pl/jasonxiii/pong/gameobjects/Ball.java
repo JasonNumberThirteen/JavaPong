@@ -1,9 +1,9 @@
 package pl.jasonxiii.pong.gameobjects;
 
 import pl.jasonxiii.pong.*;
-import pl.jasonxiii.pong.colliders.BallCollider;
 import pl.jasonxiii.pong.counters.*;
 import pl.jasonxiii.pong.interfaces.*;
+import pl.jasonxiii.pong.colliders.BallCollider;
 
 import java.awt.*;
 
@@ -46,14 +46,6 @@ public class Ball extends GameObject implements Updatable, Drawable, Collidable
 		g.fillArc(position.x, position.y, Constants.BALL_RADIUS, Constants.BALL_RADIUS, 0, 360);
 	}
 
-	public boolean isGoingToPaddle(Paddle paddle)
-	{
-		int requiredDirection = (int)Math.signum(paddle.position.x - position.x);
-		int directionX = movementDirection.getDirectionX();
-
-		return requiredDirection < 0 ? directionX < 0 : directionX > 0;
-	}
-
 	public void onCollisionWithPaddle()
 	{
 		movementDirection.deflectInXAxis();
@@ -68,6 +60,14 @@ public class Ball extends GameObject implements Updatable, Drawable, Collidable
 	public void onMoveOutsideField()
 	{
 		reset();
+	}
+
+	public boolean isGoingToPaddle(Paddle paddle)
+	{
+		int requiredDirection = (int)Math.signum(paddle.position.x - position.x);
+		int directionX = movementDirection.getDirectionX();
+
+		return requiredDirection < 0 ? directionX < 0 : directionX > 0;
 	}
 
 	private void move(double delta)
