@@ -29,13 +29,13 @@ public enum GameManager
 
 	public void increaseLeftSideScore()
 	{
-		leftSideScore.increaseBy(1);
+		leftSideScore.increaseBy(Constants.SIDE_POINTS_PER_BALL_ESCAPE);
 		ui.update();
 	}
 
 	public void increaseRightSideScore()
 	{
-		rightSideScore.increaseBy(1);
+		rightSideScore.increaseBy(Constants.SIDE_POINTS_PER_BALL_ESCAPE);
 		ui.update();
 	}
 
@@ -46,7 +46,7 @@ public enum GameManager
 
 	public String wonSide()
 	{
-		return leftSideScore.getValue() >= Constants.SIDE_SCORE_TO_WIN ? "LEFT" : "RIGHT";
+		return leftSideScore.getValue() >= Constants.SIDE_SCORE_TO_WIN ? Constants.LEFT_SIDE_STRING : Constants.RIGHT_SIDE_STRING;
 	}
 
 	public IntegerCounter getLeftSideScore()

@@ -14,6 +14,7 @@ public final class Constants
 	public static final Color BACKGROUND_COLOR = Color.BLACK;
 
 	public static final int SIDE_INITIAL_SCORE = 0;
+	public static final int SIDE_POINTS_PER_BALL_ESCAPE = 1;
 	public static final int SIDE_SCORE_TO_WIN = 11;
 
 	public static final int PADDLE_WIDTH = 8;
@@ -36,6 +37,8 @@ public final class Constants
 	public static final int RIGHT_SIDE_SCORE_X = HALF_OF_GAME_WIDTH + 48;
 	public static final int SIDE_SCORE_TEXT_Y = 48;
 	public static final Color SIDE_SCORE_TEXT_COLOR = Color.WHITE;
+	public static final String LEFT_SIDE_STRING = "LEFT";
+	public static final String RIGHT_SIDE_STRING = "RIGHT";
 	public static final String SIDE_WON_TEXT_STRING = "%s SIDE WON!";
 	public static final Color SIDE_WON_TEXT_COLOR = Color.ORANGE;
 }
