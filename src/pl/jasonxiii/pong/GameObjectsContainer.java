@@ -2,6 +2,7 @@ package pl.jasonxiii.pong;
 
 import pl.jasonxiii.pong.gameobjects.Ball;
 import pl.jasonxiii.pong.gameobjects.Paddle;
+import pl.jasonxiii.pong.paddleinput.PaddleCPUInput;
 import pl.jasonxiii.pong.paddleinput.PaddleKeyboardInput;
 
 import java.awt.event.KeyEvent;
@@ -40,8 +41,14 @@ public class GameObjectsContainer
 
 	private void addPaddles()
 	{
-		paddles.add(new Paddle(Constants.PADDLE_WIDTH, new PaddleKeyboardInput(KeyEvent.VK_W, KeyEvent.VK_S)));
-		paddles.add(new Paddle(Constants.GAME_WIDTH - Constants.PADDLE_WIDTH - Constants.PADDLE_OFFSET_FROM_EDGE, new PaddleKeyboardInput(KeyEvent.VK_O, KeyEvent.VK_L)));
+		PaddleKeyboardInput leftPaddleInput = new PaddleKeyboardInput(KeyEvent.VK_W, KeyEvent.VK_S);
+		PaddleCPUInput rightPaddleInput = new PaddleCPUInput();
+		Paddle leftPaddle = new Paddle(Constants.PADDLE_WIDTH, leftPaddleInput);
+		Paddle rightPaddle = new Paddle(Constants.GAME_WIDTH - Constants.PADDLE_WIDTH - Constants.PADDLE_OFFSET_FROM_EDGE, rightPaddleInput);
+
+		rightPaddleInput.setPaddle(rightPaddle);
+		paddles.add(leftPaddle);
+		paddles.add(rightPaddle);
 	}
 
 	private void assignDependenciesToGameManager()

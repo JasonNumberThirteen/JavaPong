@@ -25,7 +25,6 @@ public class Paddle extends GameObject implements Updatable, Drawable, Collidabl
 	@Override
 	public void update(double delta)
 	{
-		input.update();
 		setMovementDirection();
 		move(delta);
 	}

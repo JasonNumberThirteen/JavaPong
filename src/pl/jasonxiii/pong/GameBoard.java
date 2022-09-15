@@ -43,4 +43,9 @@ public class GameBoard implements Updatable
 	{
 		return paddles;
 	}
+
+	public Ball getBall()
+	{
+		return ball;
+	}
 }
