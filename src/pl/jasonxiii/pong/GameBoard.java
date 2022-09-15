@@ -4,14 +4,14 @@ import pl.jasonxiii.pong.gameobjects.Ball;
 import pl.jasonxiii.pong.gameobjects.Paddle;
 import pl.jasonxiii.pong.interfaces.Updatable;
 
-import java.util.ArrayList;
+import java.util.HashSet;
 
 public class GameBoard implements Updatable
 {
-	private final ArrayList<Paddle> paddles;
+	private final HashSet<Paddle> paddles;
 	private final Ball ball;
 
-	public GameBoard(ArrayList<Paddle> paddles, Ball ball)
+	public GameBoard(HashSet<Paddle> paddles, Ball ball)
 	{
 		this.paddles = paddles;
 		this.ball = ball;
@@ -39,7 +39,7 @@ public class GameBoard implements Updatable
 		paddles.remove(paddle);
 	}
 
-	public ArrayList<Paddle> getPaddles()
+	public HashSet<Paddle> getPaddles()
 	{
 		return paddles;
 	}

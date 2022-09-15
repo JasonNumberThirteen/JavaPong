@@ -58,6 +58,25 @@ public class Paddle extends GameObject implements Updatable, Drawable, Collidabl
 		input.controlInput(false);
 	}
 
+	@Override
+	public int hashCode()
+	{
+		return position.x;
+	}
+
+	@Override
+	public boolean equals(Object o)
+	{
+		if(getClass() != o.getClass())
+		{
+			return false;
+		}
+
+		Paddle p = (Paddle)o;
+
+		return position.x == p.position.x;
+	}
+
 	private void setMovementDirection()
 	{
 		int y = 0;

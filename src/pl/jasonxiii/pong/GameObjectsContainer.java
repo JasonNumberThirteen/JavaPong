@@ -5,11 +5,11 @@ import pl.jasonxiii.pong.gameobjects.Paddle;
 import pl.jasonxiii.pong.playerinput.PlayerKeyboardInput;
 
 import java.awt.event.KeyEvent;
-import java.util.ArrayList;
+import java.util.HashSet;
 
 public class GameObjectsContainer
 {
-	private final ArrayList<Paddle> paddles = new ArrayList<>();
+	private final HashSet<Paddle> paddles = new HashSet<>();
 	private final Ball ball = new Ball();
 
 	public GameObjectsContainer()
@@ -17,7 +17,7 @@ public class GameObjectsContainer
 		addPaddles();
 	}
 
-	public ArrayList<Paddle> getPaddles()
+	public HashSet<Paddle> getPaddles()
 	{
 		return paddles;
 	}

@@ -3,8 +3,8 @@ package pl.jasonxiii.pong;
 import pl.jasonxiii.pong.interfaces.Drawable;
 
 import java.awt.*;
-import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.ArrayList;
 
 public class GameRenderer implements Drawable
 {
