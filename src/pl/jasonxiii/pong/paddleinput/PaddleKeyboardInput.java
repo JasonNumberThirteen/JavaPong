@@ -1,15 +1,15 @@
-package pl.jasonxiii.pong.playerinput;
+package pl.jasonxiii.pong.paddleinput;
 
 import java.awt.event.KeyEvent;
 
-public class PlayerKeyboardInput extends PlayerInput
+public class PaddleKeyboardInput extends PaddleInput
 {
 	private final int upMovementCode;
 	private final int downMovementCode;
 
 	private KeyEvent keyEvent;
 
-	public PlayerKeyboardInput(int upMovementCode, int downMovementCode)
+	public PaddleKeyboardInput(int upMovementCode, int downMovementCode)
 	{
 		this.upMovementCode = upMovementCode;
 		this.downMovementCode = downMovementCode;

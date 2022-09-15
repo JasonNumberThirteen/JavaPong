@@ -5,7 +5,7 @@ import pl.jasonxiii.pong.Constants;
 import pl.jasonxiii.pong.MovementDirection;
 import pl.jasonxiii.pong.colliders.BoxCollider;
 import pl.jasonxiii.pong.interfaces.*;
-import pl.jasonxiii.pong.playerinput.PlayerKeyboardInput;
+import pl.jasonxiii.pong.paddleinput.PaddleKeyboardInput;
 
 import java.awt.*;
 import java.awt.event.KeyEvent;
@@ -13,11 +13,11 @@ import java.awt.event.KeyListener;
 
 public class Paddle extends GameObject implements Updatable, Drawable, Collidable, KeyListener
 {
-	private final PlayerKeyboardInput input;
+	private final PaddleKeyboardInput input;
 	private final MovementDirection movementDirection = new MovementDirection();
 	private final BoxCollider collider = new BoxCollider(this, new Point(Constants.PADDLE_WIDTH, Constants.PADDLE_HEIGHT));
 
-	public Paddle(int x, PlayerKeyboardInput input)
+	public Paddle(int x, PaddleKeyboardInput input)
 	{
 		super(x, Constants.PADDLE_INITIAL_Y);
 

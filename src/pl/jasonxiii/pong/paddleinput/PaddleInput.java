@@ -1,6 +1,6 @@
-package pl.jasonxiii.pong.playerinput;
+package pl.jasonxiii.pong.paddleinput;
 
-public abstract class PlayerInput
+public abstract class PaddleInput
 {
 	private boolean isMovingUp, isMovingDown;
 
