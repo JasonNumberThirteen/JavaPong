@@ -38,4 +38,10 @@ public class KeyboardInputListener extends InputListener implements KeyListener
 	{
 		panel.addKeyListener(this);
 	}
+
+	@Override
+	public void disable(JPanel panel)
+	{
+		panel.removeKeyListener(this);
+	}
 }
