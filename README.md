@@ -22,14 +22,13 @@
 ## Features
 - Resolution: 640x480
 - Realtime game loop using thread (used technique from [this link](https://zetcode.com/javagames/animation/ "Java games animation - creating animations in Java 2D"))
-- Two players mode
+- Adjustable amount of paddles which can be controlled either by player or CPU
 - Scoring system when the ball goes outside the screen
 - UI system drawing centered texts in given color
 - Adjustable plenty of values in single class
 
 ## Usage
 - Press W / S keys to control the left paddle
-- Press O / L keys to control the right paddle
 
 ## Credits
 - This project was made by [Jason](https://jasonxiii.pl "Jason. Gry, muzyka, kursy, artykuły, programy i filmy!")

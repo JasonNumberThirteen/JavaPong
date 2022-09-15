@@ -1,11 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ea342c66-e60c-4706-9bb0-07a8f29b3208" name="Changes" comment="Optimised code in PaddleInput derived classes">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pl/jasonxiii/pong/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/jasonxiii/pong/Constants.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pl/jasonxiii/pong/Methods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/jasonxiii/pong/Methods.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pl/jasonxiii/pong/paddleinput/PaddleCPUInput.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/jasonxiii/pong/paddleinput/PaddleCPUInput.java" afterDir="false" />
+    <list default="true" id="ea342c66-e60c-4706-9bb0-07a8f29b3208" name="Changes" comment="Added a distance threshold for paddle controlled by CPU">
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -105,13 +102,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1662027905581</updated>
-    </task>
-    <task id="LOCAL-00100" summary="Added a member variable for player number">
-      <created>1662371832652</created>
-      <option name="number" value="00100" />
-      <option name="presentableId" value="LOCAL-00100" />
-      <option name="project" value="LOCAL" />
-      <updated>1662371832652</updated>
     </task>
     <task id="LOCAL-00101" summary="Renamed PlayerInput class to PlayerKeyboardInput">
       <created>1662372239175</created>
@@ -449,7 +439,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663240727644</updated>
     </task>
-    <option name="localTasksCounter" value="149" />
+    <task id="LOCAL-00149" summary="Added a distance threshold for paddle controlled by CPU">
+      <created>1663241456006</created>
+      <option name="number" value="00149" />
+      <option name="presentableId" value="LOCAL-00149" />
+      <option name="project" value="LOCAL" />
+      <updated>1663241456006</updated>
+    </task>
+    <option name="localTasksCounter" value="150" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -464,7 +461,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Adjusted condition for considering player as the winner" />
     <MESSAGE value="Added BallCollider class" />
     <MESSAGE value="Removed unnecessary method call" />
     <MESSAGE value="Replaced constructor parameter type" />
@@ -489,7 +485,8 @@
     <MESSAGE value="Added PaddleCPUInput class" />
     <MESSAGE value="Converted GameBoard class into record" />
     <MESSAGE value="Optimised code in PaddleInput derived classes" />
-    <option name="LAST_COMMIT_MESSAGE" value="Optimised code in PaddleInput derived classes" />
+    <MESSAGE value="Added a distance threshold for paddle controlled by CPU" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added a distance threshold for paddle controlled by CPU" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
