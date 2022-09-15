@@ -1,6 +1,5 @@
 package pl.jasonxiii.pong.paddleinput;
 
-import pl.jasonxiii.pong.Constants;
 import pl.jasonxiii.pong.GameBoard;
 import pl.jasonxiii.pong.GameManager;
 import pl.jasonxiii.pong.gameobjects.Paddle;
@@ -12,31 +11,56 @@ public class PaddleCPUInput extends PaddleInput
 	@Override
 	public boolean isMovingUp()
 	{
-		GameBoard gb = GameManager.INSTANCE.getBoard();
-
-		if(paddle == null || gb == null)
-		{
-			return false;
-		}
-
-		return gb.ball().getPosition().y < paddle.getPosition().y;
+		return ballIsHigherThanPaddle();
 	}
 
 	@Override
 	public boolean isMovingDown()
 	{
-		GameBoard gb = GameManager.INSTANCE.getBoard();
-
-		if(paddle == null || gb == null)
-		{
-			return false;
-		}
-
-		return gb.ball().getPosition().y > (paddle.getPosition().y + Constants.PADDLE_HEIGHT);
+		return ballIsLowerThanPaddle();
 	}
 
 	public void setPaddle(Paddle paddle)
 	{
 		this.paddle = paddle;
+	}
+
+	private boolean ballIsHigherThanPaddle()
+	{
+		GameBoard gb = GameManager.INSTANCE.getBoard();
+
+		if(cannotCheckMovementDirection(gb))
+		{
+			return false;
+		}
+
+		return ballPositionY(gb) < paddle.centerY();
+	}
+
+	private boolean ballIsLowerThanPaddle()
+	{
+		GameBoard gb = GameManager.INSTANCE.getBoard();
+
+		if(cannotCheckMovementDirection(gb))
+		{
+			return false;
+		}
+
+		return ballPositionY(gb) > paddle.centerY();
+	}
+
+	private boolean cannotCheckMovementDirection(GameBoard gb)
+	{
+		return paddle == null || gb == null;
+	}
+
+	private int ballPositionY(GameBoard gb)
+	{
+		if(gb == null)
+		{
+			return -1;
+		}
+
+		return gb.ball().getPosition().y;
 	}
 }

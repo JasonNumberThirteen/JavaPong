@@ -11,15 +11,20 @@ import java.awt.*;
 
 public class Paddle extends GameObject implements Updatable, Drawable, Collidable
 {
-	private final PaddleInput input;
 	private final MovementDirection movementDirection = new MovementDirection();
 	private final BoxCollider collider = new BoxCollider(this, new Point(Constants.PADDLE_WIDTH, Constants.PADDLE_HEIGHT));
 
-	public Paddle(int x, PaddleInput input)
+	private PaddleInput input;
+
+	public Paddle(int x)
 	{
 		super(x, Constants.PADDLE_INITIAL_Y);
+	}
 
-		this.input = input;
+	public Paddle(int x, PaddleInput pi)
+	{
+		super(x, Constants.PADDLE_INITIAL_Y);
+		setInput(pi);
 	}
 
 	@Override
@@ -55,17 +60,40 @@ public class Paddle extends GameObject implements Updatable, Drawable, Collidabl
 		return position.x == p.position.x;
 	}
 
+	public void setInput(PaddleInput pi)
+	{
+		input = pi;
+	}
+
+	public BoxCollider getCollider()
+	{
+		return collider;
+	}
+
+	public PaddleInput getInput()
+	{
+		return input;
+	}
+
+	public int centerY()
+	{
+		return position.y + (collider.getCollider().height >> 1);
+	}
+
 	private void setMovementDirection()
 	{
 		int y = 0;
 
-		if(input.isMovingUp())
+		if(input != null)
 		{
-			y = -1;
-		}
-		else if(input.isMovingDown())
-		{
-			y = 1;
+			if(input.isMovingUp())
+			{
+				y = -1;
+			}
+			else if(input.isMovingDown())
+			{
+				y = 1;
+			}
 		}
 
 		movementDirection.setDirectionY(y);
@@ -78,15 +106,5 @@ public class Paddle extends GameObject implements Updatable, Drawable, Collidabl
 		int offset = movementStep*movementDirection.getDirectionY();
 
 		position.y = Methods.clampInt(0, position.y + offset, max);
-	}
-
-	public BoxCollider getCollider()
-	{
-		return collider;
-	}
-
-	public PaddleInput getInput()
-	{
-		return input;
 	}
 }

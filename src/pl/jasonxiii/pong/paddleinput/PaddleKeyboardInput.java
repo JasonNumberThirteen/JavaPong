@@ -20,13 +20,13 @@ public class PaddleKeyboardInput extends PaddleInput implements KeyListener
 	@Override
 	public boolean isMovingUp()
 	{
-		return keyEvent != null && keyEvent.getKeyCode() == upMovementCode && enabled;
+		return keyEventIsAssigned() && keyCode() == upMovementCode && enabled;
 	}
 
 	@Override
 	public boolean isMovingDown()
 	{
-		return keyEvent != null && keyEvent.getKeyCode() == downMovementCode && enabled;
+		return keyEventIsAssigned() && keyCode() == downMovementCode && enabled;
 	}
 
 	@Override
@@ -38,15 +38,29 @@ public class PaddleKeyboardInput extends PaddleInput implements KeyListener
 	@Override
 	public void keyPressed(KeyEvent ke)
 	{
-		setKeyEvent(ke);
-		setEnabled(true);
+		setState(ke, true);
 	}
 
 	@Override
 	public void keyReleased(KeyEvent ke)
 	{
+		setState(ke, false);
+	}
+
+	private int keyCode()
+	{
+		return keyEventIsAssigned() ? keyEvent.getKeyCode() : 0;
+	}
+
+	private boolean keyEventIsAssigned()
+	{
+		return keyEvent != null;
+	}
+
+	private void setState(KeyEvent ke, boolean enabled)
+	{
 		setKeyEvent(ke);
-		setEnabled(false);
+		setEnabled(enabled);
 	}
 
 	private void setKeyEvent(KeyEvent ke)
