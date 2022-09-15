@@ -12,9 +12,6 @@ import javax.swing.*;
 public class GamePanel extends JPanel implements Runnable, Updatable
 {
 	private final GameObjectsContainer gameObjectsContainer = new GameObjectsContainer();
-	private final GameUI ui = new GameUI();
-	private final GameBoard board = new GameBoard(gameObjectsContainer.getPaddles(), gameObjectsContainer.getBall());
-	private final GameRenderer renderer = new GameRenderer();
 
 	private boolean isRunning = true;
 
@@ -25,9 +22,6 @@ public class GamePanel extends JPanel implements Runnable, Updatable
 		setFocusable(true);
 		setFocusTraversalKeysEnabled(false);
 		enableInput();
-		assignDependenciesToGameManager();
-		addDrawablesToRenderer();
-		assignSidesScoreToTexts();
 		start();
 	}
 
@@ -59,14 +53,14 @@ public class GamePanel extends JPanel implements Runnable, Updatable
 	@Override
 	public void update(double delta)
 	{
-		board.update(delta);
+		gameObjectsContainer.getBoard().update(delta);
 	}
 
 	@Override
 	protected void paintComponent(Graphics g)
 	{
 		super.paintComponent(g);
-		renderer.draw(g);
+		gameObjectsContainer.getRenderer().draw(g);
 	}
 
 	private void enableInput()
@@ -74,27 +68,6 @@ public class GamePanel extends JPanel implements Runnable, Updatable
 		InputListener inputListener = new KeyboardInputListener(gameObjectsContainer.getPaddles().toArray(new Paddle[0]));
 
 		inputListener.enable(this);
-	}
-
-	private void assignDependenciesToGameManager()
-	{
-		GameManager gm = GameManager.INSTANCE;
-
-		gm.setBoard(board);
-		gm.setUI(ui);
-	}
-
-	private void addDrawablesToRenderer()
-	{
-		gameObjectsContainer.getPaddles().forEach(renderer::addDrawable);
-		renderer.addDrawable(gameObjectsContainer.getBall());
-		renderer.addDrawable(ui);
-	}
-
-	private void assignSidesScoreToTexts()
-	{
-		ui.setCounterToLeftSideScoreText(GameManager.INSTANCE.getLeftSideScore());
-		ui.setCounterToRightSideScoreText(GameManager.INSTANCE.getRightSideScore());
 	}
 
 	private void start()

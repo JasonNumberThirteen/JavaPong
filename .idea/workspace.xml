@@ -1,12 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ea342c66-e60c-4706-9bb0-07a8f29b3208" name="Changes" comment="Added GameObjectsContainer class">
+    <list default="true" id="ea342c66-e60c-4706-9bb0-07a8f29b3208" name="Changes" comment="Added protection against adding two paddles in the same place">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pl/jasonxiii/pong/GameBoard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/jasonxiii/pong/GameBoard.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pl/jasonxiii/pong/GameObjectsContainer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/jasonxiii/pong/GameObjectsContainer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pl/jasonxiii/pong/GameRenderer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/jasonxiii/pong/GameRenderer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pl/jasonxiii/pong/gameobjects/Paddle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/jasonxiii/pong/gameobjects/Paddle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pl/jasonxiii/pong/window/GamePanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/jasonxiii/pong/window/GamePanel.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -106,13 +104,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1662027905581</updated>
-    </task>
-    <task id="LOCAL-00091" summary="Added a method for setting position to game object">
-      <created>1662370179075</created>
-      <option name="number" value="00091" />
-      <option name="presentableId" value="LOCAL-00091" />
-      <option name="project" value="LOCAL" />
-      <updated>1662370179075</updated>
     </task>
     <task id="LOCAL-00092" summary="Renamed ScoreCounter class to IntegerCounter">
       <created>1662370239283</created>
@@ -450,7 +441,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663156527258</updated>
     </task>
-    <option name="localTasksCounter" value="140" />
+    <task id="LOCAL-00140" summary="Added protection against adding two paddles in the same place">
+      <created>1663230044034</created>
+      <option name="number" value="00140" />
+      <option name="presentableId" value="LOCAL-00140" />
+      <option name="project" value="LOCAL" />
+      <updated>1663230044039</updated>
+    </task>
+    <option name="localTasksCounter" value="141" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -465,7 +463,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Optimised CircleCollider class" />
     <MESSAGE value="Added a constant for player initial score" />
     <MESSAGE value="Removed score text member variable from Player class" />
     <MESSAGE value="Added a method for checking if player won the game" />
@@ -490,7 +487,8 @@
     <MESSAGE value="Removed all Player classes" />
     <MESSAGE value="Renamed player won texts with side won text" />
     <MESSAGE value="Added GameObjectsContainer class" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added GameObjectsContainer class" />
+    <MESSAGE value="Added protection against adding two paddles in the same place" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added protection against adding two paddles in the same place" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
