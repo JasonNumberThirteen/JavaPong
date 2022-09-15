@@ -6,21 +6,12 @@ import pl.jasonxiii.pong.interfaces.Updatable;
 
 import java.util.HashSet;
 
-public class GameBoard implements Updatable
+public record GameBoard(HashSet<Paddle> paddles, Ball ball) implements Updatable
 {
-	private final HashSet<Paddle> paddles;
-	private final Ball ball;
-
-	public GameBoard(HashSet<Paddle> paddles, Ball ball)
-	{
-		this.paddles = paddles;
-		this.ball = ball;
-	}
-
 	@Override
 	public void update(double delta)
 	{
-		if(GameManager.INSTANCE.isOver())
+		if (GameManager.INSTANCE.isOver())
 		{
 			return;
 		}
@@ -37,15 +28,5 @@ public class GameBoard implements Updatable
 	public void removePaddle(Paddle paddle)
 	{
 		paddles.remove(paddle);
-	}
-
-	public HashSet<Paddle> getPaddles()
-	{
-		return paddles;
-	}
-
-	public Ball getBall()
-	{
-		return ball;
 	}
 }

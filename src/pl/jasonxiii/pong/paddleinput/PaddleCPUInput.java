@@ -19,7 +19,7 @@ public class PaddleCPUInput extends PaddleInput
 			return false;
 		}
 
-		return gb.getBall().getPosition().y < paddle.getPosition().y;
+		return gb.ball().getPosition().y < paddle.getPosition().y;
 	}
 
 	@Override
@@ -32,7 +32,7 @@ public class PaddleCPUInput extends PaddleInput
 			return false;
 		}
 
-		return gb.getBall().getPosition().y > (paddle.getPosition().y + Constants.PADDLE_HEIGHT);
+		return gb.ball().getPosition().y > (paddle.getPosition().y + Constants.PADDLE_HEIGHT);
 	}
 
 	public void setPaddle(Paddle paddle)

@@ -45,7 +45,7 @@ public class BallCollider
 	{
 		GameBoard gb = GameManager.INSTANCE.getBoard();
 
-		for (Paddle p : gb.getPaddles())
+		for (Paddle p : gb.paddles())
 		{
 			if(isCollidingWithPaddle(p))
 			{
