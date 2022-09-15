@@ -6,4 +6,9 @@ public final class Methods
 	{
 		return Math.min(Math.max(n, a), b);
 	}
+
+	public static int distance1D(int ya, int yb)
+	{
+		return Math.abs(ya - yb);
+	}
 }
