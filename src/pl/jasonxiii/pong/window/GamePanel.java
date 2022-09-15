@@ -2,7 +2,6 @@ package pl.jasonxiii.pong.window;
 
 import pl.jasonxiii.pong.*;
 import pl.jasonxiii.pong.interfaces.Updatable;
-import pl.jasonxiii.pong.gameobjects.Paddle;
 import pl.jasonxiii.pong.inputlisteners.*;
 
 import java.awt.*;
@@ -64,7 +63,7 @@ public class GamePanel extends JPanel implements Runnable, Updatable
 
 	private void enableInput()
 	{
-		InputListener inputListener = new KeyboardInputListener(container.getPaddles().toArray(new Paddle[0]));
+		InputListener inputListener = new KeyboardInputListener(container.getPaddles());
 
 		inputListener.enable(this);
 	}

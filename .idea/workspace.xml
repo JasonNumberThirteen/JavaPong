@@ -1,9 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ea342c66-e60c-4706-9bb0-07a8f29b3208" name="Changes" comment="Added a method for disabling input listener">
+    <list default="true" id="ea342c66-e60c-4706-9bb0-07a8f29b3208" name="Changes" comment="Renamed PlayerInput classes to PaddleInput">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pl/jasonxiii/pong/gameobjects/Paddle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/jasonxiii/pong/gameobjects/Paddle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pl/jasonxiii/pong/inputlisteners/KeyboardInputListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/jasonxiii/pong/inputlisteners/KeyboardInputListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pl/jasonxiii/pong/paddleinput/PaddleInput.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/jasonxiii/pong/paddleinput/PaddleInput.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pl/jasonxiii/pong/paddleinput/PaddleKeyboardInput.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/jasonxiii/pong/paddleinput/PaddleKeyboardInput.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pl/jasonxiii/pong/window/GamePanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/jasonxiii/pong/window/GamePanel.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -103,13 +107,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1662027905581</updated>
-    </task>
-    <task id="LOCAL-00095" summary="Moved code to separate package">
-      <created>1662370453615</created>
-      <option name="number" value="00095" />
-      <option name="presentableId" value="LOCAL-00095" />
-      <option name="project" value="LOCAL" />
-      <updated>1662370453615</updated>
     </task>
     <task id="LOCAL-00096" summary="Optimised methods for collision detection between game objects">
       <created>1662370989530</created>
@@ -447,7 +444,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663231201289</updated>
     </task>
-    <option name="localTasksCounter" value="144" />
+    <task id="LOCAL-00144" summary="Renamed PlayerInput classes to PaddleInput">
+      <created>1663231834612</created>
+      <option name="number" value="00144" />
+      <option name="presentableId" value="LOCAL-00144" />
+      <option name="project" value="LOCAL" />
+      <updated>1663231834612</updated>
+    </task>
+    <option name="localTasksCounter" value="145" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -462,7 +466,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Removed a number member variable from Player class" />
     <MESSAGE value="Moved code setting player won text to UI class" />
     <MESSAGE value="Added constants for X position of player score texts" />
     <MESSAGE value="Added a constant for player won text string" />
@@ -487,7 +490,8 @@
     <MESSAGE value="Moved game instances to GameObjectsContainer class" />
     <MESSAGE value="Optimised GamePanel class" />
     <MESSAGE value="Added a method for disabling input listener" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added a method for disabling input listener" />
+    <MESSAGE value="Renamed PlayerInput classes to PaddleInput" />
+    <option name="LAST_COMMIT_MESSAGE" value="Renamed PlayerInput classes to PaddleInput" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

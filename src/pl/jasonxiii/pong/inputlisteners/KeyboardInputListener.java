@@ -1,18 +1,21 @@
 package pl.jasonxiii.pong.inputlisteners;
 
+import pl.jasonxiii.pong.gameobjects.Paddle;
+import pl.jasonxiii.pong.paddleinput.PaddleInput;
+
 import javax.swing.*;
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
 import java.util.ArrayList;
-import java.util.Arrays;
+import java.util.HashSet;
 
 public class KeyboardInputListener extends InputListener implements KeyListener
 {
 	private final ArrayList<KeyListener> listeners = new ArrayList<>();
 
-	public KeyboardInputListener(KeyListener... listeners)
+	public KeyboardInputListener(HashSet<Paddle> paddles)
 	{
-		this.listeners.addAll(Arrays.asList(listeners));
+		addFoundKeyListeners(paddles);
 	}
 
 	@Override
@@ -43,5 +46,22 @@ public class KeyboardInputListener extends InputListener implements KeyListener
 	public void disable(JPanel panel)
 	{
 		panel.removeKeyListener(this);
+	}
+
+	private void addFoundKeyListeners(HashSet<Paddle> paddles)
+	{
+		ArrayList<KeyListener> keyListeners = new ArrayList<>();
+
+		for (Paddle p : paddles)
+		{
+			PaddleInput pi = p.getInput();
+
+			if(pi instanceof KeyListener)
+			{
+				keyListeners.add((KeyListener)pi);
+			}
+		}
+
+		listeners.addAll(keyListeners);
 	}
 }

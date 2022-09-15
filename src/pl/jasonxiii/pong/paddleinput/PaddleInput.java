@@ -4,6 +4,7 @@ public abstract class PaddleInput
 {
 	private boolean isMovingUp, isMovingDown;
 
+	public abstract void update();
 	public abstract boolean triggeredMovingUp(boolean enable);
 	public abstract boolean triggeredMovingDown(boolean enable);
 

@@ -5,19 +5,17 @@ import pl.jasonxiii.pong.Constants;
 import pl.jasonxiii.pong.MovementDirection;
 import pl.jasonxiii.pong.colliders.BoxCollider;
 import pl.jasonxiii.pong.interfaces.*;
-import pl.jasonxiii.pong.paddleinput.PaddleKeyboardInput;
+import pl.jasonxiii.pong.paddleinput.PaddleInput;
 
 import java.awt.*;
-import java.awt.event.KeyEvent;
-import java.awt.event.KeyListener;
 
-public class Paddle extends GameObject implements Updatable, Drawable, Collidable, KeyListener
+public class Paddle extends GameObject implements Updatable, Drawable, Collidable
 {
-	private final PaddleKeyboardInput input;
+	private final PaddleInput input;
 	private final MovementDirection movementDirection = new MovementDirection();
 	private final BoxCollider collider = new BoxCollider(this, new Point(Constants.PADDLE_WIDTH, Constants.PADDLE_HEIGHT));
 
-	public Paddle(int x, PaddleKeyboardInput input)
+	public Paddle(int x, PaddleInput input)
 	{
 		super(x, Constants.PADDLE_INITIAL_Y);
 
@@ -27,6 +25,7 @@ public class Paddle extends GameObject implements Updatable, Drawable, Collidabl
 	@Override
 	public void update(double delta)
 	{
+		input.update();
 		setMovementDirection();
 		move(delta);
 	}
@@ -36,26 +35,6 @@ public class Paddle extends GameObject implements Updatable, Drawable, Collidabl
 	{
 		g.setColor(Constants.PADDLE_COLOR);
 		g.fillRect(position.x, position.y, Constants.PADDLE_WIDTH, Constants.PADDLE_HEIGHT);
-	}
-
-	@Override
-	public void keyTyped(KeyEvent ke)
-	{
-
-	}
-
-	@Override
-	public void keyPressed(KeyEvent ke)
-	{
-		input.setKeyEvent(ke);
-		input.controlInput(true);
-	}
-
-	@Override
-	public void keyReleased(KeyEvent ke)
-	{
-		input.setKeyEvent(ke);
-		input.controlInput(false);
 	}
 
 	@Override
@@ -105,5 +84,10 @@ public class Paddle extends GameObject implements Updatable, Drawable, Collidabl
 	public BoxCollider getCollider()
 	{
 		return collider;
+	}
+
+	public PaddleInput getInput()
+	{
+		return input;
 	}
 }
