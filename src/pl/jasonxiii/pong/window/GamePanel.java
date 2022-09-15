@@ -1,17 +1,16 @@
 package pl.jasonxiii.pong.window;
 
 import pl.jasonxiii.pong.*;
-import pl.jasonxiii.pong.gameobjects.Paddle;
-import pl.jasonxiii.pong.inputlisteners.InputListener;
-import pl.jasonxiii.pong.inputlisteners.KeyboardInputListener;
 import pl.jasonxiii.pong.interfaces.Updatable;
+import pl.jasonxiii.pong.gameobjects.Paddle;
+import pl.jasonxiii.pong.inputlisteners.*;
 
 import java.awt.*;
 import javax.swing.*;
 
 public class GamePanel extends JPanel implements Runnable, Updatable
 {
-	private final GameObjectsContainer gameObjectsContainer = new GameObjectsContainer();
+	private final GameObjectsContainer container = new GameObjectsContainer();
 
 	private boolean isRunning = true;
 
@@ -53,19 +52,19 @@ public class GamePanel extends JPanel implements Runnable, Updatable
 	@Override
 	public void update(double delta)
 	{
-		gameObjectsContainer.getBoard().update(delta);
+		container.getBoard().update(delta);
 	}
 
 	@Override
 	protected void paintComponent(Graphics g)
 	{
 		super.paintComponent(g);
-		gameObjectsContainer.getRenderer().draw(g);
+		container.getRenderer().draw(g);
 	}
 
 	private void enableInput()
 	{
-		InputListener inputListener = new KeyboardInputListener(gameObjectsContainer.getPaddles().toArray(new Paddle[0]));
+		InputListener inputListener = new KeyboardInputListener(container.getPaddles().toArray(new Paddle[0]));
 
 		inputListener.enable(this);
 	}

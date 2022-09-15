@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ea342c66-e60c-4706-9bb0-07a8f29b3208" name="Changes" comment="Added protection against adding two paddles in the same place">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pl/jasonxiii/pong/GameObjectsContainer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/jasonxiii/pong/GameObjectsContainer.java" afterDir="false" />
+    <list default="true" id="ea342c66-e60c-4706-9bb0-07a8f29b3208" name="Changes" comment="Moved game instances to GameObjectsContainer class">
       <change beforePath="$PROJECT_DIR$/src/pl/jasonxiii/pong/window/GamePanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/jasonxiii/pong/window/GamePanel.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -104,13 +102,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1662027905581</updated>
-    </task>
-    <task id="LOCAL-00092" summary="Renamed ScoreCounter class to IntegerCounter">
-      <created>1662370239283</created>
-      <option name="number" value="00092" />
-      <option name="presentableId" value="LOCAL-00092" />
-      <option name="project" value="LOCAL" />
-      <updated>1662370239283</updated>
     </task>
     <task id="LOCAL-00093" summary="Renamed DelayTimerCounter class to FloatCounter">
       <created>1662370262967</created>
@@ -448,7 +439,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663230044039</updated>
     </task>
-    <option name="localTasksCounter" value="141" />
+    <task id="LOCAL-00141" summary="Moved game instances to GameObjectsContainer class">
+      <created>1663230533867</created>
+      <option name="number" value="00141" />
+      <option name="presentableId" value="LOCAL-00141" />
+      <option name="project" value="LOCAL" />
+      <updated>1663230533867</updated>
+    </task>
+    <option name="localTasksCounter" value="142" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -463,7 +461,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added a constant for player initial score" />
     <MESSAGE value="Removed score text member variable from Player class" />
     <MESSAGE value="Added a method for checking if player won the game" />
     <MESSAGE value="Removed a number member variable from Player class" />
@@ -488,7 +485,8 @@
     <MESSAGE value="Renamed player won texts with side won text" />
     <MESSAGE value="Added GameObjectsContainer class" />
     <MESSAGE value="Added protection against adding two paddles in the same place" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added protection against adding two paddles in the same place" />
+    <MESSAGE value="Moved game instances to GameObjectsContainer class" />
+    <option name="LAST_COMMIT_MESSAGE" value="Moved game instances to GameObjectsContainer class" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
