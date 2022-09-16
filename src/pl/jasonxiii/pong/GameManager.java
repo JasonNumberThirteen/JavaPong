@@ -37,6 +37,11 @@ public enum GameManager
 		return board;
 	}
 
+	public GameUI getUI()
+	{
+		return ui;
+	}
+
 	public void increaseLeftSideScore()
 	{
 		leftSideScore.increaseBy(Constants.SIDE_POINTS_PER_BALL_ESCAPE);

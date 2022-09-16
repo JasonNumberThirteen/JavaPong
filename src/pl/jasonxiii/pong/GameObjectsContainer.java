@@ -29,6 +29,11 @@ public class GameObjectsContainer
 		return paddles;
 	}
 
+	public Ball getBall()
+	{
+		return ball;
+	}
+
 	public GameBoard getBoard()
 	{
 		return board;

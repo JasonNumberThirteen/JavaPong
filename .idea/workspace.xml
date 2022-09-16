@@ -1,13 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ea342c66-e60c-4706-9bb0-07a8f29b3208" name="Changes" comment="Replaced assignments with method calls">
+    <list default="true" id="ea342c66-e60c-4706-9bb0-07a8f29b3208" name="Changes" comment="Added methods to Counter class">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pl/jasonxiii/pong/GameManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/jasonxiii/pong/GameManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pl/jasonxiii/pong/counters/Counter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/jasonxiii/pong/counters/Counter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pl/jasonxiii/pong/counters/FloatCounter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/jasonxiii/pong/counters/FloatCounter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pl/jasonxiii/pong/counters/IntegerCounter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/jasonxiii/pong/counters/IntegerCounter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pl/jasonxiii/pong/gameobjects/Ball.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/jasonxiii/pong/gameobjects/Ball.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pl/jasonxiii/pong/GameObjectsContainer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/jasonxiii/pong/GameObjectsContainer.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -107,13 +104,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1662027905581</updated>
-    </task>
-    <task id="LOCAL-00109" summary="Added a getter in Collider class">
-      <created>1662644204863</created>
-      <option name="number" value="00109" />
-      <option name="presentableId" value="LOCAL-00109" />
-      <option name="project" value="LOCAL" />
-      <updated>1662644204863</updated>
     </task>
     <task id="LOCAL-00110" summary="Added CircleCollider class">
       <created>1662646429485</created>
@@ -451,7 +441,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663333594271</updated>
     </task>
-    <option name="localTasksCounter" value="158" />
+    <task id="LOCAL-00158" summary="Added methods to Counter class">
+      <created>1663334097801</created>
+      <option name="number" value="00158" />
+      <option name="presentableId" value="LOCAL-00158" />
+      <option name="project" value="LOCAL" />
+      <updated>1663334097801</updated>
+    </task>
+    <option name="localTasksCounter" value="159" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -466,7 +463,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Optimised Ball class" />
     <MESSAGE value="Added methods for adding and removing drawables" />
     <MESSAGE value="Refactored code to make game work independently of amount of players" />
     <MESSAGE value="Added several constants" />
@@ -491,7 +487,8 @@
     <MESSAGE value="Renamed parameters of a method" />
     <MESSAGE value="Adjusted order of methods in many classes" />
     <MESSAGE value="Replaced assignments with method calls" />
-    <option name="LAST_COMMIT_MESSAGE" value="Replaced assignments with method calls" />
+    <MESSAGE value="Added methods to Counter class" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added methods to Counter class" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
