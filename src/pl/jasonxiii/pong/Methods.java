@@ -7,8 +7,8 @@ public final class Methods
 		return Math.min(Math.max(n, a), b);
 	}
 
-	public static int distance1D(int ya, int yb)
+	public static int distance1D(int a, int b)
 	{
-		return Math.abs(ya - yb);
+		return Math.abs(a - b);
 	}
 }
