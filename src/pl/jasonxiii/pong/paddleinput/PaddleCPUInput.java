@@ -69,6 +69,6 @@ public class PaddleCPUInput extends PaddleInput
 			return -1;
 		}
 
-		return gb.ball().getPosition().y;
+		return gb.ball().getPositionY();
 	}
 }

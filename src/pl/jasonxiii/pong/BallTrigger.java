@@ -34,11 +34,11 @@ public class BallTrigger
 
 	private boolean reachedLeftEdge()
 	{
-		return ball.getPosition().x <= -Constants.BALL_RADIUS;
+		return ball.getPositionX() <= -Constants.BALL_RADIUS;
 	}
 
 	private boolean reachedRightEdge()
 	{
-		return ball.getPosition().x >= Constants.GAME_WIDTH;
+		return ball.getPositionX() >= Constants.GAME_WIDTH;
 	}
 }

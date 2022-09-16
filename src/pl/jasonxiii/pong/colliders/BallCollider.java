@@ -36,7 +36,7 @@ public class BallCollider
 
 	private boolean isCollidingWithVerticalEdge()
 	{
-		int y = ball.getPosition().y;
+		int y = ball.getPositionY();
 
 		return y <= 0 || y >= Constants.GAME_HEIGHT - Constants.BALL_RADIUS;
 	}

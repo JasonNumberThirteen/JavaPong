@@ -37,7 +37,7 @@ public class Paddle extends MovingGameObject implements Updatable, Drawable, Col
 	public void draw(Graphics g)
 	{
 		g.setColor(Constants.PADDLE_COLOR);
-		g.fillRect(position.x, position.y, Constants.PADDLE_WIDTH, Constants.PADDLE_HEIGHT);
+		g.fillRect(getPositionX(), getPositionY(), Constants.PADDLE_WIDTH, Constants.PADDLE_HEIGHT);
 	}
 
 	@Override
@@ -48,13 +48,13 @@ public class Paddle extends MovingGameObject implements Updatable, Drawable, Col
 		int directionY = getMovementDirection().getDirectionY();
 		int offset = movementStep*directionY;
 
-		position.y = Methods.clampInt(0, position.y + offset, max);
+		setPositionY(Methods.clampInt(0, getPositionY() + offset, max));
 	}
 
 	@Override
 	public int hashCode()
 	{
-		return position.x;
+		return getPositionX();
 	}
 
 	@Override
@@ -67,7 +67,7 @@ public class Paddle extends MovingGameObject implements Updatable, Drawable, Col
 
 		Paddle p = (Paddle)o;
 
-		return position.x == p.position.x;
+		return getPositionX() == p.getPositionX();
 	}
 
 	public void setInput(PaddleInput pi)
@@ -77,7 +77,7 @@ public class Paddle extends MovingGameObject implements Updatable, Drawable, Col
 
 	public int centerY()
 	{
-		return position.y + (collider.getCollider().height >> 1);
+		return getPositionY() + (collider.getCollider().height >> 1);
 	}
 
 	public BoxCollider getCollider()

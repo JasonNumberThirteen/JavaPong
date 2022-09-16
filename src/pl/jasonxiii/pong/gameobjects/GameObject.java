@@ -4,7 +4,7 @@ import java.awt.*;
 
 public abstract class GameObject
 {
-	protected final Point position;
+	private final Point position;
 
 	public GameObject(int x, int y)
 	{
@@ -16,8 +16,44 @@ public abstract class GameObject
 		position.setLocation(x, y);
 	}
 
+	public void setPositionX(int x)
+	{
+		position.x = x;
+	}
+
+	public void setPositionY(int y)
+	{
+		position.y = y;
+	}
+
+	public void addToPosition(int x, int y)
+	{
+		addToPositionX(x);
+		addToPositionY(y);
+	}
+
+	public void addToPositionX(int x)
+	{
+		position.x += x;
+	}
+
+	public void addToPositionY(int y)
+	{
+		position.y += y;
+	}
+
 	public Point getPosition()
 	{
 		return position;
+	}
+
+	public int getPositionX()
+	{
+		return position.x;
+	}
+
+	public int getPositionY()
+	{
+		return position.y;
 	}
 }

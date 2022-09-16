@@ -41,7 +41,7 @@ public class Ball extends MovingGameObject implements Updatable, Drawable, Colli
 
 		g.setColor(Constants.BALL_COLOR);
 		g2D.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
-		g.fillArc(position.x, position.y, Constants.BALL_RADIUS, Constants.BALL_RADIUS, 0, 360);
+		g.fillArc(getPositionX(), getPositionY(), Constants.BALL_RADIUS, Constants.BALL_RADIUS, 0, 360);
 	}
 
 	@Override
@@ -50,8 +50,7 @@ public class Ball extends MovingGameObject implements Updatable, Drawable, Colli
 		int movementStep = movementStep(delta);
 		MovementDirection md = getMovementDirection();
 
-		position.x += movementStep*md.getDirectionX();
-		position.y += movementStep*md.getDirectionY();
+		addToPosition(movementStep*md.getDirectionX(), movementStep*md.getDirectionY());
 	}
 
 	public void onCollisionWithPaddle()
@@ -72,7 +71,7 @@ public class Ball extends MovingGameObject implements Updatable, Drawable, Colli
 
 	public boolean isGoingToPaddle(Paddle paddle)
 	{
-		int requiredDirection = (int)Math.signum(paddle.position.x - position.x);
+		int requiredDirection = (int)Math.signum(paddle.getPositionX() - getPositionX());
 		int directionX = getMovementDirection().getDirectionX();
 
 		return requiredDirection < 0 ? directionX < 0 : directionX > 0;
