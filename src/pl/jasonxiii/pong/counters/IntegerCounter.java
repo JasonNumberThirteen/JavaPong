@@ -4,7 +4,7 @@ public class IntegerCounter extends Counter<Integer>
 {
 	public IntegerCounter()
 	{
-		super(0);
+		this(0);
 	}
 
 	public IntegerCounter(int value)

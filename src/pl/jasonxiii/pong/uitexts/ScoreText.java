@@ -11,7 +11,7 @@ public class ScoreText extends UIText
 
 	public ScoreText(Point position)
 	{
-		super(String.valueOf(Constants.SIDE_INITIAL_SCORE), position, Constants.SIDE_SCORE_TEXT_COLOR);
+		super(position, Constants.SIDE_SCORE_TEXT_COLOR, String.valueOf(Constants.SIDE_INITIAL_SCORE));
 	}
 
 	public void setCounter(IntegerCounter ic)

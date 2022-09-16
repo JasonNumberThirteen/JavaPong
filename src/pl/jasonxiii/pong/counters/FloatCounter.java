@@ -4,7 +4,7 @@ public class FloatCounter extends Counter<Float>
 {
 	public FloatCounter()
 	{
-		super(0f);
+		this(0f);
 	}
 
 	public FloatCounter(Float value)

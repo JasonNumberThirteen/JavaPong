@@ -12,11 +12,10 @@ public class UIText implements Drawable
 	private Point position;
 	private Color color;
 
-	public UIText(String text, Point position, Color color)
+	public UIText(Point position, Color color, String text)
 	{
+		this(position, color);
 		setText(text);
-		setPosition(position);
-		setColor(color);
 	}
 
 	public UIText(Point position, Color color)
