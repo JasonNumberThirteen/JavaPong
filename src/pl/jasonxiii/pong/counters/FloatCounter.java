@@ -2,6 +2,11 @@ package pl.jasonxiii.pong.counters;
 
 public class FloatCounter extends Counter<Float>
 {
+	public FloatCounter()
+	{
+		super(0f);
+	}
+
 	public FloatCounter(Float value)
 	{
 		super(value);

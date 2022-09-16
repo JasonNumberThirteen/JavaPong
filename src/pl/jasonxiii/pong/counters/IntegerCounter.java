@@ -2,6 +2,11 @@ package pl.jasonxiii.pong.counters;
 
 public class IntegerCounter extends Counter<Integer>
 {
+	public IntegerCounter()
+	{
+		super(0);
+	}
+
 	public IntegerCounter(int value)
 	{
 		super(value);

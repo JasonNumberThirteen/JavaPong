@@ -10,8 +10,8 @@ import java.awt.*;
 public class Ball extends GameObject implements Updatable, Drawable, Collidable
 {
 	private final MovementDirection movementDirection = new MovementDirection();
-	private final IntegerCounter movementSpeed = new IntegerCounter(0);
-	private final FloatCounter delayTimer = new FloatCounter(0f);
+	private final IntegerCounter movementSpeed = new IntegerCounter();
+	private final FloatCounter delayTimer = new FloatCounter();
 	private final BallCollider collider = new BallCollider(this);
 	private final BallTrigger trigger = new BallTrigger(this);
 
