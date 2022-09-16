@@ -14,17 +14,16 @@ public class Paddle extends MovingGameObject implements Updatable, Drawable, Col
 
 	private PaddleInput input;
 
+	public Paddle(int x, PaddleInput pi)
+	{
+		this(x);
+		setInput(pi);
+	}
+
 	public Paddle(int x)
 	{
 		super(x, Constants.PADDLE_INITIAL_Y);
 		getMovementSpeed().setTo(Constants.PADDLE_MOVEMENT_SPEED);
-	}
-
-	public Paddle(int x, PaddleInput pi)
-	{
-		super(x, Constants.PADDLE_INITIAL_Y);
-		getMovementSpeed().setTo(Constants.PADDLE_MOVEMENT_SPEED);
-		setInput(pi);
 	}
 
 	@Override
