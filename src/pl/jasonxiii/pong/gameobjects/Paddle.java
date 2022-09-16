@@ -29,7 +29,7 @@ public class Paddle extends MovingGameObject implements Updatable, Drawable, Col
 	@Override
 	public void update(double delta)
 	{
-		setMovementDirection();
+		getMovementDirection().setDirectionY(input.movementDirectionY());
 		move(delta);
 	}
 
@@ -90,24 +90,5 @@ public class Paddle extends MovingGameObject implements Updatable, Drawable, Col
 	public final PaddleInput getInput()
 	{
 		return input;
-	}
-
-	private void setMovementDirection()
-	{
-		int y = 0;
-
-		if(input != null)
-		{
-			if(input.isMovingUp())
-			{
-				y = -1;
-			}
-			else if(input.isMovingDown())
-			{
-				y = 1;
-			}
-		}
-
-		getMovementDirection().setDirectionY(y);
 	}
 }

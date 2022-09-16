@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ea342c66-e60c-4706-9bb0-07a8f29b3208" name="Changes" comment="Added final modifiers">
+    <list default="true" id="ea342c66-e60c-4706-9bb0-07a8f29b3208" name="Changes" comment="Modified input injection into paddle">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pl/jasonxiii/pong/GameObjectsContainer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/jasonxiii/pong/GameObjectsContainer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pl/jasonxiii/pong/gameobjects/Paddle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/jasonxiii/pong/gameobjects/Paddle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pl/jasonxiii/pong/paddleinput/PaddleCPUInput.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/jasonxiii/pong/paddleinput/PaddleCPUInput.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pl/jasonxiii/pong/paddleinput/PaddleInput.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/jasonxiii/pong/paddleinput/PaddleInput.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -106,13 +104,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1662027905581</updated>
-    </task>
-    <task id="LOCAL-00114" summary="Added a member variable in CircleCollider class">
-      <created>1662725721965</created>
-      <option name="number" value="00114" />
-      <option name="presentableId" value="LOCAL-00114" />
-      <option name="project" value="LOCAL" />
-      <updated>1662725721965</updated>
     </task>
     <task id="LOCAL-00115" summary="Optimised CircleCollider class">
       <created>1662725911186</created>
@@ -450,7 +441,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663336558254</updated>
     </task>
-    <option name="localTasksCounter" value="163" />
+    <task id="LOCAL-00163" summary="Modified input injection into paddle">
+      <created>1663337262389</created>
+      <option name="number" value="00163" />
+      <option name="presentableId" value="LOCAL-00163" />
+      <option name="project" value="LOCAL" />
+      <updated>1663337262389</updated>
+    </task>
+    <option name="localTasksCounter" value="164" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -465,7 +463,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Renamed player won texts with side won text" />
     <MESSAGE value="Added GameObjectsContainer class" />
     <MESSAGE value="Added protection against adding two paddles in the same place" />
     <MESSAGE value="Moved game instances to GameObjectsContainer class" />
@@ -490,7 +487,8 @@
     <MESSAGE value="Added several methods in GameObject class" />
     <MESSAGE value="Adjusted member variables" />
     <MESSAGE value="Added final modifiers" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added final modifiers" />
+    <MESSAGE value="Modified input injection into paddle" />
+    <option name="LAST_COMMIT_MESSAGE" value="Modified input injection into paddle" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

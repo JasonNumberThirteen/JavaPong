@@ -9,6 +9,22 @@ public abstract class PaddleInput
 	public abstract boolean isMovingUp();
 	public abstract boolean isMovingDown();
 
+	public final int movementDirectionY()
+	{
+		int y = 0;
+
+		if(isMovingUp())
+		{
+			return -1;
+		}
+		else if(isMovingDown())
+		{
+			return 1;
+		}
+
+		return y;
+	}
+
 	public final void setPaddle(Paddle paddle)
 	{
 		this.paddle = paddle;
