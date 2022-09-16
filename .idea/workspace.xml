@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ea342c66-e60c-4706-9bb0-07a8f29b3208" name="Changes" comment="Updated README file">
+    <list default="true" id="ea342c66-e60c-4706-9bb0-07a8f29b3208" name="Changes" comment="Added overloading of class constructors">
+      <change afterPath="$PROJECT_DIR$/src/pl/jasonxiii/pong/gameobjects/MovingGameObject.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pl/jasonxiii/pong/counters/FloatCounter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/jasonxiii/pong/counters/FloatCounter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pl/jasonxiii/pong/counters/IntegerCounter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/jasonxiii/pong/counters/IntegerCounter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pl/jasonxiii/pong/gameobjects/Ball.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/jasonxiii/pong/gameobjects/Ball.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pl/jasonxiii/pong/gameobjects/Paddle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/jasonxiii/pong/gameobjects/Paddle.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -105,13 +105,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1662027905581</updated>
-    </task>
-    <task id="LOCAL-00102" summary="Renamed KeyboardInput class to KeyboardInputListener">
-      <created>1662372819433</created>
-      <option name="number" value="00102" />
-      <option name="presentableId" value="LOCAL-00102" />
-      <option name="project" value="LOCAL" />
-      <updated>1662372819433</updated>
     </task>
     <task id="LOCAL-00103" summary="Added PlayerInput class">
       <created>1662402147480</created>
@@ -449,7 +442,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663241632271</updated>
     </task>
-    <option name="localTasksCounter" value="151" />
+    <task id="LOCAL-00151" summary="Added overloading of class constructors">
+      <created>1663330924295</created>
+      <option name="number" value="00151" />
+      <option name="presentableId" value="LOCAL-00151" />
+      <option name="project" value="LOCAL" />
+      <updated>1663330924295</updated>
+    </task>
+    <option name="localTasksCounter" value="152" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -464,7 +464,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Removed unnecessary method call" />
     <MESSAGE value="Replaced constructor parameter type" />
     <MESSAGE value="Optimised UIText class" />
     <MESSAGE value="Added BallTrigger class" />
@@ -489,7 +488,8 @@
     <MESSAGE value="Optimised code in PaddleInput derived classes" />
     <MESSAGE value="Added a distance threshold for paddle controlled by CPU" />
     <MESSAGE value="Updated README file" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated README file" />
+    <MESSAGE value="Added overloading of class constructors" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added overloading of class constructors" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

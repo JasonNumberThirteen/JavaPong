@@ -2,16 +2,14 @@ package pl.jasonxiii.pong.gameobjects;
 
 import pl.jasonxiii.pong.Methods;
 import pl.jasonxiii.pong.Constants;
-import pl.jasonxiii.pong.MovementDirection;
 import pl.jasonxiii.pong.colliders.BoxCollider;
 import pl.jasonxiii.pong.interfaces.*;
 import pl.jasonxiii.pong.paddleinput.PaddleInput;
 
 import java.awt.*;
 
-public class Paddle extends GameObject implements Updatable, Drawable, Collidable
+public class Paddle extends MovingGameObject implements Updatable, Drawable, Collidable
 {
-	private final MovementDirection movementDirection = new MovementDirection();
 	private final BoxCollider collider = new BoxCollider(this, new Point(Constants.PADDLE_WIDTH, Constants.PADDLE_HEIGHT));
 
 	private PaddleInput input;
@@ -19,11 +17,13 @@ public class Paddle extends GameObject implements Updatable, Drawable, Collidabl
 	public Paddle(int x)
 	{
 		super(x, Constants.PADDLE_INITIAL_Y);
+		getMovementSpeed().setTo(Constants.PADDLE_MOVEMENT_SPEED);
 	}
 
 	public Paddle(int x, PaddleInput pi)
 	{
 		super(x, Constants.PADDLE_INITIAL_Y);
+		getMovementSpeed().setTo(Constants.PADDLE_MOVEMENT_SPEED);
 		setInput(pi);
 	}
 
@@ -39,6 +39,17 @@ public class Paddle extends GameObject implements Updatable, Drawable, Collidabl
 	{
 		g.setColor(Constants.PADDLE_COLOR);
 		g.fillRect(position.x, position.y, Constants.PADDLE_WIDTH, Constants.PADDLE_HEIGHT);
+	}
+
+	@Override
+	public void move(double delta)
+	{
+		int movementStep = movementStep(delta);
+		int max = Constants.GAME_HEIGHT - Constants.PADDLE_HEIGHT;
+		int directionY = getMovementDirection().getDirectionY();
+		int offset = movementStep*directionY;
+
+		position.y = Methods.clampInt(0, position.y + offset, max);
 	}
 
 	@Override
@@ -96,15 +107,6 @@ public class Paddle extends GameObject implements Updatable, Drawable, Collidabl
 			}
 		}
 
-		movementDirection.setDirectionY(y);
-	}
-
-	private void move(double delta)
-	{
-		int movementStep = (int)(Constants.PADDLE_MOVEMENT_SPEED*delta);
-		int max = Constants.GAME_HEIGHT - Constants.PADDLE_HEIGHT;
-		int offset = movementStep*movementDirection.getDirectionY();
-
-		position.y = Methods.clampInt(0, position.y + offset, max);
+		getMovementDirection().setDirectionY(y);
 	}
 }

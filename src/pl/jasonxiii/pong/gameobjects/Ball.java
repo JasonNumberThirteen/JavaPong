@@ -7,10 +7,8 @@ import pl.jasonxiii.pong.colliders.BallCollider;
 
 import java.awt.*;
 
-public class Ball extends GameObject implements Updatable, Drawable, Collidable
+public class Ball extends MovingGameObject implements Updatable, Drawable, Collidable
 {
-	private final MovementDirection movementDirection = new MovementDirection();
-	private final IntegerCounter movementSpeed = new IntegerCounter();
 	private final FloatCounter delayTimer = new FloatCounter();
 	private final BallCollider collider = new BallCollider(this);
 	private final BallTrigger trigger = new BallTrigger(this);
@@ -46,15 +44,25 @@ public class Ball extends GameObject implements Updatable, Drawable, Collidable
 		g.fillArc(position.x, position.y, Constants.BALL_RADIUS, Constants.BALL_RADIUS, 0, 360);
 	}
 
+	@Override
+	public void move(double delta)
+	{
+		int movementStep = movementStep(delta);
+		MovementDirection md = getMovementDirection();
+
+		position.x += movementStep*md.getDirectionX();
+		position.y += movementStep*md.getDirectionY();
+	}
+
 	public void onCollisionWithPaddle()
 	{
-		movementDirection.deflectInXAxis();
-		movementSpeed.increaseBy(Constants.BALL_SPEED_INCREASE_PER_PADDLE_DEFLECT);
+		getMovementDirection().deflectInXAxis();
+		getMovementSpeed().increaseBy(Constants.BALL_SPEED_INCREASE_PER_PADDLE_DEFLECT);
 	}
 
 	public void onCollisionWithVerticalEdge()
 	{
-		movementDirection.deflectInYAxis();
+		getMovementDirection().deflectInYAxis();
 	}
 
 	public void onMoveOutsideField()
@@ -65,25 +73,17 @@ public class Ball extends GameObject implements Updatable, Drawable, Collidable
 	public boolean isGoingToPaddle(Paddle paddle)
 	{
 		int requiredDirection = (int)Math.signum(paddle.position.x - position.x);
-		int directionX = movementDirection.getDirectionX();
+		int directionX = getMovementDirection().getDirectionX();
 
 		return requiredDirection < 0 ? directionX < 0 : directionX > 0;
-	}
-
-	private void move(double delta)
-	{
-		int movementStep = (int)(movementSpeed.getValue()*delta);
-
-		position.x += movementStep*movementDirection.getDirectionX();
-		position.y += movementStep*movementDirection.getDirectionY();
 	}
 
 	private void reset()
 	{
 		setPosition(Constants.BALL_INITIAL_X, Constants.BALL_INITIAL_Y);
-		movementDirection.randomise();
+		getMovementDirection().randomise();
 		delayTimer.setTo(Constants.BALL_INITIAL_DELAY_TIMER);
-		movementSpeed.setTo(Constants.BALL_INITIAL_MOVEMENT_SPEED);
+		getMovementSpeed().setTo(Constants.BALL_INITIAL_MOVEMENT_SPEED);
 	}
 
 	private boolean canMove()
