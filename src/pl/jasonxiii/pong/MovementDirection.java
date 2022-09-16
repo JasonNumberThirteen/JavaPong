@@ -19,12 +19,12 @@ public class MovementDirection
 
 	public void deflectInXAxis()
 	{
-		direction.x = -direction.x;
+		setDirectionX(-getDirectionX());
 	}
 
 	public void deflectInYAxis()
 	{
-		direction.y = -direction.y;
+		setDirectionY(-getDirectionY());
 	}
 
 	public void setDirectionX(int x)
