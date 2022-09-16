@@ -51,7 +51,6 @@ public class GameObjectsContainer
 		Paddle leftPaddle = new Paddle(Constants.PADDLE_WIDTH, leftPaddleInput);
 		Paddle rightPaddle = new Paddle(Constants.GAME_WIDTH - Constants.PADDLE_WIDTH - Constants.PADDLE_OFFSET_FROM_EDGE, rightPaddleInput);
 
-		rightPaddleInput.setPaddle(rightPaddle);
 		paddles.add(leftPaddle);
 		paddles.add(rightPaddle);
 	}

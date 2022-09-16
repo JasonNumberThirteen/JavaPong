@@ -73,6 +73,8 @@ public class Paddle extends MovingGameObject implements Updatable, Drawable, Col
 	public final void setInput(PaddleInput pi)
 	{
 		input = pi;
+
+		pi.setPaddle(this);
 	}
 
 	public final int centerY()
