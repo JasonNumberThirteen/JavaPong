@@ -21,13 +21,6 @@ public class GameUI implements Drawable
 		sideWonText.draw(g);
 	}
 
-	public void update()
-	{
-		leftSideScoreText.updateText();
-		rightSideScoreText.updateText();
-		updateSideWonText();
-	}
-
 	public void setCounterToLeftSideScoreText(IntegerCounter ic)
 	{
 		leftSideScoreText.setCounter(ic);
@@ -36,6 +29,13 @@ public class GameUI implements Drawable
 	public void setCounterToRightSideScoreText(IntegerCounter ic)
 	{
 		rightSideScoreText.setCounter(ic);
+	}
+
+	public void update()
+	{
+		leftSideScoreText.updateText();
+		rightSideScoreText.updateText();
+		updateSideWonText();
 	}
 
 	private void updateSideWonText()

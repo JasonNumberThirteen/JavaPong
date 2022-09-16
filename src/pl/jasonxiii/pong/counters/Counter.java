@@ -9,6 +9,9 @@ public abstract class Counter<T extends Number>
 		this.value = value;
 	}
 
+	public abstract void increaseBy(T n);
+	public abstract void decreaseBy(T n);
+
 	public final void setTo(T value)
 	{
 		this.value = value;
@@ -18,7 +21,4 @@ public abstract class Counter<T extends Number>
 	{
 		return value;
 	}
-
-	public abstract void increaseBy(T n);
-	public abstract void decreaseBy(T n);
 }

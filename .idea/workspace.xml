@@ -1,8 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ea342c66-e60c-4706-9bb0-07a8f29b3208" name="Changes" comment="Fixed constructors in several classes">
-      <change beforePath="$PROJECT_DIR$/src/pl/jasonxiii/pong/Methods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/jasonxiii/pong/Methods.java" afterDir="false" />
+    <list default="true" id="ea342c66-e60c-4706-9bb0-07a8f29b3208" name="Changes" comment="Renamed parameters of a method">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pl/jasonxiii/pong/GameManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/jasonxiii/pong/GameManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pl/jasonxiii/pong/GameRenderer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/jasonxiii/pong/GameRenderer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pl/jasonxiii/pong/GameUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/jasonxiii/pong/GameUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pl/jasonxiii/pong/MovementDirection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/jasonxiii/pong/MovementDirection.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pl/jasonxiii/pong/counters/Counter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/jasonxiii/pong/counters/Counter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pl/jasonxiii/pong/gameobjects/MovingGameObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/jasonxiii/pong/gameobjects/MovingGameObject.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pl/jasonxiii/pong/gameobjects/Paddle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/jasonxiii/pong/gameobjects/Paddle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pl/jasonxiii/pong/inputlisteners/KeyboardInputListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/jasonxiii/pong/inputlisteners/KeyboardInputListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pl/jasonxiii/pong/paddleinput/PaddleKeyboardInput.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/jasonxiii/pong/paddleinput/PaddleKeyboardInput.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pl/jasonxiii/pong/uitexts/UIText.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/jasonxiii/pong/uitexts/UIText.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -102,13 +112,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1662027905581</updated>
-    </task>
-    <task id="LOCAL-00106" summary="Moved code to separate package">
-      <created>1662403218124</created>
-      <option name="number" value="00106" />
-      <option name="presentableId" value="LOCAL-00106" />
-      <option name="project" value="LOCAL" />
-      <updated>1662403218124</updated>
     </task>
     <task id="LOCAL-00107" summary="Replaced array of drawables with ArrayList">
       <created>1662403691312</created>
@@ -446,7 +449,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663332714122</updated>
     </task>
-    <option name="localTasksCounter" value="155" />
+    <task id="LOCAL-00155" summary="Renamed parameters of a method">
+      <created>1663332741600</created>
+      <option name="number" value="00155" />
+      <option name="presentableId" value="LOCAL-00155" />
+      <option name="project" value="LOCAL" />
+      <updated>1663332741600</updated>
+    </task>
+    <option name="localTasksCounter" value="156" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -461,7 +471,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added MovementDirection class" />
     <MESSAGE value="Moved a method for event when the ball moves outside the field" />
     <MESSAGE value="Optimised Paddle class" />
     <MESSAGE value="Optimised Ball class" />
@@ -486,7 +495,8 @@
     <MESSAGE value="Added MovingGameObject class" />
     <MESSAGE value="Fixed constructors in Paddle class" />
     <MESSAGE value="Fixed constructors in several classes" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed constructors in several classes" />
+    <MESSAGE value="Renamed parameters of a method" />
+    <option name="LAST_COMMIT_MESSAGE" value="Renamed parameters of a method" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

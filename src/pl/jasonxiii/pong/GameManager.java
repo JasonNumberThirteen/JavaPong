@@ -22,6 +22,16 @@ public enum GameManager
 		this.ui = ui;
 	}
 
+	public IntegerCounter getLeftSideScore()
+	{
+		return leftSideScore;
+	}
+
+	public IntegerCounter getRightSideScore()
+	{
+		return rightSideScore;
+	}
+
 	public GameBoard getBoard()
 	{
 		return board;
@@ -47,15 +57,5 @@ public enum GameManager
 	public String wonSide()
 	{
 		return leftSideScore.getValue() >= Constants.SIDE_SCORE_TO_WIN ? Constants.LEFT_SIDE_STRING : Constants.RIGHT_SIDE_STRING;
-	}
-
-	public IntegerCounter getLeftSideScore()
-	{
-		return leftSideScore;
-	}
-
-	public IntegerCounter getRightSideScore()
-	{
-		return rightSideScore;
 	}
 }

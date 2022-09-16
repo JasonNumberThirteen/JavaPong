@@ -75,6 +75,11 @@ public class Paddle extends MovingGameObject implements Updatable, Drawable, Col
 		input = pi;
 	}
 
+	public int centerY()
+	{
+		return position.y + (collider.getCollider().height >> 1);
+	}
+
 	public BoxCollider getCollider()
 	{
 		return collider;
@@ -83,11 +88,6 @@ public class Paddle extends MovingGameObject implements Updatable, Drawable, Col
 	public PaddleInput getInput()
 	{
 		return input;
-	}
-
-	public int centerY()
-	{
-		return position.y + (collider.getCollider().height >> 1);
 	}
 
 	private void setMovementDirection()

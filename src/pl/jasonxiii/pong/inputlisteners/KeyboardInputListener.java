@@ -19,6 +19,18 @@ public class KeyboardInputListener extends InputListener implements KeyListener
 	}
 
 	@Override
+	public void enable(JPanel panel)
+	{
+		panel.addKeyListener(this);
+	}
+
+	@Override
+	public void disable(JPanel panel)
+	{
+		panel.removeKeyListener(this);
+	}
+
+	@Override
 	public void keyTyped(KeyEvent ke)
 	{
 		listeners.forEach(l -> l.keyTyped(ke));
@@ -34,18 +46,6 @@ public class KeyboardInputListener extends InputListener implements KeyListener
 	public void keyReleased(KeyEvent ke)
 	{
 		listeners.forEach(l -> l.keyReleased(ke));
-	}
-
-	@Override
-	public void enable(JPanel panel)
-	{
-		panel.addKeyListener(this);
-	}
-
-	@Override
-	public void disable(JPanel panel)
-	{
-		panel.removeKeyListener(this);
 	}
 
 	private void addFoundKeyListeners(HashSet<Paddle> paddles)

@@ -47,16 +47,6 @@ public class PaddleKeyboardInput extends PaddleInput implements KeyListener
 		setState(ke, false);
 	}
 
-	private int keyCode()
-	{
-		return keyEventIsAssigned() ? keyEvent.getKeyCode() : 0;
-	}
-
-	private boolean keyEventIsAssigned()
-	{
-		return keyEvent != null;
-	}
-
 	private void setState(KeyEvent ke, boolean enabled)
 	{
 		setKeyEvent(ke);
@@ -71,5 +61,15 @@ public class PaddleKeyboardInput extends PaddleInput implements KeyListener
 	private void setEnabled(boolean enabled)
 	{
 		this.enabled = enabled;
+	}
+
+	private int keyCode()
+	{
+		return keyEventIsAssigned() ? keyEvent.getKeyCode() : 0;
+	}
+
+	private boolean keyEventIsAssigned()
+	{
+		return keyEvent != null;
 	}
 }

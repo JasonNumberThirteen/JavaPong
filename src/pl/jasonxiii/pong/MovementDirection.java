@@ -11,6 +11,12 @@ public class MovementDirection
 		direction = new Point(0, 0);
 	}
 
+	public void randomise()
+	{
+		setDirectionX(randomDirection());
+		setDirectionY(randomDirection());
+	}
+
 	public void deflectInXAxis()
 	{
 		direction.x = -direction.x;
@@ -19,12 +25,6 @@ public class MovementDirection
 	public void deflectInYAxis()
 	{
 		direction.y = -direction.y;
-	}
-
-	public void randomise()
-	{
-		setDirectionX(randomDirection());
-		setDirectionY(randomDirection());
 	}
 
 	public void setDirectionX(int x)

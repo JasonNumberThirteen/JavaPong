@@ -15,6 +15,15 @@ public class GameRenderer implements Drawable
 		this.drawables.addAll(Arrays.asList(drawables));
 	}
 
+	@Override
+	public void draw(Graphics g)
+	{
+		for (Drawable d : drawables)
+		{
+			d.draw(g);
+		}
+	}
+
 	public void addDrawable(Drawable drawable)
 	{
 		drawables.add(drawable);
@@ -23,14 +32,5 @@ public class GameRenderer implements Drawable
 	public void removeDrawable(Drawable drawable)
 	{
 		drawables.remove(drawable);
-	}
-
-	@Override
-	public void draw(Graphics g)
-	{
-		for (Drawable d : drawables)
-		{
-			d.draw(g);
-		}
 	}
 }

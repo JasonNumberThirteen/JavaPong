@@ -24,26 +24,6 @@ public class UIText implements Drawable
 		setColor(color);
 	}
 
-	public void setText(String text)
-	{
-		stringBuilder.replace(0, stringBuilder.length(), text);
-	}
-
-	public void setPosition(Point position)
-	{
-		this.position = position;
-	}
-
-	public void setColor(Color color)
-	{
-		this.color = color;
-	}
-
-	public boolean isVisible()
-	{
-		return true;
-	}
-
 	@Override
 	public void draw(Graphics g)
 	{
@@ -58,6 +38,26 @@ public class UIText implements Drawable
 		g.setFont(textFont());
 		g2D.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
 		drawCenteredString(g);
+	}
+
+	public void setPosition(Point position)
+	{
+		this.position = position;
+	}
+
+	public void setColor(Color color)
+	{
+		this.color = color;
+	}
+
+	public void setText(String text)
+	{
+		stringBuilder.replace(0, stringBuilder.length(), text);
+	}
+
+	public boolean isVisible()
+	{
+		return true;
 	}
 
 	private void drawCenteredString(Graphics g)

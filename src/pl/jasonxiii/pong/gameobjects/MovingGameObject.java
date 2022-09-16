@@ -14,6 +14,8 @@ public abstract class MovingGameObject extends GameObject
 		super(x, y);
 	}
 
+	public abstract void move(double delta);
+
 	public final int movementStep(double delta)
 	{
 		return (int)(movementSpeed.getValue()*delta);
@@ -28,6 +30,4 @@ public abstract class MovingGameObject extends GameObject
 	{
 		return movementSpeed;
 	}
-
-	public abstract void move(double delta);
 }
