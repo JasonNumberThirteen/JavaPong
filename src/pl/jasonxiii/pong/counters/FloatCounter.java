@@ -23,4 +23,16 @@ public class FloatCounter extends Counter<Float>
 	{
 		value -= n;
 	}
+
+	@Override
+	public boolean isLessThanOrEqualTo(Float n)
+	{
+		return value <= n;
+	}
+
+	@Override
+	public boolean isGreaterThanOrEqualTo(Float n)
+	{
+		return value >= n;
+	}
 }

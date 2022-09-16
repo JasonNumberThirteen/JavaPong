@@ -51,11 +51,13 @@ public enum GameManager
 
 	public boolean isOver()
 	{
-		return leftSideScore.getValue() >= Constants.SIDE_SCORE_TO_WIN || rightSideScore.getValue() >= Constants.SIDE_SCORE_TO_WIN;
+		int sideScoreToWin = Constants.SIDE_SCORE_TO_WIN;
+
+		return leftSideScore.isGreaterThanOrEqualTo(sideScoreToWin) || rightSideScore.isGreaterThanOrEqualTo(sideScoreToWin);
 	}
 
 	public String wonSide()
 	{
-		return leftSideScore.getValue() >= Constants.SIDE_SCORE_TO_WIN ? Constants.LEFT_SIDE_STRING : Constants.RIGHT_SIDE_STRING;
+		return leftSideScore.isGreaterThanOrEqualTo(Constants.SIDE_SCORE_TO_WIN) ? Constants.LEFT_SIDE_STRING : Constants.RIGHT_SIDE_STRING;
 	}
 }

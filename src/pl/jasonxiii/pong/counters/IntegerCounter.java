@@ -23,4 +23,16 @@ public class IntegerCounter extends Counter<Integer>
 	{
 		value -= n;
 	}
+
+	@Override
+	public boolean isLessThanOrEqualTo(Integer n)
+	{
+		return value <= n;
+	}
+
+	@Override
+	public boolean isGreaterThanOrEqualTo(Integer n)
+	{
+		return value >= n;
+	}
 }

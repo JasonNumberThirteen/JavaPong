@@ -88,6 +88,6 @@ public class Ball extends MovingGameObject implements Updatable, Drawable, Colli
 
 	private boolean canMove()
 	{
-		return delayTimer.getValue() <= 0;
+		return delayTimer.isLessThanOrEqualTo(0f);
 	}
 }

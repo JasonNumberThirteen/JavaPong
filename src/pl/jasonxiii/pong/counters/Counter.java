@@ -11,6 +11,8 @@ public abstract class Counter<T extends Number>
 
 	public abstract void increaseBy(T n);
 	public abstract void decreaseBy(T n);
+	public abstract boolean isLessThanOrEqualTo(T n);
+	public abstract boolean isGreaterThanOrEqualTo(T n);
 
 	public final void setTo(T value)
 	{
