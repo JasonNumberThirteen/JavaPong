@@ -6,7 +6,6 @@ import pl.jasonxiii.pong.counters.IntegerCounter;
 public abstract class MovingGameObject extends GameObject
 {
 	private final MovementDirection movementDirection = new MovementDirection();
-
 	private final IntegerCounter movementSpeed = new IntegerCounter();
 
 	public MovingGameObject(int x, int y)

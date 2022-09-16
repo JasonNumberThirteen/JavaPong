@@ -5,8 +5,7 @@ import java.awt.event.KeyListener;
 
 public class PaddleKeyboardInput extends PaddleInput implements KeyListener
 {
-	private final int upMovementCode;
-	private final int downMovementCode;
+	private final int upMovementCode, downMovementCode;
 
 	private KeyEvent keyEvent;
 	private boolean enabled;
