@@ -20,12 +20,12 @@ public abstract class MovingGameObject extends GameObject
 		return (int)(movementSpeed.getValue()*delta);
 	}
 
-	public MovementDirection getMovementDirection()
+	public final MovementDirection getMovementDirection()
 	{
 		return movementDirection;
 	}
 
-	public IntegerCounter getMovementSpeed()
+	public final IntegerCounter getMovementSpeed()
 	{
 		return movementSpeed;
 	}

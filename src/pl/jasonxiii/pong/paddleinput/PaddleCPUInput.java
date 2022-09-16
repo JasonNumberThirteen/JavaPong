@@ -22,7 +22,7 @@ public class PaddleCPUInput extends PaddleInput
 		return ballIsLowerThanPaddle() && distanceToBallIsTooLong();
 	}
 
-	public void setPaddle(Paddle paddle)
+	public final void setPaddle(Paddle paddle)
 	{
 		this.paddle = paddle;
 	}

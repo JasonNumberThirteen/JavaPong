@@ -40,17 +40,17 @@ public class UIText implements Drawable
 		drawCenteredString(g);
 	}
 
-	public void setPosition(Point position)
+	public final void setPosition(Point position)
 	{
 		this.position = position;
 	}
 
-	public void setColor(Color color)
+	public final void setColor(Color color)
 	{
 		this.color = color;
 	}
 
-	public void setText(String text)
+	public final void setText(String text)
 	{
 		stringBuilder.replace(0, stringBuilder.length(), text);
 	}

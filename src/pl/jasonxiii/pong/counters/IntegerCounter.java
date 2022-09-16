@@ -13,25 +13,25 @@ public class IntegerCounter extends Counter<Integer>
 	}
 
 	@Override
-	public void increaseBy(Integer n)
+	public final void increaseBy(Integer n)
 	{
 		value += n;
 	}
 
 	@Override
-	public void decreaseBy(Integer n)
+	public final void decreaseBy(Integer n)
 	{
 		value -= n;
 	}
 
 	@Override
-	public boolean isLessThanOrEqualTo(Integer n)
+	public final boolean isLessThanOrEqualTo(Integer n)
 	{
 		return value <= n;
 	}
 
 	@Override
-	public boolean isGreaterThanOrEqualTo(Integer n)
+	public final boolean isGreaterThanOrEqualTo(Integer n)
 	{
 		return value >= n;
 	}

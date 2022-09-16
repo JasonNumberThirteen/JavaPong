@@ -14,7 +14,7 @@ public class ScoreText extends UIText
 		super(position, Constants.SIDE_SCORE_TEXT_COLOR, String.valueOf(Constants.SIDE_INITIAL_SCORE));
 	}
 
-	public void setCounter(IntegerCounter ic)
+	public final void setCounter(IntegerCounter ic)
 	{
 		counter = ic;
 	}

@@ -12,43 +12,43 @@ public enum GameManager
 	private GameBoard board;
 	private GameUI ui;
 
-	public void setBoard(GameBoard board)
+	public final void setBoard(GameBoard board)
 	{
 		this.board = board;
 	}
 
-	public void setUI(GameUI ui)
+	public final void setUI(GameUI ui)
 	{
 		this.ui = ui;
 	}
 
-	public IntegerCounter getLeftSideScore()
+	public final IntegerCounter getLeftSideScore()
 	{
 		return leftSideScore;
 	}
 
-	public IntegerCounter getRightSideScore()
+	public final IntegerCounter getRightSideScore()
 	{
 		return rightSideScore;
 	}
 
-	public GameBoard getBoard()
+	public final GameBoard getBoard()
 	{
 		return board;
 	}
 
-	public GameUI getUI()
+	public final GameUI getUI()
 	{
 		return ui;
 	}
 
-	public void increaseLeftSideScore()
+	public final void increaseLeftSideScore()
 	{
 		leftSideScore.increaseBy(Constants.SIDE_POINTS_PER_BALL_ESCAPE);
 		ui.update();
 	}
 
-	public void increaseRightSideScore()
+	public final void increaseRightSideScore()
 	{
 		rightSideScore.increaseBy(Constants.SIDE_POINTS_PER_BALL_ESCAPE);
 		ui.update();

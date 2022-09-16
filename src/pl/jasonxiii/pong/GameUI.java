@@ -7,7 +7,7 @@ import pl.jasonxiii.pong.uitexts.ScoreText;
 
 import java.awt.*;
 
-public class GameUI implements Drawable
+public final class GameUI implements Drawable
 {
 	private final ScoreText leftSideScoreText = new ScoreText(new Point(Constants.LEFT_SIDE_SCORE_X, Constants.SIDE_SCORE_TEXT_Y));
 	private final ScoreText rightSideScoreText = new ScoreText(new Point(Constants.RIGHT_SIDE_SCORE_X, Constants.SIDE_SCORE_TEXT_Y));

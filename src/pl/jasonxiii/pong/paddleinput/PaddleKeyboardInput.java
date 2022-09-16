@@ -3,7 +3,7 @@ package pl.jasonxiii.pong.paddleinput;
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
 
-public class PaddleKeyboardInput extends PaddleInput implements KeyListener
+public final class PaddleKeyboardInput extends PaddleInput implements KeyListener
 {
 	private final int upMovementCode, downMovementCode;
 

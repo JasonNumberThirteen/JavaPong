@@ -13,25 +13,25 @@ public class FloatCounter extends Counter<Float>
 	}
 
 	@Override
-	public void increaseBy(Float n)
+	public final void increaseBy(Float n)
 	{
 		value += n;
 	}
 
 	@Override
-	public void decreaseBy(Float n)
+	public final void decreaseBy(Float n)
 	{
 		value -= n;
 	}
 
 	@Override
-	public boolean isLessThanOrEqualTo(Float n)
+	public final boolean isLessThanOrEqualTo(Float n)
 	{
 		return value <= n;
 	}
 
 	@Override
-	public boolean isGreaterThanOrEqualTo(Float n)
+	public final boolean isGreaterThanOrEqualTo(Float n)
 	{
 		return value >= n;
 	}

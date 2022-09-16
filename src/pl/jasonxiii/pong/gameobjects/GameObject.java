@@ -11,48 +11,48 @@ public abstract class GameObject
 		this.position = new Point(x, y);
 	}
 
-	public void setPosition(int x, int y)
+	public final void setPosition(int x, int y)
 	{
 		position.setLocation(x, y);
 	}
 
-	public void setPositionX(int x)
+	public final void setPositionX(int x)
 	{
 		position.x = x;
 	}
 
-	public void setPositionY(int y)
+	public final void setPositionY(int y)
 	{
 		position.y = y;
 	}
 
-	public void addToPosition(int x, int y)
+	public final void addToPosition(int x, int y)
 	{
 		addToPositionX(x);
 		addToPositionY(y);
 	}
 
-	public void addToPositionX(int x)
+	public final void addToPositionX(int x)
 	{
 		position.x += x;
 	}
 
-	public void addToPositionY(int y)
+	public final void addToPositionY(int y)
 	{
 		position.y += y;
 	}
 
-	public Point getPosition()
+	public final Point getPosition()
 	{
 		return position;
 	}
 
-	public int getPositionX()
+	public final int getPositionX()
 	{
 		return position.x;
 	}
 
-	public int getPositionY()
+	public final int getPositionY()
 	{
 		return position.y;
 	}

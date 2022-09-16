@@ -24,22 +24,22 @@ public class GameObjectsContainer
 		assignSidesScoreToTexts();
 	}
 
-	public HashSet<Paddle> getPaddles()
+	public final HashSet<Paddle> getPaddles()
 	{
 		return paddles;
 	}
 
-	public Ball getBall()
+	public final Ball getBall()
 	{
 		return ball;
 	}
 
-	public GameBoard getBoard()
+	public final GameBoard getBoard()
 	{
 		return board;
 	}
 
-	public GameRenderer getRenderer()
+	public final GameRenderer getRenderer()
 	{
 		return renderer;
 	}

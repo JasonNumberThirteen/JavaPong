@@ -6,7 +6,7 @@ import java.awt.*;
 import java.util.Arrays;
 import java.util.ArrayList;
 
-public class GameRenderer implements Drawable
+public final class GameRenderer implements Drawable
 {
 	private final ArrayList<Drawable> drawables = new ArrayList<>();
 

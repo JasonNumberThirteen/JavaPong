@@ -2,7 +2,7 @@ package pl.jasonxiii.pong;
 
 import java.awt.*;
 
-public class MovementDirection
+public final class MovementDirection
 {
 	private final Point direction;
 
