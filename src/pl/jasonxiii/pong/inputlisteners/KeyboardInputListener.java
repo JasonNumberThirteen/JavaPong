@@ -1,7 +1,6 @@
 package pl.jasonxiii.pong.inputlisteners;
 
 import pl.jasonxiii.pong.gameobjects.Paddle;
-import pl.jasonxiii.pong.paddleinput.PaddleInput;
 
 import java.util.HashSet;
 import java.util.ArrayList;
@@ -15,7 +14,7 @@ public class KeyboardInputListener extends InputListener implements KeyListener
 
 	public KeyboardInputListener(HashSet<Paddle> paddles)
 	{
-		addFoundKeyListeners(paddles);
+		listeners.addAll(paddles.stream().filter(p -> p.getInput() instanceof KeyListener).map(p -> (KeyListener)p.getInput()).toList());
 	}
 
 	@Override
@@ -46,22 +45,5 @@ public class KeyboardInputListener extends InputListener implements KeyListener
 	public void keyReleased(KeyEvent ke)
 	{
 		listeners.forEach(l -> l.keyReleased(ke));
-	}
-
-	private void addFoundKeyListeners(HashSet<Paddle> paddles)
-	{
-		ArrayList<KeyListener> keyListeners = new ArrayList<>();
-
-		for (Paddle p : paddles)
-		{
-			PaddleInput pi = p.getInput();
-
-			if(pi instanceof KeyListener)
-			{
-				keyListeners.add((KeyListener)pi);
-			}
-		}
-
-		listeners.addAll(keyListeners);
 	}
 }

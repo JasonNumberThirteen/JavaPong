@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ea342c66-e60c-4706-9bb0-07a8f29b3208" name="Changes" comment="Updated README file">
+    <list default="true" id="ea342c66-e60c-4706-9bb0-07a8f29b3208" name="Changes" comment="Fixed calculating of circle collider center">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pl/jasonxiii/pong/colliders/CircleCollider.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/jasonxiii/pong/colliders/CircleCollider.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pl/jasonxiii/pong/GameObjectsContainer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/jasonxiii/pong/GameObjectsContainer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pl/jasonxiii/pong/inputlisteners/KeyboardInputListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/jasonxiii/pong/inputlisteners/KeyboardInputListener.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -103,13 +104,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1662027905581</updated>
-    </task>
-    <task id="LOCAL-00121" summary="Added constants for X position of player score texts">
-      <created>1662998082958</created>
-      <option name="number" value="00121" />
-      <option name="presentableId" value="LOCAL-00121" />
-      <option name="project" value="LOCAL" />
-      <updated>1662998082958</updated>
     </task>
     <task id="LOCAL-00122" summary="Added a constant for player won text string">
       <created>1662998616810</created>
@@ -447,7 +441,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663411620853</updated>
     </task>
-    <option name="localTasksCounter" value="170" />
+    <task id="LOCAL-00170" summary="Fixed calculating of circle collider center">
+      <created>1663412272507</created>
+      <option name="number" value="00170" />
+      <option name="presentableId" value="LOCAL-00170" />
+      <option name="project" value="LOCAL" />
+      <updated>1663412272507</updated>
+    </task>
+    <option name="localTasksCounter" value="171" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -462,7 +463,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Renamed PlayerInput classes to PaddleInput" />
     <MESSAGE value="Replaced paddle input instance with the more abstract type" />
     <MESSAGE value="Added PaddleCPUInput class" />
     <MESSAGE value="Converted GameBoard class into record" />
@@ -487,7 +487,8 @@
     <MESSAGE value="Replaced UIText instances with a list" />
     <MESSAGE value="Adjusted imports of packages" />
     <MESSAGE value="Updated README file" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated README file" />
+    <MESSAGE value="Fixed calculating of circle collider center" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed calculating of circle collider center" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
