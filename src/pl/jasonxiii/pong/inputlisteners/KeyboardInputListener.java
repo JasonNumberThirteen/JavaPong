@@ -3,11 +3,11 @@ package pl.jasonxiii.pong.inputlisteners;
 import pl.jasonxiii.pong.gameobjects.Paddle;
 import pl.jasonxiii.pong.paddleinput.PaddleInput;
 
-import javax.swing.*;
+import java.util.HashSet;
+import java.util.ArrayList;
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
-import java.util.ArrayList;
-import java.util.HashSet;
+import javax.swing.*;
 
 public class KeyboardInputListener extends InputListener implements KeyListener
 {

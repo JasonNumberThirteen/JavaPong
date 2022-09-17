@@ -1,14 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ea342c66-e60c-4706-9bb0-07a8f29b3208" name="Changes" comment="Fixed one-step movement of the CPU paddle in the first frame">
+    <list default="true" id="ea342c66-e60c-4706-9bb0-07a8f29b3208" name="Changes" comment="Replaced UIText instances with a list">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pl/jasonxiii/pong/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/jasonxiii/pong/Constants.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pl/jasonxiii/pong/GameBoard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/jasonxiii/pong/GameBoard.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pl/jasonxiii/pong/GameObjectsContainer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/jasonxiii/pong/GameObjectsContainer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pl/jasonxiii/pong/GameUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/jasonxiii/pong/GameUI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pl/jasonxiii/pong/uitexts/ScoreText.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/jasonxiii/pong/uitexts/ScoreText.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pl/jasonxiii/pong/uitexts/SideWonText.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/jasonxiii/pong/uitexts/SideWonText.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pl/jasonxiii/pong/uitexts/UIText.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/jasonxiii/pong/uitexts/UIText.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pl/jasonxiii/pong/colliders/Collider.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/jasonxiii/pong/colliders/Collider.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pl/jasonxiii/pong/gameobjects/Paddle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/jasonxiii/pong/gameobjects/Paddle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pl/jasonxiii/pong/inputlisteners/KeyboardInputListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/jasonxiii/pong/inputlisteners/KeyboardInputListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pl/jasonxiii/pong/paddleinput/PaddleCPUInput.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/jasonxiii/pong/paddleinput/PaddleCPUInput.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pl/jasonxiii/pong/window/GamePanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/jasonxiii/pong/window/GamePanel.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -108,13 +110,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1662027905581</updated>
-    </task>
-    <task id="LOCAL-00118" summary="Added a method for checking if player won the game">
-      <created>1662996997655</created>
-      <option name="number" value="00118" />
-      <option name="presentableId" value="LOCAL-00118" />
-      <option name="project" value="LOCAL" />
-      <updated>1662996997655</updated>
     </task>
     <task id="LOCAL-00119" summary="Removed a number member variable from Player class">
       <created>1662997614489</created>
@@ -452,7 +447,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663408333145</updated>
     </task>
-    <option name="localTasksCounter" value="167" />
+    <task id="LOCAL-00167" summary="Replaced UIText instances with a list">
+      <created>1663409450111</created>
+      <option name="number" value="00167" />
+      <option name="presentableId" value="LOCAL-00167" />
+      <option name="project" value="LOCAL" />
+      <updated>1663409450111</updated>
+    </task>
+    <option name="localTasksCounter" value="168" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -467,7 +469,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Optimised GamePanel class" />
     <MESSAGE value="Added a method for disabling input listener" />
     <MESSAGE value="Renamed PlayerInput classes to PaddleInput" />
     <MESSAGE value="Replaced paddle input instance with the more abstract type" />
@@ -492,7 +493,8 @@
     <MESSAGE value="Moved a method for setting paddle movement in Y axis" />
     <MESSAGE value="Added a method for calculating center of collider" />
     <MESSAGE value="Fixed one-step movement of the CPU paddle in the first frame" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed one-step movement of the CPU paddle in the first frame" />
+    <MESSAGE value="Replaced UIText instances with a list" />
+    <option name="LAST_COMMIT_MESSAGE" value="Replaced UIText instances with a list" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

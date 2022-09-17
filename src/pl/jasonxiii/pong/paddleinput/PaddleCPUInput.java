@@ -1,9 +1,9 @@
 package pl.jasonxiii.pong.paddleinput;
 
+import pl.jasonxiii.pong.Methods;
 import pl.jasonxiii.pong.Constants;
 import pl.jasonxiii.pong.GameBoard;
 import pl.jasonxiii.pong.GameManager;
-import pl.jasonxiii.pong.Methods;
 
 public class PaddleCPUInput extends PaddleInput
 {

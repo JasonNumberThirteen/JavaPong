@@ -2,8 +2,8 @@ package pl.jasonxiii.pong.gameobjects;
 
 import pl.jasonxiii.pong.Methods;
 import pl.jasonxiii.pong.Constants;
-import pl.jasonxiii.pong.colliders.BoxCollider;
 import pl.jasonxiii.pong.interfaces.*;
+import pl.jasonxiii.pong.colliders.BoxCollider;
 import pl.jasonxiii.pong.paddleinput.PaddleInput;
 
 import java.awt.*;

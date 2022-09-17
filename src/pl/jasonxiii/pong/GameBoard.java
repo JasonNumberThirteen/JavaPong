@@ -1,8 +1,8 @@
 package pl.jasonxiii.pong;
 
+import pl.jasonxiii.pong.interfaces.Updatable;
 import pl.jasonxiii.pong.gameobjects.Ball;
 import pl.jasonxiii.pong.gameobjects.Paddle;
-import pl.jasonxiii.pong.interfaces.Updatable;
 
 import java.util.HashSet;
 

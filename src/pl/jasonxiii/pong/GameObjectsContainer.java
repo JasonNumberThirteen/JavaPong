@@ -1,11 +1,8 @@
 package pl.jasonxiii.pong;
 
-import pl.jasonxiii.pong.gameobjects.Ball;
-import pl.jasonxiii.pong.gameobjects.Paddle;
-import pl.jasonxiii.pong.paddleinput.PaddleCPUInput;
-import pl.jasonxiii.pong.paddleinput.PaddleKeyboardInput;
-import pl.jasonxiii.pong.uitexts.ScoreText;
-import pl.jasonxiii.pong.uitexts.SideWonText;
+import pl.jasonxiii.pong.uitexts.*;
+import pl.jasonxiii.pong.gameobjects.*;
+import pl.jasonxiii.pong.paddleinput.*;
 
 import java.awt.*;
 import java.awt.event.KeyEvent;

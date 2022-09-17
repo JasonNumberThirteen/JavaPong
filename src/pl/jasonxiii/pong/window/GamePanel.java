@@ -1,8 +1,8 @@
 package pl.jasonxiii.pong.window;
 
 import pl.jasonxiii.pong.*;
-import pl.jasonxiii.pong.interfaces.Updatable;
 import pl.jasonxiii.pong.inputlisteners.*;
+import pl.jasonxiii.pong.interfaces.Updatable;
 
 import java.awt.*;
 import javax.swing.*;
