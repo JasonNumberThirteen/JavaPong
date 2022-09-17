@@ -27,8 +27,9 @@ public class CircleCollider extends Collider<Arc2D>
 	@Override
 	public Point center()
 	{
-		int x = object.getPositionX() + radius;
-		int y = object.getPositionY() + radius;
+		int halfOfRadius = radius >> 1;
+		int x = object.getPositionX() + halfOfRadius;
+		int y = object.getPositionY() + halfOfRadius;
 
 		return new Point(x, y);
 	}

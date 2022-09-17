@@ -1,12 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ea342c66-e60c-4706-9bb0-07a8f29b3208" name="Changes" comment="Adjusted imports of packages">
-      <change afterPath="$PROJECT_DIR$/screenshots/1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/screenshots/2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/screenshots/3.png" afterDir="false" />
+    <list default="true" id="ea342c66-e60c-4706-9bb0-07a8f29b3208" name="Changes" comment="Updated README file">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pl/jasonxiii/pong/colliders/CircleCollider.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/jasonxiii/pong/colliders/CircleCollider.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -106,13 +103,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1662027905581</updated>
-    </task>
-    <task id="LOCAL-00120" summary="Moved code setting player won text to UI class">
-      <created>1662997949547</created>
-      <option name="number" value="00120" />
-      <option name="presentableId" value="LOCAL-00120" />
-      <option name="project" value="LOCAL" />
-      <updated>1662997949547</updated>
     </task>
     <task id="LOCAL-00121" summary="Added constants for X position of player score texts">
       <created>1662998082958</created>
@@ -450,7 +440,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663409929004</updated>
     </task>
-    <option name="localTasksCounter" value="169" />
+    <task id="LOCAL-00169" summary="Updated README file">
+      <created>1663411620853</created>
+      <option name="number" value="00169" />
+      <option name="presentableId" value="LOCAL-00169" />
+      <option name="project" value="LOCAL" />
+      <updated>1663411620853</updated>
+    </task>
+    <option name="localTasksCounter" value="170" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -471,7 +468,6 @@
     <MESSAGE value="Converted GameBoard class into record" />
     <MESSAGE value="Optimised code in PaddleInput derived classes" />
     <MESSAGE value="Added a distance threshold for paddle controlled by CPU" />
-    <MESSAGE value="Updated README file" />
     <MESSAGE value="Added overloading of class constructors" />
     <MESSAGE value="Added MovingGameObject class" />
     <MESSAGE value="Fixed constructors in Paddle class" />
@@ -490,7 +486,8 @@
     <MESSAGE value="Fixed one-step movement of the CPU paddle in the first frame" />
     <MESSAGE value="Replaced UIText instances with a list" />
     <MESSAGE value="Adjusted imports of packages" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adjusted imports of packages" />
+    <MESSAGE value="Updated README file" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated README file" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
