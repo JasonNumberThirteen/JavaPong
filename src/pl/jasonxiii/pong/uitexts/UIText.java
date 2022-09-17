@@ -5,7 +5,7 @@ import pl.jasonxiii.pong.interfaces.Drawable;
 
 import java.awt.*;
 
-public class UIText implements Drawable
+public abstract class UIText implements Drawable
 {
 	private final StringBuilder stringBuilder = new StringBuilder();
 
@@ -23,6 +23,8 @@ public class UIText implements Drawable
 		setPosition(position);
 		setColor(color);
 	}
+
+	public abstract void update();
 
 	@Override
 	public void draw(Graphics g)

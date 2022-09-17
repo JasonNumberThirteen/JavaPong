@@ -4,7 +4,10 @@ import pl.jasonxiii.pong.gameobjects.Ball;
 import pl.jasonxiii.pong.gameobjects.Paddle;
 import pl.jasonxiii.pong.paddleinput.PaddleCPUInput;
 import pl.jasonxiii.pong.paddleinput.PaddleKeyboardInput;
+import pl.jasonxiii.pong.uitexts.ScoreText;
+import pl.jasonxiii.pong.uitexts.SideWonText;
 
+import java.awt.*;
 import java.awt.event.KeyEvent;
 import java.util.HashSet;
 
@@ -21,7 +24,7 @@ public class GameObjectsContainer
 		addPaddles();
 		assignDependenciesToGameManager();
 		addDrawablesToRenderer();
-		assignSidesScoreToTexts();
+		addUITexts();
 	}
 
 	public final HashSet<Paddle> getPaddles()
@@ -70,11 +73,14 @@ public class GameObjectsContainer
 		renderer.addDrawable(ui);
 	}
 
-	private void assignSidesScoreToTexts()
+	private void addUITexts()
 	{
 		GameManager gm = GameManager.INSTANCE;
+		Point leftSideScorePoint = new Point(Constants.LEFT_SIDE_SCORE_X, Constants.SIDE_SCORE_TEXT_Y);
+		Point rightSideScorePoint = new Point(Constants.RIGHT_SIDE_SCORE_X, Constants.SIDE_SCORE_TEXT_Y);
 
-		ui.setCounterToLeftSideScoreText(gm.getLeftSideScore());
-		ui.setCounterToRightSideScoreText(gm.getRightSideScore());
+		ui.addText(new ScoreText(leftSideScorePoint, gm.getLeftSideScore()));
+		ui.addText(new ScoreText(rightSideScorePoint, gm.getRightSideScore()));
+		ui.addText(new SideWonText());
 	}
 }

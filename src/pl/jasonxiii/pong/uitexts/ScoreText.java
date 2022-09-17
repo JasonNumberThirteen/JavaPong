@@ -7,19 +7,17 @@ import java.awt.*;
 
 public class ScoreText extends UIText
 {
-	private IntegerCounter counter;
+	private final IntegerCounter counter;
 
-	public ScoreText(Point position)
+	public ScoreText(Point position, IntegerCounter ic)
 	{
 		super(position, Constants.SIDE_SCORE_TEXT_COLOR, String.valueOf(Constants.SIDE_INITIAL_SCORE));
-	}
 
-	public final void setCounter(IntegerCounter ic)
-	{
 		counter = ic;
 	}
 
-	public void updateText()
+	@Override
+	public void update()
 	{
 		setText(String.valueOf(counter.getValue()));
 	}

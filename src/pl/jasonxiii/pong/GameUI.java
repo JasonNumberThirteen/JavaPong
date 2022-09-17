@@ -1,50 +1,39 @@
 package pl.jasonxiii.pong;
 
-import pl.jasonxiii.pong.counters.IntegerCounter;
+import pl.jasonxiii.pong.uitexts.UIText;
 import pl.jasonxiii.pong.interfaces.Drawable;
-import pl.jasonxiii.pong.uitexts.SideWonText;
-import pl.jasonxiii.pong.uitexts.ScoreText;
 
 import java.awt.*;
+import java.util.ArrayList;
+import java.util.Arrays;
 
 public final class GameUI implements Drawable
 {
-	private final ScoreText leftSideScoreText = new ScoreText(new Point(Constants.LEFT_SIDE_SCORE_X, Constants.SIDE_SCORE_TEXT_Y));
-	private final ScoreText rightSideScoreText = new ScoreText(new Point(Constants.RIGHT_SIDE_SCORE_X, Constants.SIDE_SCORE_TEXT_Y));
-	private final SideWonText sideWonText = new SideWonText();
+	private final ArrayList<UIText> texts = new ArrayList<>();
+
+	public GameUI(UIText... texts)
+	{
+		this.texts.addAll(Arrays.asList(texts));
+	}
 
 	@Override
 	public void draw(Graphics g)
 	{
-		leftSideScoreText.draw(g);
-		rightSideScoreText.draw(g);
-		sideWonText.draw(g);
-	}
-
-	public void setCounterToLeftSideScoreText(IntegerCounter ic)
-	{
-		leftSideScoreText.setCounter(ic);
-	}
-
-	public void setCounterToRightSideScoreText(IntegerCounter ic)
-	{
-		rightSideScoreText.setCounter(ic);
+		texts.forEach(t -> t.draw(g));
 	}
 
 	public void update()
 	{
-		leftSideScoreText.updateText();
-		rightSideScoreText.updateText();
-		updateSideWonText();
+		texts.forEach(UIText::update);
 	}
 
-	private void updateSideWonText()
+	public void addText(UIText text)
 	{
-		GameManager gm = GameManager.INSTANCE;
+		texts.add(text);
+	}
 
-		if(gm.isOver())
-		{
-			sideWonText.setText(String.format(Constants.SIDE_WON_TEXT_STRING, gm.wonSide()));
-		}
+	public void removeText(UIText text)
+	{
+		texts.remove(text);
 	}
 }

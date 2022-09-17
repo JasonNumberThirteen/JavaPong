@@ -13,6 +13,17 @@ public class SideWonText extends UIText
 	}
 
 	@Override
+	public void update()
+	{
+		GameManager gm = GameManager.INSTANCE;
+
+		if(gm.isOver())
+		{
+			setText(String.format(Constants.SIDE_WON_TEXT_STRING, gm.wonSide()));
+		}
+	}
+
+	@Override
 	public boolean isVisible()
 	{
 		return GameManager.INSTANCE.isOver();
