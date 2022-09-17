@@ -6,6 +6,7 @@
 * [Used technologies](#used-technologies)
 * [Features](#features)
 * [Usage](#usage)
+* [Screenshots](#screenshots)
 * [Credits](#credits)
 
 ## General information
@@ -29,6 +30,11 @@
 
 ## Usage
 - Press W / S keys to control the left paddle
+
+## Screenshots
+!["Pong"](./screenshots/1.png?raw=true)
+!["Pong"](./screenshots/2.png?raw=true)
+!["Pong"](./screenshots/3.png?raw=true)
 
 ## Credits
 - This project was made by [Jason](https://jasonxiii.pl "Jason. Gry, muzyka, kursy, artykuły, programy i filmy!")
