@@ -77,9 +77,9 @@ public class Paddle extends MovingGameObject implements Updatable, Drawable, Col
 		pi.setPaddle(this);
 	}
 
-	public final int centerY()
+	public final Point center()
 	{
-		return getPositionY() + (collider.getCollider().height >> 1);
+		return collider.center();
 	}
 
 	public final BoxCollider getCollider()

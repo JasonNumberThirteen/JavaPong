@@ -1,10 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ea342c66-e60c-4706-9bb0-07a8f29b3208" name="Changes" comment="Modified input injection into paddle">
+    <list default="true" id="ea342c66-e60c-4706-9bb0-07a8f29b3208" name="Changes" comment="Moved a method for setting paddle movement in Y axis">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pl/jasonxiii/pong/colliders/BoxCollider.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/jasonxiii/pong/colliders/BoxCollider.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pl/jasonxiii/pong/colliders/CircleCollider.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/jasonxiii/pong/colliders/CircleCollider.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pl/jasonxiii/pong/colliders/Collider.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/jasonxiii/pong/colliders/Collider.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pl/jasonxiii/pong/gameobjects/Paddle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/jasonxiii/pong/gameobjects/Paddle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pl/jasonxiii/pong/paddleinput/PaddleInput.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/jasonxiii/pong/paddleinput/PaddleInput.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pl/jasonxiii/pong/paddleinput/PaddleCPUInput.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/jasonxiii/pong/paddleinput/PaddleCPUInput.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -104,13 +107,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1662027905581</updated>
-    </task>
-    <task id="LOCAL-00115" summary="Optimised CircleCollider class">
-      <created>1662725911186</created>
-      <option name="number" value="00115" />
-      <option name="presentableId" value="LOCAL-00115" />
-      <option name="project" value="LOCAL" />
-      <updated>1662725911186</updated>
     </task>
     <task id="LOCAL-00116" summary="Added a constant for player initial score">
       <created>1662726648254</created>
@@ -448,7 +444,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663337262389</updated>
     </task>
-    <option name="localTasksCounter" value="164" />
+    <task id="LOCAL-00164" summary="Moved a method for setting paddle movement in Y axis">
+      <created>1663337425373</created>
+      <option name="number" value="00164" />
+      <option name="presentableId" value="LOCAL-00164" />
+      <option name="project" value="LOCAL" />
+      <updated>1663337425373</updated>
+    </task>
+    <option name="localTasksCounter" value="165" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -463,7 +466,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added GameObjectsContainer class" />
     <MESSAGE value="Added protection against adding two paddles in the same place" />
     <MESSAGE value="Moved game instances to GameObjectsContainer class" />
     <MESSAGE value="Optimised GamePanel class" />
@@ -488,7 +490,8 @@
     <MESSAGE value="Adjusted member variables" />
     <MESSAGE value="Added final modifiers" />
     <MESSAGE value="Modified input injection into paddle" />
-    <option name="LAST_COMMIT_MESSAGE" value="Modified input injection into paddle" />
+    <MESSAGE value="Moved a method for setting paddle movement in Y axis" />
+    <option name="LAST_COMMIT_MESSAGE" value="Moved a method for setting paddle movement in Y axis" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

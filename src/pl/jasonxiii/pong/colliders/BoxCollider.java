@@ -16,4 +16,13 @@ public class BoxCollider extends Collider<Rectangle>
 	{
 		collider.setLocation(object.getPosition());
 	}
+
+	@Override
+	public Point center()
+	{
+		int x = object.getPositionX() + (collider.width >> 1);
+		int y = object.getPositionY() + (collider.height >> 1);
+
+		return new Point(x, y);
+	}
 }

@@ -23,4 +23,13 @@ public class CircleCollider extends Collider<Arc2D>
 
 		collider.setArc(position.x, position.y, radius, radius, 0, 360, Arc2D.CHORD);
 	}
+
+	@Override
+	public Point center()
+	{
+		int x = object.getPositionX() + radius;
+		int y = object.getPositionY() + radius;
+
+		return new Point(x, y);
+	}
 }

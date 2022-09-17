@@ -18,6 +18,7 @@ public abstract class Collider<T extends Shape> implements Collidable
 	}
 
 	public abstract void updateColliderPosition();
+	public abstract Point center();
 
 	public final <U extends Collider<?>> boolean isCollidingWith(U collider)
 	{

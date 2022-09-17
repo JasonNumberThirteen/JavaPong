@@ -26,7 +26,7 @@ public class PaddleCPUInput extends PaddleInput
 			return false;
 		}
 
-		return ballPositionY() < getPaddle().centerY();
+		return ballPositionY() < getPaddle().center().y;
 	}
 
 	private boolean ballIsLowerThanPaddle()
@@ -36,7 +36,7 @@ public class PaddleCPUInput extends PaddleInput
 			return false;
 		}
 
-		return ballPositionY() > getPaddle().centerY();
+		return ballPositionY() > getPaddle().center().y;
 	}
 
 	private boolean cannotCheckMovementDirection()
@@ -46,7 +46,7 @@ public class PaddleCPUInput extends PaddleInput
 
 	private boolean distanceToBallIsTooLong()
 	{
-		int paddleCenterY = getPaddle().centerY();
+		int paddleCenterY = getPaddle().center().y;
 		int ballPositionY = ballPositionY();
 
 		return Methods.distance1D(paddleCenterY, ballPositionY) >= Constants.PADDLE_CPU_MINIMUM_DISTANCE_TO_MOVE;
