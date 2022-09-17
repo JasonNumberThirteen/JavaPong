@@ -47,9 +47,8 @@ public class PaddleCPUInput extends PaddleInput
 	private boolean distanceToBallIsTooLong()
 	{
 		int paddleCenterY = getPaddle().center().y;
-		int ballPositionY = ballPositionY();
 
-		return Methods.distance1D(paddleCenterY, ballPositionY) >= Constants.PADDLE_CPU_MINIMUM_DISTANCE_TO_MOVE;
+		return Methods.distance1D(paddleCenterY, ballPositionY()) > Constants.PADDLE_CPU_MINIMUM_DISTANCE_TO_MOVE;
 	}
 
 	private int ballPositionY()
