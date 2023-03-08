@@ -1,6 +1,5 @@
 package pl.jasonxiii.pong.interfaces;
 
-public interface Collidable
-{
+public interface Collidable {
 
 }

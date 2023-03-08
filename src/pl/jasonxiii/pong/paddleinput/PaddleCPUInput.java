@@ -5,58 +5,47 @@ import pl.jasonxiii.pong.Constants;
 import pl.jasonxiii.pong.GameBoard;
 import pl.jasonxiii.pong.GameManager;
 
-public class PaddleCPUInput extends PaddleInput
-{
+public class PaddleCPUInput extends PaddleInput {
 	@Override
-	public boolean isMovingUp()
-	{
+	public boolean isMovingUp() {
 		return ballIsHigherThanPaddle() && distanceToBallIsTooLong();
 	}
 
 	@Override
-	public boolean isMovingDown()
-	{
+	public boolean isMovingDown() {
 		return ballIsLowerThanPaddle() && distanceToBallIsTooLong();
 	}
 
-	private boolean ballIsHigherThanPaddle()
-	{
-		if(cannotCheckMovementDirection())
-		{
+	private boolean ballIsHigherThanPaddle() {
+		if(cannotCheckMovementDirection()) {
 			return false;
 		}
 
 		return ballPositionY() < getPaddle().center().y;
 	}
 
-	private boolean ballIsLowerThanPaddle()
-	{
-		if(cannotCheckMovementDirection())
-		{
+	private boolean ballIsLowerThanPaddle() {
+		if(cannotCheckMovementDirection()) {
 			return false;
 		}
 
 		return ballPositionY() > getPaddle().center().y;
 	}
 
-	private boolean cannotCheckMovementDirection()
-	{
+	private boolean cannotCheckMovementDirection() {
 		return getPaddle() == null || GameManager.INSTANCE.getBoard() == null;
 	}
 
-	private boolean distanceToBallIsTooLong()
-	{
+	private boolean distanceToBallIsTooLong() {
 		int paddleCenterY = getPaddle().center().y;
 
 		return Methods.distance1D(paddleCenterY, ballPositionY()) > Constants.PADDLE_CPU_MINIMUM_DISTANCE_TO_MOVE;
 	}
 
-	private int ballPositionY()
-	{
+	private int ballPositionY() {
 		GameBoard gb = GameManager.INSTANCE.getBoard();
 
-		if(gb == null)
-		{
+		if(gb == null) {
 			return -1;
 		}
 

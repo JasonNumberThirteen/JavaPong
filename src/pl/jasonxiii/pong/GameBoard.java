@@ -6,13 +6,10 @@ import pl.jasonxiii.pong.gameobjects.Paddle;
 
 import java.util.HashSet;
 
-public record GameBoard(HashSet<Paddle> paddles, Ball ball) implements Updatable
-{
+public record GameBoard(HashSet<Paddle> paddles, Ball ball) implements Updatable {
 	@Override
-	public void update(double delta)
-	{
-		if (GameManager.INSTANCE.isOver())
-		{
+	public void update(double delta) {
+		if(GameManager.INSTANCE.isOver()) {
 			return;
 		}
 
@@ -20,13 +17,11 @@ public record GameBoard(HashSet<Paddle> paddles, Ball ball) implements Updatable
 		ball.update(delta);
 	}
 
-	public void addPaddle(Paddle paddle)
-	{
+	public void addPaddle(Paddle paddle) {
 		paddles.add(paddle);
 	}
 
-	public void removePaddle(Paddle paddle)
-	{
+	public void removePaddle(Paddle paddle) {
 		paddles.remove(paddle);
 	}
 }

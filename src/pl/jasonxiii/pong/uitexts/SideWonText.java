@@ -5,27 +5,22 @@ import pl.jasonxiii.pong.GameManager;
 
 import java.awt.*;
 
-public class SideWonText extends UIText
-{
-	public SideWonText()
-	{
+public class SideWonText extends UIText {
+	public SideWonText() {
 		super(new Point(Constants.HALF_OF_GAME_WIDTH, Constants.HALF_OF_GAME_HEIGHT), Constants.SIDE_WON_TEXT_COLOR);
 	}
 
 	@Override
-	public void update()
-	{
+	public void update() {
 		GameManager gm = GameManager.INSTANCE;
 
-		if(gm.isOver())
-		{
+		if(gm.isOver()) {
 			setText(String.format(Constants.SIDE_WON_TEXT_STRING, gm.wonSide()));
 		}
 	}
 
 	@Override
-	public boolean isVisible()
-	{
+	public boolean isVisible() {
 		return GameManager.INSTANCE.isOver();
 	}
 }
