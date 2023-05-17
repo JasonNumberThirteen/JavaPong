@@ -4,42 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ea342c66-e60c-4706-9bb0-07a8f29b3208" name="Changes" comment="Replaced for-each loop with a stream">
+    <list default="true" id="ea342c66-e60c-4706-9bb0-07a8f29b3208" name="Changes" comment="Adjusted the code formatting">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pl/jasonxiii/pong/BallTrigger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/jasonxiii/pong/BallTrigger.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pl/jasonxiii/pong/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/jasonxiii/pong/Constants.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pl/jasonxiii/pong/GameBoard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/jasonxiii/pong/GameBoard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pl/jasonxiii/pong/GameManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/jasonxiii/pong/GameManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pl/jasonxiii/pong/GameObjectsContainer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/jasonxiii/pong/GameObjectsContainer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pl/jasonxiii/pong/GameRenderer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/jasonxiii/pong/GameRenderer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pl/jasonxiii/pong/GameUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/jasonxiii/pong/GameUI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pl/jasonxiii/pong/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/jasonxiii/pong/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pl/jasonxiii/pong/Methods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/jasonxiii/pong/Methods.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pl/jasonxiii/pong/MovementDirection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/jasonxiii/pong/MovementDirection.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pl/jasonxiii/pong/colliders/BallCollider.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/jasonxiii/pong/colliders/BallCollider.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pl/jasonxiii/pong/colliders/BoxCollider.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/jasonxiii/pong/colliders/BoxCollider.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pl/jasonxiii/pong/colliders/CircleCollider.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/jasonxiii/pong/colliders/CircleCollider.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pl/jasonxiii/pong/colliders/Collider.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/jasonxiii/pong/colliders/Collider.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pl/jasonxiii/pong/counters/Counter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/jasonxiii/pong/counters/Counter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pl/jasonxiii/pong/counters/FloatCounter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/jasonxiii/pong/counters/FloatCounter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pl/jasonxiii/pong/counters/IntegerCounter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/jasonxiii/pong/counters/IntegerCounter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pl/jasonxiii/pong/gameobjects/Ball.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/jasonxiii/pong/gameobjects/Ball.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pl/jasonxiii/pong/gameobjects/GameObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/jasonxiii/pong/gameobjects/GameObject.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pl/jasonxiii/pong/gameobjects/MovingGameObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/jasonxiii/pong/gameobjects/MovingGameObject.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pl/jasonxiii/pong/gameobjects/Paddle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/jasonxiii/pong/gameobjects/Paddle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pl/jasonxiii/pong/inputlisteners/InputListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/jasonxiii/pong/inputlisteners/InputListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pl/jasonxiii/pong/inputlisteners/KeyboardInputListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/jasonxiii/pong/inputlisteners/KeyboardInputListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pl/jasonxiii/pong/interfaces/Collidable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/jasonxiii/pong/interfaces/Collidable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pl/jasonxiii/pong/interfaces/Drawable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/jasonxiii/pong/interfaces/Drawable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pl/jasonxiii/pong/interfaces/Updatable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/jasonxiii/pong/interfaces/Updatable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pl/jasonxiii/pong/paddleinput/PaddleCPUInput.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/jasonxiii/pong/paddleinput/PaddleCPUInput.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pl/jasonxiii/pong/paddleinput/PaddleInput.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/jasonxiii/pong/paddleinput/PaddleInput.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pl/jasonxiii/pong/paddleinput/PaddleKeyboardInput.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/jasonxiii/pong/paddleinput/PaddleKeyboardInput.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pl/jasonxiii/pong/uitexts/ScoreText.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/jasonxiii/pong/uitexts/ScoreText.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pl/jasonxiii/pong/uitexts/SideWonText.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/jasonxiii/pong/uitexts/SideWonText.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pl/jasonxiii/pong/uitexts/UIText.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/jasonxiii/pong/uitexts/UIText.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pl/jasonxiii/pong/window/GameFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/jasonxiii/pong/window/GameFrame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pl/jasonxiii/pong/window/GamePanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/jasonxiii/pong/window/GamePanel.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -99,18 +67,19 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Admin/JetBrains/IdeaProjects/Java/Pong&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.fonts.default&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "C:/Users/Admin/JetBrains/IdeaProjects/Java/Pong",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "editor.preferences.fonts.default"
   }
-}</component>
+}]]></component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="pl.jasonxiii.pong.Main" />
@@ -140,13 +109,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1662027905581</updated>
-    </task>
-    <task id="LOCAL-00123" summary="Added constants for half of game window size">
-      <created>1663079715274</created>
-      <option name="number" value="00123" />
-      <option name="presentableId" value="LOCAL-00123" />
-      <option name="project" value="LOCAL" />
-      <updated>1663079715274</updated>
     </task>
     <task id="LOCAL-00124" summary="Adjusted condition for considering player as the winner">
       <created>1663080022582</created>
@@ -484,7 +446,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663413022046</updated>
     </task>
-    <option name="localTasksCounter" value="172" />
+    <task id="LOCAL-00172" summary="Adjusted the code formatting">
+      <created>1678270778733</created>
+      <option name="number" value="00172" />
+      <option name="presentableId" value="LOCAL-00172" />
+      <option name="project" value="LOCAL" />
+      <updated>1678270778733</updated>
+    </task>
+    <option name="localTasksCounter" value="173" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -499,7 +468,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added PaddleCPUInput class" />
     <MESSAGE value="Converted GameBoard class into record" />
     <MESSAGE value="Optimised code in PaddleInput derived classes" />
     <MESSAGE value="Added a distance threshold for paddle controlled by CPU" />
@@ -524,7 +492,8 @@
     <MESSAGE value="Updated README file" />
     <MESSAGE value="Fixed calculating of circle collider center" />
     <MESSAGE value="Replaced for-each loop with a stream" />
-    <option name="LAST_COMMIT_MESSAGE" value="Replaced for-each loop with a stream" />
+    <MESSAGE value="Adjusted the code formatting" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adjusted the code formatting" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

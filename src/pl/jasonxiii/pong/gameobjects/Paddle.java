@@ -56,7 +56,7 @@ public class Paddle extends MovingGameObject implements Updatable, Drawable, Col
 			return false;
 		}
 
-		Paddle p = (Paddle) o;
+		Paddle p = (Paddle)o;
 
 		return getPositionX() == p.getPositionX();
 	}
