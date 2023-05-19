@@ -8,16 +8,19 @@ import java.awt.*;
 import javax.swing.*;
 
 public class GamePanel extends JPanel implements Runnable, Updatable {
-	private final GameObjectsContainer container = new GameObjectsContainer();
+	private final GameObjectsContainer container;
 
+	private InputListener inputListener;
 	private boolean isRunning = true;
 
-	public GamePanel() {
+	public GamePanel(GameObjectsContainer container, InputListener inputListener) {
+		this.container = container;
+
 		setBackground(Constants.BACKGROUND_COLOR);
 		setPreferredSize(new Dimension(Constants.GAME_WIDTH, Constants.GAME_HEIGHT));
 		setFocusable(true);
 		setFocusTraversalKeysEnabled(false);
-		enableInput();
+		setInputListener(inputListener);
 		start();
 	}
 
@@ -52,10 +55,14 @@ public class GamePanel extends JPanel implements Runnable, Updatable {
 		container.getRenderer().draw(g);
 	}
 
-	private void enableInput() {
-		InputListener inputListener = new KeyboardInputListener(container.getPaddles());
+	public void setInputListener(InputListener inputListener) {
+		if(this.inputListener != null) {
+			this.inputListener.disable(this);
+		}
 
-		inputListener.enable(this);
+		this.inputListener = inputListener;
+
+		this.inputListener.enable(this);
 	}
 
 	private void start() {
